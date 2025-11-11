@@ -113,6 +113,7 @@
   /* Typography */
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-shippori-mincho: var(--font-shippori-mincho), serif;
 
   /* Font Sizes */
   --font-size-xs: 0.75rem;
