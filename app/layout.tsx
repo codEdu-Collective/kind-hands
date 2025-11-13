@@ -1,6 +1,12 @@
 import { JSX } from "react";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Shippori_Mincho, Work_Sans } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Shippori_Mincho,
+  Sue_Ellen_Francisco,
+  Work_Sans,
+} from "next/font/google";
 
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
@@ -17,16 +23,22 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const sueEllenFrancisco = Sue_Ellen_Francisco({
+  variable: "--font-sue-ellen-francisco",
+  subsets: ["latin"],
+  weight: "400",
+});
+
 const shipporiMincho = Shippori_Mincho({
+  variable: "--font-shippori-mincho",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-shippori-mincho",
 });
 
 const workSans = Work_Sans({
+  variable: "--font-work-sans",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-work-sans",
 });
 
 export const metadata: Metadata = {
@@ -40,11 +52,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>): JSX.Element {
   return (
-    <html
-      lang="tr"
-      className={`${geistSans.variable} ${geistMono.variable} ${shipporiMincho.variable} ${workSans.variable}`}
-    >
-      <body className="antialiased">
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable}  ${sueEllenFrancisco.variable} ${shipporiMincho.variable} ${workSans.variable} antialiased w-full max-w-480 bg-background`}
+      >
         <Header />
         {children}
         <Footer />
