@@ -1,15 +1,17 @@
 import { JSX } from "react";
 
-import AboutUs from "@/components/landing/AboutUs";
-import Hero from "@/components/landing/Hero";
-import HowWeHelp from "@/components/landing/HowWeHelp";
-import OurCouses from "@/components/landing/OurCouses";
-import OurEvents from "@/components/landing/OurEvents";
-import Subscribe from "@/components/landing/Subscribe";
-import Team from "@/components/landing/Team";
-import Testimonal from "@/components/landing/Testimonal";
-import WhatWeDid from "@/components/landing/WhatWeDid";
-import WhatWeDo from "@/components/landing/WhatWeDo";
+import {
+  AboutUs,
+  Hero,
+  HowWeHelp,
+  OurCouses,
+  OurEvents,
+  Subscribe,
+  Team,
+  Testimonal,
+  WhatWeDid,
+  WhatWeDo,
+} from "@/components/landing";
 
 export default function Home(): JSX.Element {
   return (
