@@ -7,7 +7,7 @@ const Team = (): JSX.Element => {
     <section className="w-full h-217.5 bg-beige flex flex-col justify-center items-center">
       <h2 className="font-sue-ellen text-4xl text-primary">Team</h2>
       <h3 className="font-shippori font-extrabold text-[2.5rem]">Meet Our Volunteers</h3>
-      <aside className="flex gap-6 mt-10">
+      <aside className="flex gap-6 mt-10 text-dark">
         {["Martin Luther", "Keira Knightley", "Jack Sparrow"].map((member, index) => (
           <div key={index} className="text-center">
             <Image
@@ -34,8 +34,8 @@ const Team = (): JSX.Element => {
             alt="hand icon"
             className="bg-dark p-4.5 rounded-full mb-4"
           />
-          <h4 className="font-shippori font-extrabold text-2xl text-dark">Become a Volunteer</h4>
-          <p className="font-work text-xl text-dark my-4">
+          <h4 className="font-shippori font-extrabold text-2xl">Become a Volunteer</h4>
+          <p className="font-work text-xl my-4">
             Centuries but also the leap electtypesetting, remaining{" "}
           </p>
           <button className="uppercase w-50 h-16 bg-dark rounded-4xl text-white text-lg font-work font-medium">

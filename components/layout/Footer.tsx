@@ -19,18 +19,14 @@ export default function Footer(): JSX.Element {
                 believe. fundraising NGO organizations.
               </p>
               <div className="flex gap-4">
-                <FaInstagram size={60} color="white" className="bg-[#384C56] p-5 rounded-full" />
-                <FaFacebook size={60} color="white" className="bg-[#384C56] p-5 rounded-full" />
-                <FaSquareXTwitter
-                  size={60}
-                  color="white"
-                  className="bg-[#384C56] p-5 rounded-full"
-                />
-                <FaPinterest size={60} color="white" className="bg-[#384C56] p-5 rounded-full" />
+                <FaInstagram size={60} color="white" className="bg-steel p-5 rounded-full" />
+                <FaFacebook size={60} color="white" className="bg-steel p-5 rounded-full" />
+                <FaSquareXTwitter size={60} color="white" className="bg-steel p-5 rounded-full" />
+                <FaPinterest size={60} color="white" className="bg-steel p-5 rounded-full" />
               </div>
             </div>
           </aside>
-          <aside className="flex-2 bg-[#384C56] py-14 px-12.5 flex gap-17.5">
+          <aside className="flex-2 bg-steel py-14 px-12.5 flex gap-17.5">
             <div className="flex-3">
               <h2 className="font-shippori font-bold text-2xl mb-6">Get Involved</h2>
               {["About Us", "Volunteer", "Causes", "Projects", "Team"].map((item, index) => (
@@ -69,7 +65,7 @@ export default function Footer(): JSX.Element {
       </div>
       {/*  Copyright */}
       <div className="w-full bg-dark text-white font-inter text-lg text-center">
-        <div className="w-full bg-[#465A64] h-0.5" />
+        <div className="w-full bg-cool-slate h-0.5" />
         <p className="py-5">&copy; 2025 CodeEdu. All rights reserved.</p>
       </div>
     </footer>

@@ -3,12 +3,12 @@ import Image from "next/image";
 
 const WhatWeDid = (): JSX.Element => {
   return (
-    <section className="w-full h-221.5 bg-[#202D33] text-white">
+    <section className="w-full h-221.5 bg-slate-ink text-white font-shippori">
       <div className="grid grid-cols-4">
         <div className="col-span-2 pt-21 px-25">
           <h3 className="font-sue-ellen text-4xl text-primary">What We Did</h3>
-          <h2 className="font-shippori font-extrabold text-[2.5rem]">Featured Projects</h2>
-          <p className="font-work text-xl mt-4 mb-8">
+          <h2 className="font-extrabold text-[2.5rem]">Featured Projects</h2>
+          <p className="text-xl mt-4 mb-8 font-work">
             Lorem Ipsum is simply dummy text of the printin typesetting dummy text ever when an
             unknown printer took a galley of type and scrambled a type specimen book.
           </p>
@@ -31,13 +31,13 @@ const WhatWeDid = (): JSX.Element => {
             {["Education", "Health"].map((item, index) => (
               <button
                 key={index}
-                className="h-9.5 px-5 bg-[#E85353] rounded-4xl text-white font-work font-medium text-xl"
+                className="h-9.5 px-5 bg-coral-red rounded-4xl text-white font-work font-medium text-xl"
               >
                 {item}
               </button>
             ))}
           </div>
-          <p className="font-shippori font-extrabold text-3xl">
+          <p className="font-extrabold text-3xl">
             More than One Life <br /> Changed
           </p>
         </div>

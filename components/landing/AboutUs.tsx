@@ -5,11 +5,11 @@ import Image from "next/image";
 
 const AboutUs = (): JSX.Element => {
   return (
-    <section className="relative flex flex-col items-center">
+    <section className="relative flex flex-col items-center text-dark">
       <aside className="w-300 h-88 relative -top-25 grid grid-cols-3">
         <div className="bg-accent px-10 py-15">
           <h2 className="font-shippori text-4xl">Education</h2>
-          <h3 className="font-work font-normal text-xl mt-3.5 mb-5">
+          <h3 className="font-work font-normal text-xl mt-3.5 mb-5 text-charcoal">
             Below Poverty Line is enchmark used by the government of India economic disadvantage.
           </h3>
           <button className="bg-white w-36.5 h-16.5 rounded-4xl uppercase font-work font-medium">
@@ -44,7 +44,7 @@ const AboutUs = (): JSX.Element => {
             Help People, <br />
             Our Main Goals
           </h2>
-          <div className="text-neutral text-xl flex flex-col gap-4 text-justify mb-4">
+          <div className="text-xl flex flex-col gap-4 text-justify mb-4 text-neutral">
             <p>
               Lorem Ipsum is simply dummy text of the printin typesetting dummy text ever when an
               unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -80,8 +80,8 @@ const AboutUs = (): JSX.Element => {
             ))}
           </div>
           <div className="relative font-shippori font-extrabold">
-            <p className="text-2xl mb-6">Total Donation</p>
-            <div className="w-full h-1.5 bg-[#C5CECC] rounded-3xl" />
+            <p className="text-2xl mb-6 ">Total Donation</p>
+            <div className="w-full h-1.5 bg-mist-gray rounded-3xl" />
             <div className="w-2/3 h-1.5 bg-primary relative -top-1.5 rounded-3xl z-2" />
             <div className="flex justify-between text-xl mt-6 mb-10">
               <p>Collection - $5M</p>

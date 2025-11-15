@@ -40,13 +40,13 @@ const Testimonal = (): JSX.Element => {
         <MdOutlineKeyboardArrowLeft
           size={73}
           color="black"
-          className="rounded-full overflow-hidden border border-[#D0D0D0]"
+          className="rounded-full overflow-hidden border border-soft-gray"
         />
-        <div className="w-111 h-px bg-[#D0D0D0]" />
+        <div className="w-111 h-px bg-soft-gray" />
         <MdOutlineKeyboardArrowRight
           size={73}
           color="black"
-          className="rounded-full overflow-hidden border border-[#D0D0D0]"
+          className="rounded-full overflow-hidden border border-soft-gray"
         />
       </div>
       <div className="w-300 flex gap-20">
@@ -68,7 +68,7 @@ const Testimonal = (): JSX.Element => {
           </article>
         ))}
       </div>
-      <div className="w-300 bg-[#D0D0D0] h-px my-12.5" />
+      <div className="w-300 bg-soft-gray h-px my-12.5" />
       <div className="w-300 h-26.5 flex gap-30">
         {[...Array(5)].map((_, index) => (
           <section key={index} className="h-full w-full relative">

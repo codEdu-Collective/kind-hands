@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const OurCouses = (): JSX.Element => {
   return (
-    <section className="w-full h-332 bg-beige flex flex-col items-center justify-center">
+    <section className="w-full h-332 bg-beige flex flex-col items-center justify-center text-dark">
       <div className="w-300">
         <h3 className="font-sue-ellen text-4xl text-primary">Our Couses</h3>
         <div className="flex items-center justify-between ">
@@ -41,7 +41,7 @@ const OurCouses = (): JSX.Element => {
               <h2 className="font-shippori text-2xl font-extrabold mb-8">
                 Big charity: build school for poor children
               </h2>
-              <div className="w-full h-1.5 bg-[#C5CECC] rounded-3xl" />
+              <div className="w-full h-1.5 bg-mist-gray rounded-3xl" />
               <div className="w-2/3 h-1.5 bg-primary relative -top-1.5 rounded-3xl z-2" />
               <div className="flex justify-between mt-5 mb-9 font-shippori font-extrabold text-xl">
                 <p>Raised - {raised}M</p>

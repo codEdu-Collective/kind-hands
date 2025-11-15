@@ -25,7 +25,7 @@ const Hero = (): JSX.Element => {
           <button className="uppercase w-36 h-16 bg-primary rounded-4xl text-white text-lg font-work font-medium">
             Donate
           </button>
-          <button className="uppercase w-36 h-16 bg-white rounded-4xl text-black text-lg font-work font-medium">
+          <button className="uppercase w-36 h-16 bg-white rounded-4xl text-dark text-lg font-work font-medium">
             Discover
           </button>
         </div>

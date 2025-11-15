@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const OurEvents = (): JSX.Element => {
   return (
-    <section className="w-full h-295.5 flex flex-col justify-center items-center">
+    <section className="w-full h-295.5 flex flex-col justify-center items-center text-dark">
       <article className="w-300 flex justify-between items-center mb-12.5">
         <div>
           <h3 className="font-sue-ellen text-4xl text-primary">Our Events</h3>
@@ -30,7 +30,7 @@ const OurEvents = (): JSX.Element => {
             <p className="text-6xl">18</p>
             <p className="text-2xl">June</p>
           </div>
-          <div className="flex justify-between items-center font-work text-dark font-medium text-xl mt-5">
+          <div className="flex justify-between items-center font-work font-medium text-xl mt-5">
             <p>
               <span className="text-neutral font-normal">Organized By :</span>
               Nattasha
@@ -38,17 +38,17 @@ const OurEvents = (): JSX.Element => {
             <MdOutlineWatchLater size={20} className="text-primary" />
             <p className="uppercase text-lg">10:00 AM - 18:00 PM, Everyday</p>
           </div>
-          <div className="w-full bg-[#C7C7C7] h-0.5 my-4" />
-          <h4 className="font-shippori font-extrabold text-2xl text-dark mb-3">
+          <div className="w-full bg-cloud-gray h-0.5 my-4" />
+          <h4 className="font-shippori font-extrabold text-2xl mb-3">
             Education for Poor Children
           </h4>
           <p className="font-work text-xl text-neutral">
             There are many varieations of passages of injected Lorem Ipsum available,but the
             majority have.
           </p>
-          <div className="flex items-center justify-evenly w-108.5 h-15 mt-7 bg-[#F0F0F0]">
+          <div className="flex items-center justify-evenly w-108.5 h-15 mt-7 bg-snow">
             <IoLocationOutline size={27} className="text-primary" />
-            <p className="uppercase font-work font-medium text-lg text-dark">
+            <p className="uppercase font-work font-medium text-lg">
               Dark Spurt, San Francisco, CA 94528
             </p>
           </div>
@@ -84,15 +84,13 @@ const OurEvents = (): JSX.Element => {
                   <h3 className="font-work text-xl text-neutral">
                     Organized By :<span className="font-medium text-primary"> {organized}</span>
                   </h3>
-                  <h2 className="font-shippori font-extrabold text-2xl text-dark mt-3 mb-6">
-                    {title}
-                  </h2>
+                  <h2 className="font-shippori font-extrabold text-2xl mt-3 mb-6">{title}</h2>
                   <p className="font-work text-neutral text-xl">
                     There are many varieations of passages of injected Lorem Ipsum available.
                   </p>
                 </div>
               </article>
-              <div className="w-full h-0.5 bg-[#C7C7C7] my-6" />
+              <div className="w-full h-0.5 bg-cloud-gray my-6" />
             </div>
           ))}
         </aside>
