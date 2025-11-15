@@ -1,4 +1,4 @@
-import { JSX } from "react/jsx-dev-runtime";
+import { JSX } from "react";
 import { FaFacebook, FaInstagram, FaPinterest, FaSquareXTwitter } from "react-icons/fa6";
 import { LuMail, LuPhone } from "react-icons/lu";
 

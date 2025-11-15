@@ -1,4 +1,4 @@
-import { JSX } from "react/jsx-dev-runtime";
+import { JSX } from "react";
 import { LuChevronDown } from "react-icons/lu";
 import Image from "next/image";
 import Link from "next/link";
