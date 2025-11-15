@@ -59,11 +59,13 @@ const OurCouses = (): JSX.Element => {
           size={73}
           color="black"
           className="bg-background rounded-full overflow-hidden"
+          aria-label="previous causes"
         />
         <MdOutlineKeyboardArrowRight
           size={73}
           color="black"
           className="bg-background rounded-full overflow-hidden"
+          aria-label="next causes"
         />
       </div>
     </section>

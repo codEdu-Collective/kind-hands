@@ -4,7 +4,7 @@ import Image from "next/image";
 const Subscribe = (): JSX.Element => {
   return (
     <section className="w-full h-100 grid grid-cols-2">
-      <aside className="h-full flex flex-col justify-center px-28 bg-primary text-white">
+      <div className="h-full flex flex-col justify-center px-28 bg-primary text-white">
         <h3 className="font-sue-ellen text-4xl mb-0.5">Subscribe</h3>
         <h2 className="font-shippori font-extrabold text-[2.5rem] mb-4">Newsletter</h2>
         <p className="font-work text-xl">
@@ -16,8 +16,8 @@ const Subscribe = (): JSX.Element => {
           </div>
           <button className="uppercase bg-dark py-5.5 px-9 rounded-full">Send</button>
         </div>
-      </aside>
-      <aside className="h-full relative bg-accent text-dark px-27 flex flex-col justify-center">
+      </div>
+      <div className="h-full relative bg-accent text-dark px-27 flex flex-col justify-center">
         <Image
           src={`/images/blog-background.jpg`}
           alt="kids"
@@ -31,7 +31,7 @@ const Subscribe = (): JSX.Element => {
         <button className="uppercase bg-dark w-50 h-16 rounded-full text-white z-2 font-work text-lg">
           See Our Blogs
         </button>
-      </aside>
+      </div>
     </section>
   );
 };

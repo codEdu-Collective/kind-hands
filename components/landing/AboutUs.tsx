@@ -6,7 +6,7 @@ import Image from "next/image";
 const AboutUs = (): JSX.Element => {
   return (
     <section className="relative flex flex-col items-center text-dark">
-      <aside className="w-300 h-88 relative -top-25 grid grid-cols-3">
+      <div className="w-300 h-88 relative -top-25 grid grid-cols-3">
         <div className="bg-accent px-10 py-15">
           <h2 className="font-shippori text-4xl">Education</h2>
           <h3 className="font-work font-normal text-xl mt-3.5 mb-5 text-charcoal">
@@ -32,12 +32,16 @@ const AboutUs = (): JSX.Element => {
             fill
             className="object-cover object-bottom-right opacity-45"
           />
-          <button className="bg-white z-2 aspect-square flex justify-center items-center rounded-full p-7">
-            <FaPlay size={24} />
+          <button
+            id="button"
+            aria-label="play button"
+            className="bg-white z-2 aspect-square flex justify-center items-center rounded-full p-7"
+          >
+            <FaPlay size={24} aria-label="play icon" />
           </button>
         </div>
-      </aside>
-      <aside className="w-300 h-full flex gap-12">
+      </div>
+      <div className="w-300 h-full flex gap-12">
         <div className="w-150">
           <h3 className="font-sue-ellen text-4xl text-primary mb-1">About US</h3>
           <h2 className="font-shippori font-extrabold text-[2.5rem] mb-3">
@@ -73,6 +77,7 @@ const AboutUs = (): JSX.Element => {
                 <FaCheck
                   color="black"
                   size={27}
+                  aria-label="check icon"
                   className="bg-accent overflow-hidden rounded-full p-1.5"
                 />
                 <span className="font-work text-xl text-neutral font-medium">{item}</span>
@@ -92,7 +97,7 @@ const AboutUs = (): JSX.Element => {
             Donate NOW
           </button>
         </div>
-      </aside>
+      </div>
     </section>
   );
 };

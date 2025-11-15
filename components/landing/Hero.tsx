@@ -12,8 +12,8 @@ const Hero = (): JSX.Element => {
         className="object-cover"
       />
       <div className="absolute top-1/5 left-1/5 w-full max-w-190">
-        <h2 className="text-white font-sue-ellen text-[3.125rem]">Need Help...</h2>
-        <h1 className="text-white font-shippori text-[5.625rem]">Being Life Saver For Someone</h1>
+        <h1 className="text-white font-sue-ellen text-[3.125rem]">Need Help...</h1>
+        <h2 className="text-white font-shippori text-[5.625rem]">Being Life Saver For Someone</h2>
         <div className="text-white text-lg flex items-center">
           <div className="w-6 h-6 bg-white rounded-full" />
           <div className="w-76 h-0.5 bg-white" />

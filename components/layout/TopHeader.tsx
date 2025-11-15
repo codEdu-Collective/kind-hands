@@ -9,11 +9,11 @@ export default function TopHeader(): JSX.Element {
         <div className="flex justify-between items-center">
           <div className="flex space-x-4 items-center font-work text-lg">
             <span className="flex items-center space-x-1">
-              <LuPhone size={16} />
+              <LuPhone size={16} aria-label="phone icon" />
               <span>+90 555 123 45 67</span>
             </span>
             <span className="flex items-center space-x-1">
-              <LuMail size={16} />
+              <LuMail size={16} aria-label="mail icon" />
               <span>info@kindhands.com</span>
             </span>
           </div>
@@ -23,31 +23,35 @@ export default function TopHeader(): JSX.Element {
               <a
                 href="https://instagram.com"
                 className="text-deep-teal hover:text-gray-200 transition"
+                aria-label="Instagram Profile"
               >
                 {/* Instagram Icon */}
-                <FaInstagram size={24} />
+                <FaInstagram size={24} aria-label="Instagram icon" />
               </a>
               <a
                 href="https://facebook.com"
                 className="text-deep-teal hover:text-gray-200 transition"
+                aria-label="Facebook Profile"
               >
                 {/* Facebook Icon */}
-                <FaFacebook size={24} />
+                <FaFacebook size={24} aria-label="Facebook icon" />
               </a>
               <a
                 href="https://twitter.com"
                 className="text-deep-teal hover:text-gray-200 transition"
+                aria-label="Twitter Profile"
               >
                 {/* Twitter Icon */}
-                <FaSquareXTwitter size={24} />
+                <FaSquareXTwitter size={24} aria-label="Twitter icon" />
               </a>
 
               <a
                 href="https://pinterest.com"
                 className="text-deep-teal hover:text-gray-200 transition"
+                aria-label="Pinterest Profile"
               >
                 {/* Pinterest Icon */}
-                <FaPinterest size={24} />
+                <FaPinterest size={24} aria-label="Pinterest icon" />
               </a>
             </div>
           </div>

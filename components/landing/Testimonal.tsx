@@ -5,14 +5,14 @@ import Image from "next/image";
 const Testimonal = (): JSX.Element => {
   return (
     <section className="w-full h-328 flex flex-col justify-center items-center">
-      <h3 className="font-sue-ellen text-4xl text-primary">Testimonal</h3>
+      <h1 className="font-sue-ellen text-4xl text-primary">Testimonal</h1>
       <h2 className="font-shippori font-extrabold text-[2.5rem]">What People Say About Us</h2>
       <div className="flex mt-16 gap-8">
         {[
           { person: "Belli Smith", job: "Designer" },
           { person: "Sara Taylor", job: "Donator" },
         ].map(({ person, job }, index) => (
-          <aside key={index} className="w-146 h-76.5 p-6.5 bg-light flex">
+          <div key={index} className="w-146 h-76.5 p-6.5 bg-light flex">
             <Image
               src={`/images/people-${index + 1}.jpg`}
               alt="people"
@@ -23,7 +23,7 @@ const Testimonal = (): JSX.Element => {
             <div className="ml-6 my-10">
               <div className="flex justify-between">
                 <div>
-                  <h4 className="font-shippori font-bold text-2xl">{person}</h4>
+                  <h3 className="font-shippori font-bold text-2xl">{person}</h3>
                   <p className="font-work text-neutral text-xl">{job}</p>
                 </div>
                 <Image src={`/icons/7.png`} alt="quote" width={77} height={57} />
@@ -33,7 +33,7 @@ const Testimonal = (): JSX.Element => {
                 reader will bdistracted the readable content.
               </p>
             </div>
-          </aside>
+          </div>
         ))}
       </div>
       <div className="flex mt-8 mb-25 items-center">
@@ -41,12 +41,14 @@ const Testimonal = (): JSX.Element => {
           size={73}
           color="black"
           className="rounded-full overflow-hidden border border-soft-gray"
+          aria-label="previous testimonial"
         />
         <div className="w-111 h-px bg-soft-gray" />
         <MdOutlineKeyboardArrowRight
           size={73}
           color="black"
           className="rounded-full overflow-hidden border border-soft-gray"
+          aria-label="next testimonial"
         />
       </div>
       <div className="w-300 flex gap-20">

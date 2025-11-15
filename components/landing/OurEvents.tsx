@@ -8,17 +8,17 @@ const OurEvents = (): JSX.Element => {
     <section className="w-full h-295.5 flex flex-col justify-center items-center text-dark">
       <article className="w-300 flex justify-between items-center mb-12.5">
         <div>
-          <h3 className="font-sue-ellen text-4xl text-primary">Our Events</h3>
-          <h2 className="font-shippori font-extrabold text-[2.5rem]">
+          <h2 className="font-sue-ellen text-4xl text-primary">Our Events</h2>
+          <h3 className="font-shippori font-extrabold text-[2.5rem]">
             Join Upcoming Events <br /> Replays & Webinars
-          </h2>
+          </h3>
         </div>
         <button className="uppercase w-50 h-16 bg-primary rounded-4xl text-white text-lg font-work font-medium">
           More Events
         </button>
       </article>
       <div className="w-300 h-154 grid grid-cols-2">
-        <aside className="relative">
+        <div className="relative">
           <Image
             src={`/images/event-1.jpg`}
             alt="kids"
@@ -35,7 +35,7 @@ const OurEvents = (): JSX.Element => {
               <span className="text-neutral font-normal">Organized By :</span>
               Nattasha
             </p>
-            <MdOutlineWatchLater size={20} className="text-primary" />
+            <MdOutlineWatchLater size={20} className="text-primary" aria-label="watch icon" />
             <p className="uppercase text-lg">10:00 AM - 18:00 PM, Everyday</p>
           </div>
           <div className="w-full bg-cloud-gray h-0.5 my-4" />
@@ -47,13 +47,13 @@ const OurEvents = (): JSX.Element => {
             majority have.
           </p>
           <div className="flex items-center justify-evenly w-108.5 h-15 mt-7 bg-snow">
-            <IoLocationOutline size={27} className="text-primary" />
+            <IoLocationOutline size={27} className="text-primary" aria-label="location icon" />
             <p className="uppercase font-work font-medium text-lg">
               Dark Spurt, San Francisco, CA 94528
             </p>
           </div>
-        </aside>
-        <aside className="ml-7.5">
+        </div>
+        <div className="ml-7.5">
           {[
             {
               day: "18",
@@ -93,7 +93,7 @@ const OurEvents = (): JSX.Element => {
               <div className="w-full h-0.5 bg-cloud-gray my-6" />
             </div>
           ))}
-        </aside>
+        </div>
       </div>
     </section>
   );

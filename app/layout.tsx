@@ -12,6 +12,7 @@ import {
 import { Footer, Header } from "@/components/layout";
 
 import "./globals.css";
+// import AxeTest from "@/utils/AxeTest";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -62,6 +63,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}  ${sueEllenFrancisco.variable} ${shipporiMincho.variable} ${workSans.variable} antialiased w-full max-w-480 bg-background`}
       >
+        {/* <AxeTest /> */}
+        {/* for accessibility testing */}
         <Header />
         {children}
         <Footer />

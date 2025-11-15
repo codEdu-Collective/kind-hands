@@ -32,7 +32,7 @@ export default function MainMenu(): JSX.Element {
                 className="font-work text-dark font-medium text-lg flex items-center space-x-1"
               >
                 <p>Pages</p>
-                <LuChevronDown />
+                <LuChevronDown aria-label="dropdown icon" />
               </Link>
 
               <Link href="/event" className="font-work text-dark font-medium text-lg">

@@ -12,7 +12,7 @@ const HowWeHelp = (): JSX.Element => {
         className="opacity-10 blur-xl object-center"
       />
       <div className="absolute top-0 left-0 grid grid-cols-2 py-35.5 px-90 gap-14">
-        <aside>
+        <div>
           <h3 className="font-sue-ellen text-4xl mb-3">How We Help</h3>
           <h2 className="font-shippori font-extrabold text-[2.5rem] mb-3">
             Join The Community To Give Education For Children
@@ -27,8 +27,8 @@ const HowWeHelp = (): JSX.Element => {
           <button className="uppercase w-50 h-16 bg-primary rounded-4xl text-white text-lg font-work font-medium">
             Donate NOW
           </button>
-        </aside>
-        <aside className="border border-white px-16 py-12">
+        </div>
+        <div className="border border-white px-16 py-12">
           <h2 className="font-shippori font-extrabold text-4xl">Become A Volunteer</h2>
           {["Full Name*", "Email Address*", "Phone Number*"].map((item, index) => (
             <div key={index} className="w-full h-16 border border-white my-8">
@@ -41,7 +41,7 @@ const HowWeHelp = (): JSX.Element => {
           <button className="uppercase w-50 h-16 bg-background rounded-4xl text-black text-lg font-work font-medium">
             Donate NOW
           </button>
-        </aside>
+        </div>
       </div>
     </section>
   );
