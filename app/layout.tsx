@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import {
   Geist,
   Geist_Mono,
+  Inter,
   Shippori_Mincho,
   Sue_Ellen_Francisco,
   Work_Sans,
@@ -15,6 +16,12 @@ import "./globals.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+
+const inter = Inter({
+  variable: "--font-inter-sans",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 const geistMono = Geist_Mono({
@@ -53,7 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable}  ${sueEllenFrancisco.variable} ${shipporiMincho.variable} ${workSans.variable} antialiased w-full max-w-480 bg-background`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}  ${sueEllenFrancisco.variable} ${shipporiMincho.variable} ${workSans.variable} antialiased w-full max-w-480 bg-background`}
       >
         <Header />
         {children}

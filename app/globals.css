@@ -120,6 +120,7 @@
   );
   --font-shippori: var(--font-shippori-mincho, "Shippori Mincho", serif);
   --font-work: var(--font-work-sans, "Work Sans", sans-serif);
+  --font-inter: var(--font-inter-sans, "Inter", sans-serif);
 
   /* Font Sizes */
   --font-size-xs: 0.75rem;

@@ -7,7 +7,7 @@ export default function TopHeader(): JSX.Element {
     <div className="text-[#126360] text-sm bg-accent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
         <div className="flex justify-between items-center">
-          <div className="flex space-x-4 items-center">
+          <div className="flex space-x-4 items-center font-work text-lg">
             <span className="flex items-center space-x-1">
               <LuPhone size={16} />
               <span>+90 555 123 45 67</span>

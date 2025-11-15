@@ -5,112 +5,72 @@ import Link from "next/link";
 
 export default function Footer(): JSX.Element {
   return (
-    <footer className="text-white bg-dark">
-      <div className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 bg-[#384C56]">
-            <div className="space-y-4 bg-dark">
-              <div className="flex items-center space-x-2">
-                <Link
-                  href="/"
-                  className="text-2xl text-blue-200 flex items-center space-x-2 font-shippori"
-                >
-                  <Image
-                    src={`/images/logo.png`}
-                    alt="Logo"
-                    width={32}
-                    height={32}
-                    className="w-8 h-8"
-                  />
-                  <span>Kind Hands</span>
-                </Link>
-              </div>
-              <p className="text-white text-sm font-work">
+    <footer>
+      <div className="w-full h-141 text-white bg-dark pt-28">
+        <section className="w-300 h-90 m-auto flex">
+          <aside className="flex-1">
+            <div className="pr-9">
+              <Link href={""} className="flex items-center gap-1.5">
+                <Image src={`/images/logo.png`} width={21} height={44} alt="logo" />
+                <span className="font-shippori font-extrabold text-4xl">Kind Hands</span>
+              </Link>
+              <p className="font-work text-xl mt-6 mb-7.5">
                 Care about people to transforming their lives and exudes a positives Impressiono
                 believe. fundraising NGO organizations.
               </p>
-
-              <div className="flex space-x-4 pt-4">
-                <a
-                  href="https://instagram.com/"
-                  className="text-white hover:text-gray-200 transition"
-                >
-                  {/* Instagram Icon */}
-                  <FaInstagram size={24} />
-                </a>
-                <a href="https://facebook.com" className="text-white hover:text-white transition">
-                  {/* Facebook Icon */}
-                  <FaFacebook size={24} />
-                </a>
-                <a href="https://twitter.com" className="text-white hover:text-white transition">
-                  {/* Twitter Icon */}
-                  <FaSquareXTwitter size={24} />
-                </a>
-
-                <a
-                  href="https://pinterest.com"
-                  className="text-white hover:text-gray-200 transition"
-                >
-                  {/* Pinterest Icon */}
-                  <FaPinterest size={24} />
-                </a>
+              <div className="flex gap-4">
+                <FaInstagram size={60} color="white" className="bg-[#384C56] p-5 rounded-full" />
+                <FaFacebook size={60} color="white" className="bg-[#384C56] p-5 rounded-full" />
+                <FaSquareXTwitter
+                  size={60}
+                  color="white"
+                  className="bg-[#384C56] p-5 rounded-full"
+                />
+                <FaPinterest size={60} color="white" className="bg-[#384C56] p-5 rounded-full" />
               </div>
             </div>
-
-            {/* Get Involved */}
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold font-shippori">Get Involved</h3>
-              <ul className="space-y-2">
-                {["About Us", "Volunteer", "Causes", "Projects", "Team"].map((item) => (
-                  <li key={item}>
-                    <Link
-                      href={`/${item.toLowerCase().replace(" ", "-")}`}
-                      className="text-white hover:text-primary transition font-work"
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+          </aside>
+          <aside className="flex-2 bg-[#384C56] py-14 px-12.5 flex gap-17.5">
+            <div className="flex-3">
+              <h2 className="font-shippori font-bold text-2xl mb-6">Get Involved</h2>
+              {["About Us", "Volunteer", "Causes", "Projects", "Team"].map((item, index) => (
+                <h3
+                  key={index}
+                  className="font-work text-xl leading-[186%] hover:text-primary hover:cursor-pointer"
+                >
+                  {item}
+                </h3>
+              ))}
             </div>
-
-            {/* Utility */}
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold font-shippori">Utility</h3>
-              <ul className="space-y-2">
-                {["Style Guide", "Licences", "Password", "404 Page", "Changelog"].map((item) => (
-                  <li key={item}>
-                    <Link
-                      href={`/${item.toLowerCase().replace(" ", "-")}`}
-                      className="text-white hover:text-primary transition font-work"
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+            <div className="flex-3">
+              <h2 className="font-shippori font-bold text-2xl mb-6">Utility</h2>
+              {["Style Guide", "Licences", "Password", "404 Page", "Changelog"].map(
+                (item, index) => (
+                  <h3
+                    key={index}
+                    className="font-work text-xl leading-[186%] hover:text-primary hover:cursor-pointer"
+                  >
+                    {item}
+                  </h3>
+                ),
+              )}
             </div>
-
-            {/* Contact */}
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold font-shippori">Contact</h3>
-              <ul className="space-y-2 text-white font-work">
-                <li>1234 Street Name</li>
-                <li>City, AA 99999</li>
-                <li className="pt-2">Email: info@humanity.org</li>
-                <li>Phone: +1 (555) 123-4567</li>
-                <li>Fax: +1 (555) 123-4568</li>
-              </ul>
+            <div className="flex-5">
+              <h2 className="font-shippori font-bold text-2xl mb-6">Contact</h2>
+              <h3 className="font-work text-xl leading-[186%]">
+                660 Broklyn Street, 88 <br /> New York
+              </h3>
+              <h3 className="font-work text-xl leading-[186%]">
+                <br /> help Need@walfare.com 222 888 0000
+              </h3>
             </div>
-          </div>
-        </div>
+          </aside>
+        </section>
       </div>
-
       {/*  Copyright */}
-      <div className="py-8 border-t border-dark">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-white font-work">&copy; 2025 CodeEdu. All rights reserved.</p>
-        </div>
+      <div className="w-full bg-dark text-white font-inter text-lg text-center">
+        <div className="w-full bg-[#465A64] h-0.5" />
+        <p className="py-5">&copy; 2025 CodeEdu. All rights reserved.</p>
       </div>
     </footer>
   );
