@@ -9,9 +9,10 @@ import {
   Work_Sans,
 } from "next/font/google";
 
-import { Footer, Header } from "@/components/layout";
+import ConditionalLayout from "@/components/layout/ConditionalLayout";
 
 import "./globals.css";
+import { ClerkProvider } from "@clerk/nextjs";
 // import AxeTest from "@/utils/AxeTest";
 
 const geistSans = Geist({
@@ -59,16 +60,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>): JSX.Element {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}  ${sueEllenFrancisco.variable} ${shipporiMincho.variable} ${workSans.variable} antialiased w-full max-w-480 bg-background`}
-      >
-        {/* <AxeTest /> */}
-        {/* for accessibility testing */}
-        <Header />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}  ${sueEllenFrancisco.variable} ${shipporiMincho.variable} ${workSans.variable} antialiased w-full max-w-480 bg-background`}
+        >
+          {/* <AxeTest /> */}
+          {/* for accessibility testing */}
+          <ConditionalLayout>{children}</ConditionalLayout>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
