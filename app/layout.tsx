@@ -1,4 +1,4 @@
-import { JSX, Suspense, type ReactNode } from "react";
+import { JSX, type ReactNode } from "react";
 import type { Metadata } from "next";
 import {
   Geist,
@@ -9,10 +9,9 @@ import {
   Work_Sans,
 } from "next/font/google";
 
-import ConditionalLayout from "@/components/layout/ConditionalLayout";
-
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
+import { Footer, Header } from "@/components/layout";
 // import AxeTest from "@/utils/AxeTest";
 
 const geistSans = Geist({
@@ -60,18 +59,19 @@ export default function RootLayout({
   children: ReactNode;
 }>): JSX.Element {
   return (
-    <html lang="en">
-    <body
-      className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}  ${sueEllenFrancisco.variable} ${shipporiMincho.variable} ${workSans.variable} antialiased w-full max-w-480 bg-background`}
-    >
-      {/* <AxeTest /> */}
-      {/* for accessibility testing */}
-      <Suspense fallback={<div>Loading...</div>}>
-        <ClerkProvider>
-          <ConditionalLayout>{children}</ConditionalLayout>
-        </ClerkProvider>
-      </Suspense>
-    </body>
-  </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}  ${sueEllenFrancisco.variable} ${shipporiMincho.variable} ${workSans.variable} antialiased w-full max-w-480 bg-background`}
+        >
+          {/* <AxeTest /> */}
+          {/* for accessibility testing */}
+          <Header />
+
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

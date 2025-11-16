@@ -1,0 +1,38 @@
+import { JSX } from "react";
+import { SignInButton, UserButton, SignedIn, SignedOut } from "@clerk/nextjs";
+
+export default function AuthButtons(): JSX.Element {
+  return (
+    <>
+      <SignedIn>
+        <UserButton
+          appearance={{
+            elements: {
+              avatarBox: {
+                width: "28px",
+                height: "28px",
+              },
+            },
+          }}
+        />
+      </SignedIn>
+      <SignedOut>
+        <SignInButton
+          appearance={{
+            elements: {
+              modalContent: "flex items-center justify-center min-h-screen",
+              modal: "flex items-center justify-center",
+              modalBackdrop: "flex items-center justify-center",
+              rootBox: "flex items-center justify-center",
+            },
+          }}
+          mode="modal"
+        >
+          <button className="font-work bg-accent-800 text-white px-6 py-2 rounded-[3rem] font-medium radius-full opacity-100 cursor-pointer transition duration-300 hover:bg-accent-900">
+            Sign In
+          </button>
+        </SignInButton>
+      </SignedOut>
+    </>
+  );
+}

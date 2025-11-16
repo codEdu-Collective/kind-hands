@@ -2,11 +2,9 @@ import { JSX } from "react";
 import { LuChevronDown } from "react-icons/lu";
 import Image from "next/image";
 import Link from "next/link";
-import { SignInButton, UserButton } from "@clerk/nextjs";
-import { auth } from "@clerk/nextjs/server";
+import AuthButtons from "./AuthButtons";
 
 export default async function MainMenu(): Promise<JSX.Element> {
-  const { userId } = await auth();
   return (
     <nav className="shadow-sm border-b">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,35 +69,7 @@ export default async function MainMenu(): Promise<JSX.Element> {
                 Donate
               </button>
               {/* Auth Button */}
-              {userId ? (
-                <UserButton
-                  appearance={{
-                    elements: {
-                      avatarBox: {
-                        width: "28px",
-                        height: "28px",
-                      },
-                    },
-                  }}
-                />
-              ) : (
-                <SignInButton
-                  appearance={{
-                    elements: {
-                      modalContent:
-                        "flex items-center justify-center min-h-screen",
-                      modal: "flex items-center justify-center",
-                      modalBackdrop: "flex items-center justify-center",
-                      rootBox: "flex items-center justify-center",
-                    },
-                  }}
-                  mode="modal"
-                >
-                  <button className="font-work bg-accent-800 text-white px-6 py-2 rounded-[3rem] font-medium radius-full opacity-100 cursor-pointer transition duration-300 hover:bg-accent-900">
-                    Sign In
-                  </button>
-                </SignInButton>
-              )}
+              <AuthButtons />
             </div>
           </div>
         </div>
