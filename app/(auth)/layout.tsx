@@ -1,9 +1,9 @@
-import { JSX } from "react";
+import { JSX, type ReactNode } from "react";
 
 export default function AuthLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>): JSX.Element {
   return (
     <div className="min-h-screen">

@@ -1,4 +1,4 @@
-import { JSX } from "react";
+import { JSX, Suspense, type ReactNode } from "react";
 import type { Metadata } from "next";
 import {
   Geist,
@@ -57,19 +57,21 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>): JSX.Element {
   return (
-    <ClerkProvider>
-      <html lang="en">
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}  ${sueEllenFrancisco.variable} ${shipporiMincho.variable} ${workSans.variable} antialiased w-full max-w-480 bg-background`}
-        >
-          {/* <AxeTest /> */}
-          {/* for accessibility testing */}
+    <html lang="en">
+    <body
+      className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}  ${sueEllenFrancisco.variable} ${shipporiMincho.variable} ${workSans.variable} antialiased w-full max-w-480 bg-background`}
+    >
+      {/* <AxeTest /> */}
+      {/* for accessibility testing */}
+      <Suspense fallback={<div>Loading...</div>}>
+        <ClerkProvider>
           <ConditionalLayout>{children}</ConditionalLayout>
-        </body>
-      </html>
-    </ClerkProvider>
+        </ClerkProvider>
+      </Suspense>
+    </body>
+  </html>
   );
 }
