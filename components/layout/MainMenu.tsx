@@ -3,6 +3,8 @@ import { LuChevronDown } from "react-icons/lu";
 import Image from "next/image";
 import Link from "next/link";
 
+import AuthButtons from "./AuthButtons";
+
 export default function MainMenu(): JSX.Element {
   return (
     <nav className="shadow-sm border-b">
@@ -43,10 +45,15 @@ export default function MainMenu(): JSX.Element {
               </Link>
             </div>
 
-            {/* Button */}
-            <button className="font-work bg-primary text-white px-6 py-2 rounded-[3rem] font-medium radius-full opacity-100 cursor-pointer transition duration-300">
-              Donate
-            </button>
+            {/* Buttons */}
+            <div className="flex items-center space-x-4">
+              {/* Donate Button */}
+              <button className="font-work bg-primary text-white px-6 py-2 rounded-[3rem] font-medium radius-full opacity-100 cursor-pointer transition duration-300 hover:bg-primary-600">
+                Donate
+              </button>
+              {/* Auth Button */}
+              <AuthButtons />
+            </div>
           </div>
         </div>
       </div>

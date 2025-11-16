@@ -1,4 +1,4 @@
-import { JSX } from "react";
+import { JSX, type ReactNode } from "react";
 import type { Metadata } from "next";
 import {
   Geist,
@@ -8,6 +8,7 @@ import {
   Sue_Ellen_Francisco,
   Work_Sans,
 } from "next/font/google";
+import { ClerkProvider } from "@clerk/nextjs";
 
 import { Footer, Header } from "@/components/layout";
 
@@ -56,19 +57,22 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>): JSX.Element {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}  ${sueEllenFrancisco.variable} ${shipporiMincho.variable} ${workSans.variable} antialiased w-full max-w-480 bg-background`}
-      >
-        {/* <AxeTest /> */}
-        {/* for accessibility testing */}
-        <Header />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}  ${sueEllenFrancisco.variable} ${shipporiMincho.variable} ${workSans.variable} antialiased w-full max-w-480 bg-background`}
+        >
+          {/* <AxeTest /> */}
+          {/* for accessibility testing */}
+          <Header />
+
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
