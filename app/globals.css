@@ -17,6 +17,18 @@
   --color-primary-900: #992626;
   --color-primary-950: #7a1f1f;
 
+  /* Custom Colors from Components */
+  --color-slate-ink: #202d33;
+  --color-coral-red: #e85353;
+  --color-mist-gray: #c5cecc;
+  --color-soft-gray: #d0d0d0;
+  --color-cloud-gray: #c7c7c7;
+  --color-snow: #f0f0f0;
+  --color-deep-teal: #126360;
+  --color-steel: #384c56;
+  --color-cool-slate: #465a64;
+  --color-charcoal: #4a4a4a;
+
   /* Accent - Turkuaz/Aqua (#77D7D3) */
   --color-accent: #77d7d3;
   --color-accent-50: #e6f7f6;
@@ -113,7 +125,14 @@
   /* Typography */
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
-  --font-shippori-mincho: var(--font-shippori-mincho), serif;
+  --font-sue-ellen: var(
+    --font-sue-ellen-francisco,
+    "Sue Ellen Francisco",
+    cursive
+  );
+  --font-shippori: var(--font-shippori-mincho, "Shippori Mincho", serif);
+  --font-work: var(--font-work-sans, "Work Sans", sans-serif);
+  --font-inter: var(--font-inter-sans, "Inter", sans-serif);
 
   /* Font Sizes */
   --font-size-xs: 0.75rem;
@@ -172,10 +191,10 @@
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-base: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg:
-    0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-xl:
-    0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
   --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
 

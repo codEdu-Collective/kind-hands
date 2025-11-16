@@ -1,9 +1,33 @@
 import { JSX } from "react";
 
+import {
+  AboutUs,
+  Hero,
+  HowWeHelp,
+  OurCouses,
+  OurEvents,
+  Subscribe,
+  Team,
+  Testimonal,
+  WhatWeDid,
+  WhatWeDo,
+} from "@/components/landing";
+
 export default function Home(): JSX.Element {
   return (
     <div className="flex min-h-screen items-center justify-center">
-      <main className="text-6xl">Kind Hands</main>
+      <main className="">
+        <Hero />
+        <AboutUs />
+        <OurCouses />
+        <HowWeHelp />
+        <WhatWeDo />
+        <WhatWeDid />
+        <Testimonal />
+        <Team />
+        <OurEvents />
+        <Subscribe />
+      </main>
     </div>
   );
 }
