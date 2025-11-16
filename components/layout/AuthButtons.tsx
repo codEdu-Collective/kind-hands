@@ -1,9 +1,9 @@
-import { JSX } from "react";
-import { SignInButton, UserButton, SignedIn, SignedOut } from "@clerk/nextjs";
+import { JSX, Suspense } from "react";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 
 export default function AuthButtons(): JSX.Element {
   return (
-    <>
+    <Suspense>
       <SignedIn>
         <UserButton
           appearance={{
@@ -33,6 +33,6 @@ export default function AuthButtons(): JSX.Element {
           </button>
         </SignInButton>
       </SignedOut>
-    </>
+    </Suspense>
   );
 }

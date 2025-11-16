@@ -8,10 +8,11 @@ import {
   Sue_Ellen_Francisco,
   Work_Sans,
 } from "next/font/google";
+import { ClerkProvider } from "@clerk/nextjs";
+
+import { Footer, Header } from "@/components/layout";
 
 import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
-import { Footer, Header } from "@/components/layout";
 // import AxeTest from "@/utils/AxeTest";
 
 const geistSans = Geist({
