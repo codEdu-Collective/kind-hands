@@ -24,6 +24,15 @@ export default function AuthButtons(): JSX.Element {
               modal: "flex items-center justify-center",
               modalBackdrop: "flex items-center justify-center",
               rootBox: "flex items-center justify-center",
+              card: "w-full max-w-lg shadow-2xl",
+              headerTitle: "text-2xl font-bold",
+              headerSubtitle: "text-base",
+              socialButtonsBlockButton: "text-base py-3 px-4 h-12",
+              socialButtonsBlockButtonText: "text-base font-medium",
+              formFieldInput: "text-base py-3 h-12",
+              formFieldLabel: "text-base",
+              formButtonPrimary: "text-base py-3 h-12 font-medium",
+              formFieldInputShowPasswordButton: "text-base",
             },
           }}
           mode="modal"
