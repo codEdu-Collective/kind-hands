@@ -7,13 +7,13 @@ import AuthButtons from "./AuthButtons";
 
 export default function MainMenu(): JSX.Element {
   return (
-    <nav className="shadow-sm border-b">
+    <nav className="shadow-sm border-b bg-white dark:bg-gray-900 dark:border-gray-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link
             href="/"
-            className="text-2xl text-dark font-extrabold flex items-center space-x-2 font-shippori"
+            className="text-2xl text-dark dark:text-white font-extrabold flex items-center space-x-2 font-shippori"
           >
             <Image src={`/images/logo.png`} alt="Logo" width={32} height={32} className="w-8 h-8" />
             <span>Kind Hands</span>
@@ -22,36 +22,54 @@ export default function MainMenu(): JSX.Element {
           <div className="flex items-center space-x-8">
             {/*MENU */}
             <div className="flex space-x-8">
-              <Link href="/" className="font-work text-dark font-medium text-lg">
+              <Link href="/" className="font-work text-dark dark:text-gray-200 font-medium text-lg">
                 Home
               </Link>
-              <Link href="/about" className="font-work text-dark font-medium text-lg">
+              <Link
+                href="/about"
+                className="font-work text-dark dark:text-gray-200 font-medium text-lg"
+              >
                 About Us
               </Link>
 
-              <Link
-                href="/services"
-                className="font-work text-dark font-medium text-lg flex items-center space-x-1"
-              >
-                <p>Pages</p>
+              <div className="font-work text-dark dark:text-gray-200 font-medium text-lg flex items-center space-x-1 relative group cursor-pointer">
+                <p>Our Work</p>
                 <LuChevronDown aria-label="dropdown icon" />
-              </Link>
 
-              <Link href="/event" className="font-work text-dark font-medium text-lg">
+                <div className="absolute top-full left-0 hidden group-hover:block bg-white dark:bg-gray-800 shadow-lg z-10">
+                  <Link
+                    href="/causes"
+                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 text-dark dark:text-gray-200"
+                  >
+                    Causes
+                  </Link>
+                  <Link
+                    href="/projects"
+                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 text-dark dark:text-gray-200"
+                  >
+                    Projects
+                  </Link>
+                </div>
+              </div>
+              <Link
+                href="/event"
+                className="font-work text-dark dark:text-gray-200 font-medium text-lg"
+              >
                 Event
               </Link>
-              <Link href="/contact" className="font-work text-dark font-medium text-lg">
+              <Link
+                href="/contact"
+                className="font-work text-dark dark:text-gray-200 font-medium text-lg"
+              >
                 Contact
               </Link>
             </div>
 
-            {/* Buttons */}
             <div className="flex items-center space-x-4">
-              {/* Donate Button */}
               <button className="font-work bg-primary text-white px-6 py-2 rounded-[3rem] font-medium radius-full opacity-100 cursor-pointer transition duration-300 hover:bg-primary-600">
                 Donate
               </button>
-              {/* Auth Button */}
+
               <AuthButtons />
             </div>
           </div>
