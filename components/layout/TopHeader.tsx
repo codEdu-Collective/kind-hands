@@ -1,8 +1,7 @@
-import { JSX } from "react";
 import { FaFacebook, FaInstagram, FaPinterest, FaSquareXTwitter } from "react-icons/fa6";
 import { LuMail, LuPhone } from "react-icons/lu";
 
-export default function TopHeader(): JSX.Element {
+export default function TopHeader() {
   return (
     <div className="text-deep-teal text-sm bg-accent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">

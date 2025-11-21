@@ -1,11 +1,11 @@
-import { JSX } from "react";
+import { Suspense } from "react";
 import { LuChevronDown } from "react-icons/lu";
 import Image from "next/image";
 import Link from "next/link";
 
-import AuthButtons from "./AuthButtons";
+import ThemeToggle from "../ThemeToogle";
 
-export default function MainMenu(): JSX.Element {
+export default function MainMenu() {
   return (
     <nav className="shadow-sm border-b bg-white dark:bg-gray-900 dark:border-gray-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -69,8 +69,9 @@ export default function MainMenu(): JSX.Element {
               <button className="font-work bg-primary text-white px-6 py-2 rounded-[3rem] font-medium radius-full opacity-100 cursor-pointer transition duration-300 hover:bg-primary-600">
                 Donate
               </button>
-
-              <AuthButtons />
+              <Suspense>
+                <ThemeToggle />
+              </Suspense>
             </div>
           </div>
         </div>
