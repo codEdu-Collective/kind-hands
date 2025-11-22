@@ -2,10 +2,10 @@ import { cacheLife, cacheTag } from "next/cache";
 
 import prisma from "@/lib/prisma";
 
-export const getEvents = async (takeNumber?: number) => {
+export const getManyEvents = async (takeNumber?: number) => {
   "use cache";
   cacheLife("weeks");
-  cacheTag("events-main-page");
+  cacheTag("events-take-" + (takeNumber ?? 6).toString());
   const events = await prisma.event.findMany({
     take: takeNumber ?? 6,
     select: {
@@ -24,6 +24,18 @@ export const getEvents = async (takeNumber?: number) => {
           name: true,
         },
       },
+    },
+  });
+  return events;
+};
+
+export const getAllEventsID = async () => {
+  "use cache";
+  cacheLife("weeks");
+  cacheTag("events-all-id");
+  const events = await prisma.event.findMany({
+    select: {
+      id: true,
     },
   });
   return events;

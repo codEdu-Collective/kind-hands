@@ -45,3 +45,18 @@ model Event {
 
   @@index([organizerId]) 
 }
+
+model Cause {
+  id          Int      @id @default(autoincrement()) 
+  title       String
+  imageUrl    String
+  percentage  Float
+  raised      String
+  goal        String
+  category    String
+  organizer   String
+  date        DateTime
+  description String
+  createdAt   DateTime @default(now()) 
+  updatedAt   DateTime @updatedAt
+}

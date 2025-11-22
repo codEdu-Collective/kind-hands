@@ -3,10 +3,10 @@ import { MdOutlineWatchLater } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 
-import { getEvents } from "@/utils/get/event";
+import { getManyEvents } from "@/utils/get/event";
 
 const OurEvents = async () => {
-  const events = await getEvents(4);
+  const events = await getManyEvents(4);
   return (
     <section className="w-full h-295.5 flex flex-col justify-center items-center text-dark">
       <article className="w-300 flex justify-between items-center mb-12.5">
@@ -42,7 +42,11 @@ const OurEvents = async () => {
               <span className="text-neutral font-normal">Organized By :</span>
               Nattasha
             </p>
-            <MdOutlineWatchLater size={20} className="text-primary" aria-label="watch icon" />
+            <MdOutlineWatchLater
+              size={20}
+              className="text-primary"
+              aria-label="watch icon"
+            />
             <p className="uppercase text-lg">
               {" "}
               {events[0]?.startTime.toLocaleTimeString("en-US", {
@@ -60,10 +64,18 @@ const OurEvents = async () => {
             </p>
           </div>
           <div className="w-full bg-cloud-gray h-0.5 my-4" />
-          <h4 className="font-shippori font-extrabold text-2xl mb-3">{events[0]?.title}</h4>
-          <p className="font-work text-xl text-neutral line-clamp-2">{events[0]?.description}</p>
+          <h4 className="font-shippori font-extrabold text-2xl mb-3">
+            {events[0]?.title}
+          </h4>
+          <p className="font-work text-xl text-neutral line-clamp-2">
+            {events[0]?.description}
+          </p>
           <div className="flex items-center justify-evenly w-108.5 h-15 mt-7 bg-snow">
-            <IoLocationOutline size={27} className="text-primary" aria-label="location icon" />
+            <IoLocationOutline
+              size={27}
+              className="text-primary"
+              aria-label="location icon"
+            />
             <p className="font-work font-medium text-lg line-clamp-1">
               {events[0]?.venue}, {events[0]?.venueAddress}
             </p>
@@ -82,15 +94,22 @@ const OurEvents = async () => {
                     <Link href={`/event/${id}`}>
                       <h3 className="font-work text-xl text-neutral">
                         Organized By :
-                        <span className="font-medium text-primary"> {organizer.name}</span>
+                        <span className="font-medium text-primary">
+                          {" "}
+                          {organizer.name}
+                        </span>
                       </h3>
-                      <h2 className="font-shippori font-extrabold text-2xl mt-3 mb-6">{title}</h2>
-                      <p className="font-work text-neutral text-xl line-clamp-2">{description}</p>
+                      <h2 className="font-shippori font-extrabold text-2xl mt-3 mb-6">
+                        {title}
+                      </h2>
+                      <p className="font-work text-neutral text-xl line-clamp-2">
+                        {description}
+                      </p>
                     </Link>
                   </article>
                   <div className="w-full h-0.5 bg-cloud-gray my-6" />
                 </div>
-              ),
+              )
           )}
         </div>
       </div>
