@@ -33,6 +33,12 @@ kind-hands/
 
 ## 🛠️ Installation
 
+```
+DATABASE_URL=""
+POSTGRES_URL=""
+PRISMA_DATABASE_URL=""
+```
+
 ```bash
 # Install dependencies
 pnpm install

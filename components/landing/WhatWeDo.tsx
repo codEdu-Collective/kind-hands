@@ -1,7 +1,6 @@
-import { JSX } from "react";
 import Image from "next/image";
 
-const WhatWeDo = (): JSX.Element => {
+const WhatWeDo = () => {
   return (
     <section className="w-full h-223 flex justify-center items-center">
       <div className="w-287 text-center">

@@ -1,8 +1,7 @@
-import { JSX } from "react";
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
 import Image from "next/image";
 
-const Testimonal = (): JSX.Element => {
+const Testimonal = () => {
   return (
     <section className="w-full h-328 flex flex-col justify-center items-center">
       <h1 className="font-sue-ellen text-4xl text-primary">Testimonal</h1>

@@ -1,7 +1,6 @@
-import { JSX } from "react";
 import Image from "next/image";
 
-const Subscribe = (): JSX.Element => {
+const Subscribe = () => {
   return (
     <section className="w-full h-100 grid grid-cols-2">
       <div className="h-full flex flex-col justify-center px-28 bg-primary text-white">
