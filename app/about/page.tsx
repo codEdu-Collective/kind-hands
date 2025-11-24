@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
 import {
   FaCheck,
   FaFacebook,
@@ -11,6 +9,8 @@ import {
   FaQuoteLeft,
   FaSquareXTwitter,
 } from "react-icons/fa6";
+import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   const [showMore, setShowMore] = useState(false);
@@ -36,8 +36,7 @@ const About = () => {
       <section className="w-full flex flex-col items-center">
         <div className="w-full max-w-300 px-4 md:px-0 my-8 md:my-37.5 flex flex-col gap-6 md:gap-12">
           <article className="flex flex-col-reverse md:flex-row items-start gap-4 md:gap-12">
-     
-                <div className="relative w-full md:w-auto shrink-0 flex flex-col">
+            <div className="relative w-full md:w-auto shrink-0 flex flex-col">
               <Image
                 src="/images/about/about-1.png"
                 alt="Child giving thumbs up"
@@ -51,14 +50,13 @@ const About = () => {
                     size={40}
                     color="white"
                     aria-label="Quote icon"
-                  /> </div>
+                  />
+                </div>
                 <p className="font-work text-base md:text-xl text-white">
                   He is truly great who hath a great charity.
                 </p>
               </div>
-            </div> 
-       
-           
+            </div>
 
             <div className="flex-1 flex flex-col w-full md:w-auto">
               <h3 className="font-sue-ellen text-2xl md:text-4xl m-5 md:mb-3 text-primary">
@@ -87,7 +85,7 @@ const About = () => {
                     <p>
                       The standard chunk of Lorem Ipsum used since the 1500s is
                       reproduced below for those interested. Sections 1.10.32
-                      and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero
+                      and 1.10.33 from de Finibus Bonorum et Malorum by Cicero
                       are also reproduced in their exact original form,
                       accompanied by English versions from the 1914 translation
                       by H. Rackham.
