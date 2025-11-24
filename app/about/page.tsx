@@ -40,22 +40,22 @@ const About = () => {
                 height={502}
                 className="object-cover w-full"
               />
-              <div className="bg-dark mt-6 p-4 md:p-6 w-full md:w-112.5 md:h-42.5 flex items-start gap-3 md:gap-4 relative md:absolute md:bottom-[-30px] md:left-[-50px]">
+              <div className="bg-dark mt-6 p-3 md:p-4 w-full md:w-auto md:max-w-112.5 flex items-start gap-2 md:gap-3 relative md:absolute md:bottom-[-30px] md:left-[-20px]">
                 <div className="shrink-0">
                   <FaQuoteLeft
-                    size={50}
+                    size={40}
                     color="white"
                     aria-label="Quote icon"
                     className="hidden md:block"
                   />
                   <FaQuoteLeft
-                    size={40}
+                    size={30}
                     color="white"
                     aria-label="Quote icon"
                     className="block md:hidden"
                   />
                 </div>
-                <p className="font-work text-lg md:text-2xl text-white">
+                <p className="font-work text-base md:text-xl text-white">
                   He is truly great who hath a great charity.
                 </p>
               </div>
@@ -76,15 +76,17 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="bg-accent p-4 md:p-6 mb-6">
-                <p className="text-white font-work text-base md:text-xl">
+              <div className="bg-light-100 p-4 md:p-6 mb-6">
+                <p className="text-light-950 font-work text-base md:text-xl">
                   Save the Children believes every child deserves a future.
                 </p>
               </div>
 
-              <button className="uppercase w-full md:w-fit px-8 md:px-12 h-14 md:h-16 bg-dark rounded-4xl text-white text-base md:text-lg font-work font-medium">
-                More About
-              </button>
+              <Link href="/about/more">
+                <button className="uppercase w-full md:w-fit px-8 md:px-12 h-14 md:h-16 bg-dark rounded-4xl text-white text-base md:text-lg font-work font-medium cursor-pointer">
+                  More About
+                </button>
+              </Link>
             </div>
           </article>
 
@@ -101,6 +103,7 @@ const About = () => {
                   src={`/brands/${index + 1}.png`}
                   alt="brand logo"
                   fill
+                  sizes="(max-width: 768px) 80px, 240px"
                   className="object-contain"
                 />
               </div>
@@ -196,29 +199,31 @@ const About = () => {
               Meet Our Volunteers
             </h2>
             <div className="flex flex-wrap md:flex-nowrap justify-center md:justify-start gap-4 md:gap-4">
-              {["Jack Sparrow", "Keira Knightley", "Martin Luther"].map((member, index) => (
-                <div
-                  key={index}
-                  className="text-center w-full sm:w-[calc(50%-0.5rem)] md:w-70.5 md:h-115"
-                >
-                  <Image
-                    src={`/images/about/team-${index + 1}.png`}
-                    alt="team members"
-                    width={282}
-                    height={382}
-                    className="object-cover w-full"
-                  />
-                  <h3 className="my-4.5 font-shippori font-extrabold text-lg md:text-xl">
-                    {member}
-                  </h3>
-                  <div className="flex justify-center gap-4">
-                    <FaInstagram size={18} aria-label="Instagram icon" />
-                    <FaFacebook size={18} aria-label="Facebook icon" />
-                    <FaSquareXTwitter size={18} aria-label="Twitter icon" />
-                    <FaPinterest size={18} aria-label="Pinterest icon" />
+              {["Jack Sparrow", "Keira Knightley", "Martin Luther"].map(
+                (member, index) => (
+                  <div
+                    key={index}
+                    className="text-center w-full sm:w-[calc(50%-0.5rem)] md:w-70.5 md:h-115"
+                  >
+                    <Image
+                      src={`/images/about/team-${index + 1}.png`}
+                      alt="team members"
+                      width={282}
+                      height={382}
+                      className="object-cover w-full"
+                    />
+                    <h3 className="my-4.5 font-shippori font-extrabold text-lg md:text-xl">
+                      {member}
+                    </h3>
+                    <div className="flex justify-center gap-4">
+                      <FaInstagram size={18} aria-label="Instagram icon" />
+                      <FaFacebook size={18} aria-label="Facebook icon" />
+                      <FaSquareXTwitter size={18} aria-label="Twitter icon" />
+                      <FaPinterest size={18} aria-label="Pinterest icon" />
+                    </div>
                   </div>
-                </div>
-              ))}
+                )
+              )}
               <div className="bg-accent w-full sm:w-[calc(50%-0.5rem)] md:w-70.5 md:h-115 flex flex-col justify-center items-center text-center px-4.5 py-8 md:py-0">
                 <Image
                   src={`/images/about/icon.png`}
@@ -242,15 +247,46 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="relative w-full">
-          <Image
-            src="/images/about/footer.png"
-            alt="footer"
-            width={1920}
-            height={578}
-            className="w-full h-auto object-cover"
-          />
-        </div>
+
+        {/* Newsletter Section */}
+        <section className="w-full relative h-auto md:h-100 flex items-center justify-center overflow-hidden">
+          <div className="absolute inset-0 w-full h-full">
+            <Image
+              src="/images/about/footer.png"
+              alt="Newsletter background"
+              fill
+              className="object-cover"
+              sizes="100vw"
+            />
+            <div className="absolute inset-0" />
+          </div>
+          <div className="relative z-2 w-full max-w-300 px-4 md:px-0 flex flex-col items-center justify-center text-center text-white py-12 md:py-16">
+            <h3 className="font-sue-ellen text-2xl md:text-4xl mb-0.5">
+              Subscribe
+            </h3>
+            <h2 className="font-shippori font-extrabold text-xl md:text-[2.5rem] mb-4">
+              Newsletter
+            </h2>
+            <p className="font-work text-base md:text-xl mb-6 max-w-2xl px-4">
+              Save the Children believes every child deserves a future. In the
+              U.S. and around the world, we give children a healthy start in
+              life.
+            </p>
+            <form className="flex flex-col md:flex-row gap-3 md:gap-5 w-full max-w-2xl px-4 md:px-0">
+              <input
+                type="email"
+                placeholder="Enter Your Email Address"
+                className="flex-1 bg-white text-neutral py-3 md:py-5 pl-4 md:pl-6.5 pr-4 rounded-full font-work text-sm md:text-lg outline-none w-full"
+              />
+              <button
+                type="submit"
+                className="uppercase bg-dark text-white py-3 md:py-5.5 px-6 md:px-9 rounded-full font-work text-sm md:text-lg font-medium cursor-pointer w-full md:w-auto whitespace-nowrap"
+              >
+                SEND
+              </button>
+            </form>
+          </div>
+        </section>
       </section>
     </main>
   );
