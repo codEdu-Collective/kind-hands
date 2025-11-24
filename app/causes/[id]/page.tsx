@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+
 import { getAllCausesID, getOneCause } from "@/utils/get/cause";
 
 export async function generateStaticParams() {
@@ -66,21 +67,14 @@ const Home = async ({ params }: Props) => {
 
               <div className="flex items-center gap-6 text-sm text-gray-500 mb-8 border-b border-gray-200 pb-6">
                 <span>
-                  By{" "}
-                  <span className="text-slate-800 font-semibold">
-                    {cause.organizer}
-                  </span>
+                  By <span className="text-slate-800 font-semibold">{cause.organizer}</span>
                 </span>
                 <span>{new Date(cause.date).toLocaleDateString()}</span>
               </div>
 
               <div className="prose prose-lg text-gray-600 max-w-none">
-                <h3 className="text-xl font-serif text-slate-800 mb-3">
-                  Description
-                </h3>
-                <p className="whitespace-pre-line leading-relaxed">
-                  {cause.description}
-                </p>
+                <h3 className="text-xl font-serif text-slate-800 mb-3">Description</h3>
+                <p className="whitespace-pre-line leading-relaxed">{cause.description}</p>
               </div>
             </div>
 
@@ -89,12 +83,8 @@ const Home = async ({ params }: Props) => {
               <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 sticky top-8">
                 <div className="mb-6">
                   <div className="flex justify-between items-end mb-2">
-                    <span className="text-3xl font-bold text-slate-800">
-                      ${cause.raised}
-                    </span>
-                    <span className="text-gray-500 text-sm mb-1">
-                      of ${cause.goal} goal
-                    </span>
+                    <span className="text-3xl font-bold text-slate-800">${cause.raised}</span>
+                    <span className="text-gray-500 text-sm mb-1">of ${cause.goal} goal</span>
                   </div>
 
                   <div className="w-full bg-gray-100 rounded-full h-3 mb-2 overflow-hidden">
