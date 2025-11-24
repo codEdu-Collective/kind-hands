@@ -1,8 +1,7 @@
-import { JSX } from "react";
 import { FaFacebook, FaInstagram, FaPinterest, FaSquareXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 
-const Team = (): JSX.Element => {
+const Team = () => {
   return (
     <section className="w-full h-217.5 bg-beige flex flex-col justify-center items-center">
       <h2 className="font-sue-ellen text-4xl text-primary">Team</h2>

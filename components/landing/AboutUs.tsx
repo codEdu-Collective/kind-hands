@@ -1,9 +1,8 @@
-import { JSX } from "react";
 import { FaPlay } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa6";
 import Image from "next/image";
 
-const AboutUs = (): JSX.Element => {
+const AboutUs = () => {
   return (
     <section className="relative flex flex-col items-center text-dark">
       <div className="w-300 h-88 relative -top-25 grid grid-cols-3">

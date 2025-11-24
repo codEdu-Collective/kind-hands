@@ -1,7 +1,6 @@
-import { JSX } from "react";
 import Image from "next/image";
 
-const WhatWeDid = (): JSX.Element => {
+const WhatWeDid = () => {
   return (
     <section className="w-full h-221.5 bg-slate-ink text-white font-shippori">
       <div className="grid grid-cols-4">

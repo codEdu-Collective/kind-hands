@@ -1,5 +1,3 @@
-import { JSX } from "react";
-
 import {
   AboutUs,
   Hero,
@@ -13,7 +11,7 @@ import {
   WhatWeDo,
 } from "@/components/landing";
 
-export default function Home(): JSX.Element {
+export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <main className="">

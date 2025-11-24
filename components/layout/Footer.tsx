@@ -1,9 +1,8 @@
-import { JSX } from "react";
 import { FaFacebook, FaInstagram, FaPinterest, FaSquareXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Footer(): JSX.Element {
+export default function Footer() {
   return (
     <footer>
       <div className="w-full h-141 text-white bg-dark pt-28">

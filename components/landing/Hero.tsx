@@ -1,7 +1,6 @@
-import { JSX } from "react";
 import Image from "next/image";
 
-const Hero = (): JSX.Element => {
+const Hero = () => {
   return (
     <section className="relative">
       <Image

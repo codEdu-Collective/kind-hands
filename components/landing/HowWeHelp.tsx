@@ -1,7 +1,6 @@
-import { JSX } from "react";
 import Image from "next/image";
 
-const HowWeHelp = (): JSX.Element => {
+const HowWeHelp = () => {
   return (
     <section className="w-full h-247 bg-foreground text-white overflow-hidden relative">
       <Image

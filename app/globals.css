@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 @theme {
   /* Figma Design Colors - Kind Hands Charity Website */
 
@@ -209,13 +211,6 @@
 :root {
   --background: var(--color-background);
   --foreground: var(--color-foreground);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: var(--color-dark);
-    --foreground: var(--color-white);
-  }
 }
 
 body {
