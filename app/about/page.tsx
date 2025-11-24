@@ -1,6 +1,7 @@
-"use client";
+import Image from "next/image";
+import Link from "next/link";
+import AboutMore from "@/components/about/AboutMore";
 
-import { useState } from "react";
 import {
   FaCheck,
   FaFacebook,
@@ -9,11 +10,9 @@ import {
   FaQuoteLeft,
   FaSquareXTwitter,
 } from "react-icons/fa6";
-import Image from "next/image";
-import Link from "next/link";
+import { Suspense } from "react";
 
 const About = () => {
-  const [showMore, setShowMore] = useState(false);
   return (
     <main className="w-full">
       <header className="relative h-96 md:h-205.5 flex items-center">
@@ -71,27 +70,6 @@ const About = () => {
                   dummy text ever when an unknown printer took a galley of type
                   and scrambled it to make a type specimen book.
                 </p>
-                {showMore && (
-                  <>
-                    <p>
-                      It has survived not only five centuries, but also the leap
-                      into electronic typesetting, remaining essentially
-                      unchanged. It was popularised in the 1960s with the
-                      release of Letraset sheets containing Lorem Ipsum
-                      passages, and more recently with desktop publishing
-                      software like Aldus PageMaker including versions of Lorem
-                      Ipsum.
-                    </p>
-                    <p>
-                      The standard chunk of Lorem Ipsum used since the 1500s is
-                      reproduced below for those interested. Sections 1.10.32
-                      and 1.10.33 from de Finibus Bonorum et Malorum by Cicero
-                      are also reproduced in their exact original form,
-                      accompanied by English versions from the 1914 translation
-                      by H. Rackham.
-                    </p>
-                  </>
-                )}
               </div>
 
               <div className="bg-light-100 p-4 md:p-6 mb-6">
@@ -99,13 +77,9 @@ const About = () => {
                   Save the Children believes every child deserves a future.
                 </p>
               </div>
-
-              <button
-                onClick={() => setShowMore(!showMore)}
-                className="uppercase w-50 mx-auto md:w-fit px-8 md:px-12 h-14 md:h-16 bg-dark rounded-4xl text-white text-base md:text-lg font-work font-medium cursor-pointer"
-              >
-                {showMore ? "Show Less" : "More About"}
-              </button>
+              <Suspense>
+                <AboutMore />
+              </Suspense>
             </div>
           </article>
 
