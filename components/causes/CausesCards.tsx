@@ -1,6 +1,7 @@
-import { getManyCauses } from "@/utils/get/cause";
 import Image from "next/image";
 import Link from "next/link";
+
+import { getManyCauses } from "@/utils/get/cause";
 
 const CausesCards = async () => {
   const causes = await getManyCauses(10);
@@ -20,9 +21,7 @@ const CausesCards = async () => {
                   />
                 </Link>
                 <div className="absolute top-6 left-6 bg-white px-3 py-2 min-w-[50px] text-center">
-                  <span className="block text-rose-500 font-bold text-sm">
-                    {percentage}%
-                  </span>
+                  <span className="block text-rose-500 font-bold text-sm">{percentage}%</span>
                 </div>
               </div>
 
