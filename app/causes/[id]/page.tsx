@@ -45,7 +45,7 @@ const Home = async ({ params }: Props) => {
                 >
                   <path d="m15 18-6-6 6-6" />
                 </svg>
-                <span className="font-medium">Back to Causes</span>
+                <span className="font-medium">Back to Causes Demos</span>
               </Link>
 
               <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-sm mb-8">
