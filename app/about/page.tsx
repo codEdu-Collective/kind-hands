@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Suspense } from "react";
 import {
   FaCheck,
@@ -273,7 +272,6 @@ const About = () => {
 };
 
 export default About;
-=======
 import { FaPlay } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa6";
 import Image from "next/image";
@@ -378,4 +376,3 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
->>>>>>> be78ba7 (feat: implement AboutUs component layout)
