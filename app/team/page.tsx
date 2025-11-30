@@ -39,7 +39,7 @@ const Team = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
           {teamMembers.map((member, index) => (
             <div key={index} className="flex flex-col items-center text-center group">
-              <div className="relative overflow-hidden w-full aspect-[3/4] mb-6">
+              <div className="relative overflow-hidden w-full aspect-3/4 mb-6">
                 <Image
                   src={member.image}
                   alt={member.name}
@@ -77,6 +77,29 @@ const Team = () => {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+      {/* --- 3. section --- */}
+      <section className="relative w-full py-24 bg-[#FF6D6D] flex flex-col justify-center items-center text-center text-white overflow-hidden">
+        <Image
+          src="/teams/Volunteer.jpg"
+          alt="Kids bg"
+          fill
+          className="object-cover opacity-10 mix-blend-overlay"
+        />
+
+        <div className="relative z-10 max-w-3xl px-4 flex flex-col items-center">
+          <span className="font-sue-ellen text-4xl md:text-5xl mb-2">Become Volunteer</span>
+          <h2 className="font-shippori font-extrabold text-4xl md:text-5xl mb-6">
+            Join Our Organization
+          </h2>
+          <p className="font-work text-lg md:text-xl max-w-2xl mb-8 opacity-90 leading-relaxed">
+            Save the children believes every child deserves a future. In the U.S. and around the
+            world, we give children a healthy start in life.
+          </p>
+          <button className="bg-dark hover:bg-dark-900 text-white font-medium py-4 px-10 rounded-full transition-colors duration-100 uppercase tracking-wider text-sm cursor-pointer">
+            Join Us Now
+          </button>
         </div>
       </section>
     </div>
