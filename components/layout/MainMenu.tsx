@@ -1,28 +1,20 @@
-"use client";
-
-import { Suspense, useState } from "react";
-import { LuChevronDown, LuMenu, LuX } from "react-icons/lu";
+import { Suspense } from "react";
+import { LuChevronDown } from "react-icons/lu";
 import Image from "next/image";
 import Link from "next/link";
 
 import ThemeToggle from "../ThemeToogle";
 
-export default function MainMenu() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isMobileSubMenuOpen, setIsMobileSubMenuOpen] = useState(false);
+import MobileMenu from "./MobileMenu";
 
+export default function MainMenu() {
   const navLinkClass =
     "font-work text-dark dark:text-gray-200 font-medium text-lg hover:text-primary transition-colors";
-  const mobileLinkClass =
-    "block font-work text-dark dark:text-gray-100 font-medium text-lg py-2 border-b border-gray-100 dark:border-gray-800";
-  const mobileSubLinkClass =
-    "block font-work text-gray-600 dark:text-gray-400 py-2 hover:text-primary text-base";
 
   return (
     <nav className="shadow-sm border-b bg-white dark:bg-gray-900 dark:border-gray-700 relative z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* --- LOGO --- */}
           <Link
             href="/"
             className="text-2xl text-dark dark:text-white font-extrabold flex items-center space-x-2 font-shippori shrink-0"
@@ -31,7 +23,7 @@ export default function MainMenu() {
             <span>Kind Hands</span>
           </Link>
 
-          {/* --- DESKTOP MENU --- */}
+          {/* --- Desktop Menu --- */}
           <div className="hidden lg:flex items-center space-x-8">
             <div className="flex space-x-8">
               <Link href="/" className={navLinkClass}>
@@ -41,6 +33,7 @@ export default function MainMenu() {
                 About Us
               </Link>
 
+              {/* Desktop Dropdown ) */}
               <div
                 className={`flex items-center space-x-1 relative group cursor-pointer ${navLinkClass}`}
               >
@@ -85,103 +78,26 @@ export default function MainMenu() {
               <button className="bg-primary text-white px-6 py-2 rounded-full font-medium hover:bg-primary-600 transition duration-300 font-work">
                 Donate
               </button>
-              <Suspense>
+
+              <Suspense fallback={<div className="w-8 h-8" />}>
                 <ThemeToggle />
               </Suspense>
             </div>
           </div>
 
-          {/* --- MOBILE TOGGLE BUTTONS --- */}
+          {/* --- Mobile Theme Toggle Buttons Menu --- */}
           <div className="flex items-center gap-4 lg:hidden">
-            <Suspense>
+            <Suspense fallback={<div className="w-8 h-8" />}>
               <ThemeToggle />
             </Suspense>
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-dark dark:text-white p-2 focus:outline-none"
-            >
-              {isMobileMenuOpen ? <LuX size={28} /> : <LuMenu size={28} />}
-            </button>
+
+            {/* Mobile Menu */}
+            <Suspense fallback={null}>
+              <MobileMenu />
+            </Suspense>
           </div>
         </div>
       </div>
-
-      {isMobileMenuOpen && (
-        <div className="lg:hidden bg-white dark:bg-gray-900 border-t dark:border-gray-700 absolute w-full left-0 top-20 shadow-lg px-4 py-6 flex flex-col space-y-4 h-[calc(100vh-5rem)] overflow-y-auto">
-          <Link href="/" className={mobileLinkClass} onClick={() => setIsMobileMenuOpen(false)}>
-            Home
-          </Link>
-          <Link
-            href="/about"
-            className={mobileLinkClass}
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            About Us
-          </Link>
-
-          {/* Mobile Submenu */}
-          <div>
-            <button
-              onClick={() => setIsMobileSubMenuOpen(!isMobileSubMenuOpen)}
-              className={`${mobileLinkClass} flex justify-between items-center w-full focus:outline-none`}
-            >
-              <span>Our Work</span>
-              <LuChevronDown
-                className={`transition-transform duration-300 ${
-                  isMobileSubMenuOpen ? "rotate-180" : ""
-                }`}
-              />
-            </button>
-
-            {isMobileSubMenuOpen && (
-              <div className="pl-4 mt-2 flex flex-col space-y-2 border-l-2 border-gray-100 dark:border-gray-700 ml-2">
-                <Link
-                  href="/causes"
-                  className={mobileSubLinkClass}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Causes
-                </Link>
-                <Link
-                  href="/projects"
-                  className={mobileSubLinkClass}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Projects
-                </Link>
-                <Link
-                  href="/team"
-                  className={mobileSubLinkClass}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Team
-                </Link>
-              </div>
-            )}
-          </div>
-
-          <Link
-            href="/event"
-            className={mobileLinkClass}
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Event
-          </Link>
-          <Link
-            href="/contact"
-            className={mobileLinkClass}
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Contact
-          </Link>
-
-          <div className="pt-4 pb-10">
-            <button className="w-full bg-primary text-white px-6 py-3 rounded-full font-medium hover:bg-primary-600 transition duration-300 font-work">
-              Donate
-            </button>
-          </div>
-        </div>
-      )}
     </nav>
   );
 }
