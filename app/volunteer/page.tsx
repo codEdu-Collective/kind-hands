@@ -55,7 +55,7 @@ const Volunteer = () => {
                 sustainable future.
               </p>
 
-              <button className="bg-slate-700 hover:bg-slate-800 text-white px-8 py-3 rounded-full text-sm font-bold tracking-wider transition-all mt-4">
+              <button className="bg-slate-700 hover:bg-slate-800 text-white px-11 py-5.5 rounded-full text-sm font-bold tracking-wider transition-all mt-4">
                 CALL : +000 365 698
               </button>
             </div>
