@@ -41,7 +41,7 @@ const Volunteer = () => {
           {/* left text */}
           <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
             <div className="w-full md:w-1/2 space-y-5">
-              <span className="text-rose-500 italic text-xl font-sue-ellen">Help First</span>
+              <span className="text-primary text-4xl font-sue-ellen">Help First</span>
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground">
                 Let’s help together
               </h2>
