@@ -104,7 +104,7 @@ const Volunteer = () => {
               <span className="text-primary text-4xl font-sue-ellen block">
                 Help The People With us
               </span>
-              <h2 className="text-4xl font-serif font-bold text-gray-800">
+              <h2 className="text-[2.5rem] font-shippori font-extrabold text-dark">
                 Need Your Heartful Help
               </h2>
               <p className="text-neutral leading-relaxed">
