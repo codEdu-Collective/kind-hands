@@ -107,7 +107,7 @@ const Volunteer = () => {
               <h2 className="text-[2.5rem] font-shippori font-extrabold text-dark">
                 Need Your Heartful Help
               </h2>
-              <p className="text-neutral leading-relaxed">
+              <p className="text-neutral leading-relaxed text-xl">
                 We are constantly looking for dedicated individuals who want to contribute their
                 time and skills to make the world a better place.
               </p>
