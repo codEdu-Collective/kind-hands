@@ -82,7 +82,7 @@ const Volunteer = () => {
             </div>
 
             <div className="w-full md:w-1/2 space-y-5">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground">
+              <h2 className="text-[2.5rem] md:text-4xl font-shippori font-extrabold text-dark">
                 More People More <br /> impact
               </h2>
               <p className="text-neutral leading-relaxed">
