@@ -60,3 +60,27 @@ model Cause {
   createdAt   DateTime @default(now()) 
   updatedAt   DateTime @updatedAt
 }
+
+model Volunteer {
+  id              Int             @id @default(autoincrement())
+  name            String          
+  phone           String          
+  email           String         
+  address         String          
+  occupation      String        
+  
+  //admin
+  status          VolunteerStatus @default(PENDING) 
+  notes           String?      
+  
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+
+}
+
+enum VolunteerStatus {
+  PENDING   
+  APPROVED  
+  REJECTED  
+  ARCHIVED 
+}

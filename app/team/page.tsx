@@ -13,7 +13,7 @@ const teamMembers = [
 const Team = () => {
   return (
     <div className="w-full">
-      <section className="relative w-full h-[500px] flex flex-col justify-center items-center text-white overflow-hidden">
+      <section className="relative w-full h-[500px] flex flex-col justify-center items-start px-8 md:px-16 text-white overflow-hidden">
         {/* 1. layer  */}
         <Image
           src="/teams/Banner.jpg"
@@ -39,7 +39,7 @@ const Team = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
           {teamMembers.map((member, index) => (
             <div key={index} className="flex flex-col items-center text-center group">
-              <div className="relative overflow-hidden w-full aspect-[3/4] mb-6">
+              <div className="relative overflow-hidden w-full aspect-3/4 mb-6">
                 <Image
                   src={member.image}
                   alt={member.name}
