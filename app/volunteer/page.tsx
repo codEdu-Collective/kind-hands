@@ -50,7 +50,7 @@ const Volunteer = () => {
                 forces, we can uplift vulnerable communities, provide essential support to those who
                 need it most, and restore hope where it has been lost.
               </p>
-              <p className="text-neutral leading-relaxed">
+              <p className="text-neutral leading-relaxed text-xl">
                 Together, we are not just providing temporary relief; we are building pathways to a
                 sustainable future.
               </p>
