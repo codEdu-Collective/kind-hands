@@ -85,7 +85,7 @@ const Volunteer = () => {
               <h2 className="text-[2.5rem] md:text-4xl font-shippori font-extrabold text-dark">
                 More People More <br /> impact
               </h2>
-              <p className="text-neutral leading-relaxed">
+              <p className="text-neutral leading-relaxed text-xl">
                 Our strength lies in our unity. Every new volunteer brings a unique spark that
                 amplifies our collective power. As our community grows, so does our ability to
                 tackle complex challenges, reach remote areas, and create lasting change for those
