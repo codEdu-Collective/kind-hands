@@ -101,7 +101,7 @@ const Volunteer = () => {
           {/* --- left step --- */}
           <div className="w-full lg:w-1/2 space-y-8">
             <div className="space-y-4">
-              <span className="text-rose-400 italic text-xl font-sue-ellen block">
+              <span className="text-primary text-4xl font-sue-ellen block">
                 Help The People With us
               </span>
               <h2 className="text-4xl font-serif font-bold text-gray-800">
