@@ -45,7 +45,7 @@ const Volunteer = () => {
               <h2 className="text-[2.5rem] md:text-4xl font-shippori font-extrabold text-dark">
                 Let’s help together
               </h2>
-              <p className="text-neutral leading-relaxed">
+              <p className="text-neutral leading-relaxed text-xl">
                 We believe that meaningful change starts with a single act of kindness. By joining
                 forces, we can uplift vulnerable communities, provide essential support to those who
                 need it most, and restore hope where it has been lost.
