@@ -42,7 +42,7 @@ const Volunteer = () => {
           <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
             <div className="w-full md:w-1/2 space-y-5">
               <span className="text-primary text-4xl font-sue-ellen">Help First</span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground">
+              <h2 className="text-[2.5rem] md:text-4xl font-shippori font-extrabold text-dark">
                 Let’s help together
               </h2>
               <p className="text-neutral leading-relaxed">
