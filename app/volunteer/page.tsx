@@ -96,7 +96,7 @@ const Volunteer = () => {
         </div>
       </section>
 
-      <section className="w-full bg-[#f3f0eb] py-20">
+      <section className="w-full bg-beige py-20">
         <div className="container mx-auto px-4 flex flex-col lg:flex-row gap-16">
           {/* --- left step --- */}
           <div className="w-full lg:w-1/2 space-y-8">
