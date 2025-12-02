@@ -129,7 +129,7 @@ const Volunteer = () => {
             </div>
 
             <div className="pt-6">
-              <button className="bg-white border border-gray-200 text-gray-700 hover:bg-gray-50 hover:text-rose-500 px-8 py-3 rounded-full text-xs font-bold tracking-widest uppercase shadow-sm transition-all">
+              <button className="bg-white border border-gray-200 hover:bg-gray-50 hover:text-rose-500 px-8 py-3 rounded-full text-xs font-bold tracking-widest uppercase shadow-sm transition-all">
                 Get Started
               </button>
             </div>
