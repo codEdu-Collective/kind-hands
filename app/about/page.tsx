@@ -26,7 +26,7 @@ const About = () => {
       </header>
 
       <section className="w-full flex flex-col items-center">
-        <div className="w-full max-w-300 px-4 md:px-0 my-8 md:my-37.5 flex flex-col gap-6 md:gap-12">
+        <div className="w-full max-w-300 px-4 md:px-8 lg:px-0 my-8 md:my-37.5 flex flex-col gap-6 md:gap-12">
           <article className="flex flex-col-reverse md:flex-row items-start gap-4 md:gap-12">
             <div className="relative w-full md:w-auto shrink-0 flex flex-col">
               <Image
