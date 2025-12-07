@@ -19,7 +19,7 @@ const Project = () => {
         </div>
       </header>
       <section className="container mx-auto items-center w-full max-w-200 px-4 md:px-0 my-8 md:my-37.5">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
           {[...Array(9)].map((_, index) => {
             if (index === 5) {
               return (
