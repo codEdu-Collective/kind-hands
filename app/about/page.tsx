@@ -17,7 +17,7 @@ const About = () => {
     <main className="w-full">
       <header className="relative h-96 md:h-205.5 flex items-center">
         <Image src="/images/about/hero.png" alt="hero" fill className="object-cover" />
-        <div className="relative z-2 text-white ml-4 md:ml-90 max-w-full md:max-w-120 px-4 md:px-0">
+        <div className="relative z-2 text-white ml-4 md:ml-90 max-w-full md:max-w-180 px-4 md:px-0">
           <h1 className="font-sue-ellen text-2xl md:text-5xl mb-1.5">What We Do...</h1>
           <h2 className="font-shippori font-extrabold text-3xl md:text-[5.625rem] leading-tight">
             About Our Organization

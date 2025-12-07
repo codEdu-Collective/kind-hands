@@ -9,11 +9,11 @@ const Project = () => {
           fill
           className="object-cover"
         />
-        <div className="relative z-2 text-white ml-4 md:ml-90 max-w-full md:max-w-120 px-4 md:px-0">
+        <div className="relative z-2 text-white ml-4 md:ml-90 max-w-full md:max-w-180 px-4 md:px-0">
           <h1 className="font-sue-ellen text-2xl md:text-5xl mb-1.5">
             Donation
           </h1>
-          <h2 className="font-shippori font-extrabold text-3xl md:text-[5.625rem] leading-tight">
+          <h2 className="font-shippori font-extrabold text-3xl md:text-[5.625rem] leading-tight ">
             Meet Charity Projects
           </h2>
         </div>
@@ -25,7 +25,7 @@ const Project = () => {
               return (
                 <div
                   key={index}
-                  className="relative bg-primary flex flex-col items-center justify-center w-[200px] h-[230px]"
+                  className="relative bg-primary flex flex-col items-center justify-center w-[200px] h-[230px] min-h-[230px]"
                 >
                   <p className="text-white text-center text-lg md:text-xl font-semibold px-3 leading-tight">
                     More than One Life Changed
@@ -35,13 +35,16 @@ const Project = () => {
             }
 
             return (
-              <div key={index} className="relative w-[200px] h-[230px]">
+              <div
+                key={index}
+                className="relative w-[200px] h-[230px] min-h-[230px]"
+              >
                 <Image
                   src={`/projects/project-${index + 1}.png`}
                   alt="project"
                   width={200}
                   height={230}
-                  className="object-cover"
+                  className="object-cover w-full h-full"
                 />
               </div>
             );
