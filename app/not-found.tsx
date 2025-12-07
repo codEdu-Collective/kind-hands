@@ -10,7 +10,7 @@ export default function NotFound() {
           fill
           className="object-cover"
         />
-        <div className="relative z-2 text-white ml-4 md:ml-90 max-w-full md:max-w-200 px-4 md:px-0">
+        <div className="relative z-2 text-white ml-4 md:mx-auto max-w-full md:max-w-200 px-4 md:px-0 text-center md:text-left">
           <h1 className="font-sue-ellen text-5xl md:text-9xl mb-1.5 text-primary">
             404
           </h1>
