@@ -21,18 +21,18 @@ const Licences = () => {
         </div>
       </header>
 
-      <div className="mx-auto w-full max-w-300 h-[600px] px-4 md:px-0 my-8 md:my-37.5 flex flex-col gap-6 md:gap-12">
-        <h1 className="font-shippori font-extrabold text-4xl text-primary">
+      <div className="mx-auto w-full max-w-300 h-auto md:h-[600px] px-4 md:px-8 lg:px-0 my-8 md:my-37.5 flex flex-col gap-6 md:gap-12">
+        <h1 className="font-shippori font-extrabold text-2xl md:text-4xl text-primary">
           Icons & Graphics
         </h1>
         <div className="flex flex-col gap-6 md:gap-12 ">
           <div>
-            <p className="font-work text-neutral text-xl ">
+            <p className="font-work text-neutral text-base md:text-xl">
               All graphical assets in this template are licensed for personal
               and commercial use. If you'd like to use a specific asset, please
               check the license below
             </p>
-            <h2 className="font-shippori font-extrabold text-2xl my-3">
+            <h2 className="font-shippori font-extrabold text-xl md:text-2xl my-3">
               Phosphor Icons: Licenced
             </h2>
           </div>
@@ -90,7 +90,8 @@ const Licences = () => {
                 className="font-bold hover:underline"
               >
                 Sue Ellen Francisco
-              </Link>{" "}
+              </Link>
+              {"."}
             </p>
           </div>
         </div>
