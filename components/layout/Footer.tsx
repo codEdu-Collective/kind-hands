@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   const involvedLinks = ["About Us", "Volunteer", "Causes", "Projects", "Team"];
-  const utilityLinks = ["Style Guide", "Licences", "Password", "404 Page", "Changelog"];
+  const utilityLinks = ["Style Guide", "licenses", "Password", "404 Page", "Changelog"];
 
   return (
     <footer className="bg-dark text-white">

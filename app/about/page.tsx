@@ -16,9 +16,16 @@ const About = () => {
   return (
     <main className="w-full">
       <header className="relative h-96 md:h-205.5 flex items-center">
-        <Image src="/images/about/hero.png" alt="hero" fill className="object-cover" />
+        <Image
+          src="/images/about/hero.png"
+          alt="hero"
+          fill
+          className="object-cover"
+        />
         <div className="relative z-2 text-white ml-4 md:ml-90 max-w-full md:max-w-120 px-4 md:px-0">
-          <h1 className="font-sue-ellen text-2xl md:text-5xl mb-1.5">What We Do...</h1>
+          <h1 className="font-sue-ellen text-2xl md:text-5xl mb-1.5">
+            What We Do...
+          </h1>
           <h2 className="font-shippori font-extrabold text-3xl md:text-[5.625rem] leading-tight">
             About Our Organization
           </h2>
@@ -38,7 +45,11 @@ const About = () => {
               />
               <div className="bg-dark md:mt-6 p-3 md:p-4 w-full md:w-auto md:max-w-112.5 flex items-start gap-2 md:gap-3 relative md:absolute md:bottom-[-30px] md:right-[50px]">
                 <div className="shrink-0">
-                  <FaQuoteLeft size={40} color="white" aria-label="Quote icon" />
+                  <FaQuoteLeft
+                    size={40}
+                    color="white"
+                    aria-label="Quote icon"
+                  />
                 </div>
                 <p className="font-work text-base md:text-xl text-white">
                   He is truly great who hath a great charity.
@@ -55,9 +66,9 @@ const About = () => {
               </h2>
               <div className="text-base md:text-xl flex flex-col gap-4 text-justify text-neutral mb-6">
                 <p>
-                  Lorem Ipsum is simply dummy text of the printin typesetting dummy text ever when
-                  an unknown printer took a galley of type and scrambled it to make a type specimen
-                  book.
+                  Lorem Ipsum is simply dummy text of the printin typesetting
+                  dummy text ever when an unknown printer took a galley of type
+                  and scrambled it to make a type specimen book.
                 </p>
               </div>
 
@@ -77,7 +88,10 @@ const About = () => {
             className="w-full max-w-300 h-auto md:h-52.5 flex flex-wrap md:flex-nowrap justify-center md:justify-between gap-3 md:gap-30 my-8 md:my-30 border-y border-mist-gray py-4 md:py-5 px-4 md:px-0"
           >
             {[...Array(5)].map((_, index) => (
-              <div key={index} className="h-16 md:h-full w-20 md:w-full relative">
+              <div
+                key={index}
+                className="h-16 md:h-full w-20 md:w-full relative"
+              >
                 <Image
                   src={`/brands/${index + 1}.png`}
                   alt="brand logo"
@@ -91,12 +105,14 @@ const About = () => {
 
           <div className="flex flex-col md:flex-row gap-6 md:gap-12 w-full">
             <article className="flex-1 w-full">
-              <h2 className="font-shippori font-extrabold text-2xl md:text-4xl mb-4">Our Goal</h2>
+              <h2 className="font-shippori font-extrabold text-2xl md:text-4xl mb-4">
+                Our Goal
+              </h2>
               <div className="text-base md:text-xl flex flex-col gap-4 text-justify text-neutral mb-6">
                 <p>
-                  Lorem Ipsum is simply dummy text of the printin typesetting dummy text ever when
-                  an unknown printer took a galley of type and scrambled it to make a type specimen
-                  book.
+                  Lorem Ipsum is simply dummy text of the printin typesetting
+                  dummy text ever when an unknown printer took a galley of type
+                  and scrambled it to make a type specimen book.
                 </p>
               </div>
 
@@ -108,7 +124,10 @@ const About = () => {
                   "Become A Volunteer",
                   "Food For Poor People dayle",
                 ].map((item, index) => (
-                  <li key={index} className="flex gap-3 items-center bg-snow rounded-4xl p-3">
+                  <li
+                    key={index}
+                    className="flex gap-3 items-center bg-snow rounded-4xl p-3"
+                  >
                     <FaCheck
                       color={"var(--color-primary)"}
                       size={24}
@@ -124,9 +143,9 @@ const About = () => {
 
               <div className="text-base md:text-xl flex flex-col gap-4 text-justify text-neutral">
                 <p>
-                  Lorem Ipsum is simply dummy text of the printin typesetting dummy text ever when
-                  an unknown printer took a galley of type and scrambled it to make a type specimen
-                  book.
+                  Lorem Ipsum is simply dummy text of the printin typesetting
+                  dummy text ever when an unknown printer took a galley of type
+                  and scrambled it to make a type specimen book.
                 </p>
               </div>
             </article>
@@ -137,9 +156,10 @@ const About = () => {
               </h2>
               <div className="text-base md:text-xl flex flex-col gap-4 text-justify text-neutral mb-6">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis animi fugit
-                  officia illum perferendis dolorem, quos, minus culpa fuga ut, laudantium tempore
-                  eligendi illo quis doloribus distinctio nam aperiam laborum?
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Nobis animi fugit officia illum perferendis dolorem, quos,
+                  minus culpa fuga ut, laudantium tempore eligendi illo quis
+                  doloribus distinctio nam aperiam laborum?
                 </p>
               </div>
 
@@ -152,8 +172,12 @@ const About = () => {
                   className="object-cover w-full"
                 />
                 <div className="absolute bottom-[-10px] md:bottom-[-20px] left-4 md:left-6 bg-accent p-4 md:p-10">
-                  <p className="font-shippori font-extrabold text-3xl md:text-6xl">20000+</p>
-                  <p className="font-work text-base md:text-xl">Thousand People Helped</p>
+                  <p className="font-shippori font-extrabold text-3xl md:text-6xl">
+                    20000+
+                  </p>
+                  <p className="font-work text-base md:text-xl">
+                    Thousand People Helped
+                  </p>
                 </div>
               </div>
             </article>
@@ -168,45 +192,47 @@ const About = () => {
               Meet Our Volunteers
             </h2>
             <div className="flex flex-wrap md:flex-nowrap justify-center md:justify-start gap-3 md:gap-4">
-              {["Jack Sparrow", "Keira Knightley", "Martin Luther"].map((member, index) => (
-                <div
-                  key={index}
-                  className="text-center w-[calc(50%-0.375rem)] sm:w-[calc(50%-0.5rem)] md:w-70.5 md:h-115"
-                >
-                  <Image
-                    src={`/images/about/team-${index + 1}.png`}
-                    alt="team members"
-                    width={282}
-                    height={382}
-                    className="object-cover w-full h-auto"
-                  />
-                  <h3 className="my-3 md:my-4.5 font-shippori font-extrabold text-base md:text-xl">
-                    {member}
-                  </h3>
-                  <div className="flex justify-center gap-3 md:gap-4">
-                    <FaInstagram
-                      size={18}
-                      aria-label="Instagram icon"
-                      className="w-4 h-4 md:w-[18px] md:h-[18px]"
+              {["Jack Sparrow", "Keira Knightley", "Martin Luther"].map(
+                (member, index) => (
+                  <div
+                    key={index}
+                    className="text-center w-[calc(50%-0.375rem)] sm:w-[calc(50%-0.5rem)] md:w-70.5 md:h-115"
+                  >
+                    <Image
+                      src={`/images/about/team-${index + 1}.png`}
+                      alt="team members"
+                      width={282}
+                      height={382}
+                      className="object-cover w-full h-auto"
                     />
-                    <FaFacebook
-                      size={18}
-                      aria-label="Facebook icon"
-                      className="w-4 h-4 md:w-[18px] md:h-[18px]"
-                    />
-                    <FaSquareXTwitter
-                      size={18}
-                      aria-label="Twitter icon"
-                      className="w-4 h-4 md:w-[18px] md:h-[18px]"
-                    />
-                    <FaPinterest
-                      size={18}
-                      aria-label="Pinterest icon"
-                      className="w-4 h-4 md:w-[18px] md:h-[18px]"
-                    />
+                    <h3 className="my-3 md:my-4.5 font-shippori font-extrabold text-base md:text-xl">
+                      {member}
+                    </h3>
+                    <div className="flex justify-center gap-3 md:gap-4">
+                      <FaInstagram
+                        size={18}
+                        aria-label="Instagram icon"
+                        className="w-4 h-4 md:w-[18px] md:h-[18px]"
+                      />
+                      <FaFacebook
+                        size={18}
+                        aria-label="Facebook icon"
+                        className="w-4 h-4 md:w-[18px] md:h-[18px]"
+                      />
+                      <FaSquareXTwitter
+                        size={18}
+                        aria-label="Twitter icon"
+                        className="w-4 h-4 md:w-[18px] md:h-[18px]"
+                      />
+                      <FaPinterest
+                        size={18}
+                        aria-label="Pinterest icon"
+                        className="w-4 h-4 md:w-[18px] md:h-[18px]"
+                      />
+                    </div>
                   </div>
-                </div>
-              ))}
+                )
+              )}
               <div className="bg-accent w-[calc(50%-0.375rem)] sm:w-[calc(50%-0.5rem)] md:w-70.5 md:h-115 flex flex-col justify-center items-center text-center px-3 md:px-4.5 py-6 md:py-0">
                 <Image
                   src={`/images/about/icon.png`}
@@ -243,13 +269,16 @@ const About = () => {
             <div className="absolute inset-0" />
           </div>
           <div className="relative z-2 w-full max-w-300 px-4 md:px-0 flex flex-col items-center justify-center text-center text-white py-12 md:py-16">
-            <h3 className="font-sue-ellen text-2xl md:text-4xl mb-0.5">Subscribe</h3>
+            <h3 className="font-sue-ellen text-2xl md:text-4xl mb-0.5">
+              Subscribe
+            </h3>
             <h2 className="font-shippori font-extrabold text-xl md:text-[2.5rem] mb-4">
               Newsletter
             </h2>
             <p className="font-work text-base md:text-xl mb-6 max-w-2xl px-4">
-              Save the Children believes every child deserves a future. In the U.S. and around the
-              world, we give children a healthy start in life.
+              Save the Children believes every child deserves a future. In the
+              U.S. and around the world, we give children a healthy start in
+              life.
             </p>
             <form className="flex flex-col md:flex-row gap-3 md:gap-5 w-full max-w-2xl px-4 md:px-0">
               <input
