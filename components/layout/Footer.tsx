@@ -55,7 +55,7 @@ export default function Footer() {
                   {involvedLinks.map((item, index) => (
                     <li key={index}>
                       <Link
-                        href="#"
+                        href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
                         className="font-work text-lg text-gray-300 hover:text-primary transition-colors inline-block"
                       >
                         {item}
@@ -72,7 +72,7 @@ export default function Footer() {
                   {utilityLinks.map((item, index) => (
                     <li key={index}>
                       <Link
-                        href="#"
+                        href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
                         className="font-work text-lg text-gray-300 hover:text-primary transition-colors inline-block"
                       >
                         {item}
