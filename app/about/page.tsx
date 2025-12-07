@@ -17,7 +17,7 @@ const About = () => {
     <main className="w-full">
       <header className="relative h-96 md:h-205.5 flex items-center">
         <Image src="/images/about/hero.png" alt="hero" fill className="object-cover" />
-        <div className="relative z-2 text-white ml-4 md:ml-90 max-w-full md:max-w-120 px-4 md:px-0">
+        <div className="relative z-2 text-white ml-4 md:ml-90 max-w-full md:max-w-180 px-4 md:px-0">
           <h1 className="font-sue-ellen text-2xl md:text-5xl mb-1.5">What We Do...</h1>
           <h2 className="font-shippori font-extrabold text-3xl md:text-[5.625rem] leading-tight">
             About Our Organization
@@ -36,7 +36,7 @@ const About = () => {
                 height={502}
                 className="object-cover w-full"
               />
-              <div className="bg-dark md:mt-6 p-3 md:p-4 w-full md:w-auto md:max-w-112.5 flex items-start gap-2 md:gap-3 relative md:absolute md:bottom-[-30px] md:right-[50px]">
+              <div className="bg-dark md:mt-6 p-3 md:p-4 w-full md:w-auto md:max-w-112.5 flex items-start gap-2 md:gap-3 relative md:absolute md:bottom-[-30px] md:left-4 lg:left-8 xl:left-12">
                 <div className="shrink-0">
                   <FaQuoteLeft size={40} color="white" aria-label="Quote icon" />
                 </div>
