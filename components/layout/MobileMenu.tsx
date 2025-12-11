@@ -82,6 +82,13 @@ export default function MobileMenu() {
                 >
                   Volunteer
                 </Link>
+                <Link
+                  href="/blog"
+                  className={mobileSubLinkClass}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Blog
+                </Link>
               </div>
             )}
           </div>
