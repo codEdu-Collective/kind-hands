@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
-  const involvedLinks = ["About Us", "Volunteer", "Causes", "Projects", "Team"];
-  const utilityLinks = ["Style Guide", "Licences", "Password", "404 Page", "Changelog"];
+  const involvedLinks = ["About", "Volunteer", "Causes", "Projects", "Team"];
+  const utilityLinks = ["Style Guide", "Licenses", "Password", "Not Found", "Changelog"];
 
   return (
     <footer className="bg-dark text-white">
@@ -55,7 +55,7 @@ export default function Footer() {
                   {involvedLinks.map((item, index) => (
                     <li key={index}>
                       <Link
-                        href="#"
+                        href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
                         className="font-work text-lg text-gray-300 hover:text-primary transition-colors inline-block"
                       >
                         {item}
@@ -72,7 +72,7 @@ export default function Footer() {
                   {utilityLinks.map((item, index) => (
                     <li key={index}>
                       <Link
-                        href="#"
+                        href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
                         className="font-work text-lg text-gray-300 hover:text-primary transition-colors inline-block"
                       >
                         {item}
