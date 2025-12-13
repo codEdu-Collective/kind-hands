@@ -84,3 +84,16 @@ enum VolunteerStatus {
   REJECTED  
   ARCHIVED 
 }
+
+model Post {
+  id          String   @id @default(cuid())
+  title       String
+  excerpt     String
+  content     String
+  author      String
+  imageUrl    String
+  isFeatured  Boolean  @default(false)
+  publishedAt DateTime @default(now())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

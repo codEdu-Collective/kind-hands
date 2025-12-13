@@ -21,7 +21,7 @@ const licenses = () => {
           <div>
             <p className="font-work text-neutral text-base md:text-xl">
               All graphical assets in this template are licensed for personal and commercial use. If
-              you'd like to use a specific asset, please check the license below
+              you would like to use a specific asset, please check the license below
             </p>
             <h2 className="font-shippori font-extrabold text-xl md:text-2xl my-3 text-dark">
               Phosphor Icons: licensed

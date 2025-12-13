@@ -22,14 +22,14 @@ const Home = async ({ params }: Props) => {
 
   if (cause)
     return (
-      <section className="w-full py-16 bg-[#F7F5F2] min-h-screen">
+      <section className="w-full py-16 bg-cream min-h-screen">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* --- left  --- */}
             <div className="lg:col-span-2">
               <Link
                 href="/causes"
-                className="inline-flex items-center text-gray-500 hover:text-[#1A2B3C] transition-colors mb-6 group"
+                className="inline-flex items-center text-gray-500 hover:text-navy transition-colors mb-6 group"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +98,7 @@ const Home = async ({ params }: Props) => {
                   </div>
                 </div>
 
-                <button className="w-full bg-[#1A2B3C] hover:bg-slate-800 text-white font-bold py-4 rounded-full transition-colors">
+                <button className="w-full bg-navy hover:bg-slate-800 text-white font-bold py-4 rounded-full transition-colors">
                   Donate Now
                 </button>
               </div>
