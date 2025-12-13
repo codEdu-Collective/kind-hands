@@ -83,9 +83,15 @@ export default function MobileMenu() {
                   Volunteer
                 </Link>
                 <Link
+                  href="/blog"
+                  className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 text-dark dark:text-gray-200 transition-colors"
+                >
+                  Blog
+                </Link>
+
+                <Link
                   href="/faq"
-                  className={mobileSubLinkClass}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 text-dark dark:text-gray-200 transition-colors"
                 >
                   FAQ
                 </Link>
