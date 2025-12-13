@@ -6,7 +6,7 @@ import Image from "next/image";
 const Contact = () => {
   return (
     <>
-      <section className="relative h-64 md:h-80 lg:h-96 w-full bg-light">
+      <section className="relative w-full h-125 lg:h-162.5 flex items-center">
         <Image
           src="/images/contact-us-banner.jpg"
           alt="Causes Image"

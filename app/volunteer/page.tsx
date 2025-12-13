@@ -5,7 +5,7 @@ import VolunteerContent from "@/components/volunteer/VolunteerContent";
 import VolunteerSteps from "@/components/volunteer/VolunteerSteps";
 
 const VolunteerForm = dynamic(() => import("@/components/volunteer/VolunteerForm"), {
-  loading: () => <div className="h-[600px] bg-gray-50 animate-pulse rounded-sm" />,
+  loading: () => <div className="h-150 bg-gray-50 animate-pulse rounded-sm" />,
 });
 
 const VolunteerPage = () => {
