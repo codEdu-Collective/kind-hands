@@ -5,7 +5,7 @@ import CausesCards from "@/components/causes/CausesCards";
 const Causes = () => {
   return (
     <>
-      <section className="relative w-full h-[500px] lg:h-[650px] flex items-center">
+      <section className="relative w-full h-125 lg:h-162.5lex items-center">
         <div className="absolute inset-0 w-full h-full z-0">
           <Image
             src="/images/causes-5.jpg"

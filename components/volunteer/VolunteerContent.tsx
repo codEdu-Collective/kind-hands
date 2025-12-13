@@ -26,7 +26,7 @@ const VolunteerContent = () => {
             </button>
           </div>
 
-          <div className="w-full md:w-1/2 relative h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-lg">
+          <div className="w-full md:w-1/2 relative h-75 md:h-100 rounded-lg overflow-hidden shadow-lg">
             <Image
               src="/images/volunteer/help-together.jpg"
               alt="Helping together"
@@ -39,7 +39,7 @@ const VolunteerContent = () => {
 
         {/* --- left picture right text --- */}
         <div className="flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16">
-          <div className="w-full md:w-1/2 relative h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-lg">
+          <div className="w-full md:w-1/2 relative h-75 md:h-100 rounded-lg overflow-hidden shadow-lg">
             <Image
               src="/images/volunteer/more-people-impact.jpg"
               alt="More people more impact"

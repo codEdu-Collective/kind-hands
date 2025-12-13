@@ -48,7 +48,7 @@ const Home = async ({ params }: Props) => {
                 <span className="font-medium">Back to Causes Demos</span>
               </Link>
 
-              <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-sm mb-8">
+              <div className="relative h-100 w-full rounded-2xl overflow-hidden shadow-sm mb-8">
                 <Image
                   src={cause.imageUrl}
                   alt={cause.title}

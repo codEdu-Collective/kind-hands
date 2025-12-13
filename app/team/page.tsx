@@ -13,7 +13,7 @@ const teamMembers = [
 const Team = () => {
   return (
     <div className="w-full">
-      <section className="relative w-full h-[500px] flex flex-col justify-center items-start px-8 md:px-16 text-white overflow-hidden">
+      <section className="relative w-full h-125 flex flex-col justify-center items-start px-8 md:px-16 text-white overflow-hidden">
         {/* 1. layer  */}
         <Image
           src="/teams/Banner.jpg"
