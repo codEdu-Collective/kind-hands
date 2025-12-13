@@ -8,6 +8,14 @@ export const getOnePost = async (id: string) => {
   cacheTag(`post-${id}`);
   const posts = await prisma.post.findUnique({
     where: { id },
+    include: {
+      author: {
+        select: {
+          id: true,
+          name: true,
+        },
+      },
+    },
   });
   return posts;
 };
@@ -23,9 +31,6 @@ export const getAllPostsID = async () => {
   });
   return posts;
 };
-import { cacheLife, cacheTag } from "next/cache";
-
-import prisma from "@/lib/prisma";
 
 export const getManyPosts = async (takeNumber?: number) => {
   "use cache";

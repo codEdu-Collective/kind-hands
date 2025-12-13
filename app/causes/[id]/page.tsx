@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { CauseParams } from "@/types/types";
 import { getAllCausesID, getOneCause } from "@/utils/get/cause";
 
 export async function generateStaticParams() {
@@ -12,11 +13,7 @@ export async function generateStaticParams() {
   }));
 }
 
-type Props = {
-  params: { id: string };
-};
-
-const Home = async ({ params }: Props) => {
+const Home = async ({ params }: CauseParams) => {
   const { id } = await params;
   const cause = await getOneCause(Number(id));
 
