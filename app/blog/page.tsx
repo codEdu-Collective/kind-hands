@@ -1,31 +1,13 @@
-import { Suspense } from "react";
-import { connection } from "next/server";
-
 import BlogCard from "@/components/blog/BlogCard";
 import BlogHero from "@/components/blog/BlogHero";
-import prisma from "@/lib/prisma";
-import { Post } from "@/prisma/generated/prisma/client";
+import { getManyPosts } from "@/utils/get/post";
 
-async function BlogContent() {
-  await connection();
-
-  let posts: Post[] = [];
-
-  try {
-    posts = await prisma.post.findMany({
-      orderBy: {
-        publishedAt: "desc",
-      },
-    });
-  } catch (error) {
-    console.error("Error pulling posts:", error);
-  }
-
+export default async function BlogPage() {
+  const posts = await getManyPosts(6);
   const featuredPost = posts.find((post) => post.isFeatured) || posts[0];
   const otherPosts = posts.filter((post) => post.id !== featuredPost?.id);
-
   return (
-    <>
+    <div className="bg-[#F9F9F9] min-h-screen pb-20 font-sans">
       {/* hero*/}
       {featuredPost && <BlogHero post={featuredPost} />}
 
@@ -37,16 +19,6 @@ async function BlogContent() {
           ))}
         </div>
       </section>
-    </>
-  );
-}
-
-export default function BlogPage() {
-  return (
-    <div className="bg-[#F9F9F9] min-h-screen pb-20 font-sans">
-      <Suspense fallback={<div className="text-center pt-20">Loading...</div>}>
-        <BlogContent />
-      </Suspense>
     </div>
   );
 }

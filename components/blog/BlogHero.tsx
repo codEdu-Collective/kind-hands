@@ -1,14 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 
-import { Post } from "@/prisma/generated/prisma/client";
-
-interface BlogHeroProps {
-  post: Post;
-}
+import { BlogHeroProps } from "@/types/types";
 
 export default function BlogHero({ post }: BlogHeroProps) {
   return (
-    <section className="relative w-full h-[500px] lg:h-[650px] flex items-center">
+    <section className="relative w-full h-125 lg:h-162.5 flex items-center">
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
           src={post.imageUrl}
@@ -30,7 +27,7 @@ export default function BlogHero({ post }: BlogHeroProps) {
               })}
             </span>
             <span className="mx-2 text-color-dark font-work ">|</span>
-            <span className="text-red-500 font-work ">{post.author}</span>
+            <span className="text-red-500 font-work ">{post.author.name}</span>
           </div>
 
           <h1 className="text-3xl font-shippori font-extrabold text-color-foreground md:text-2xl mb-6 leading-tight">
@@ -41,9 +38,11 @@ export default function BlogHero({ post }: BlogHeroProps) {
             {post.excerpt}
           </p>
 
-          <button className="px-8 py-3 border border-gray-900 text-gray-900 text-xs font-bold uppercase tracking-widest hover:bg-gray-900 hover:text-white transition-all duration-300 rounded-full cursor-pointer">
-            READ MORE
-          </button>
+          <Link href={`/blog/${post.id}`}>
+            <button className="px-8 py-3 border border-gray-900 text-gray-900 text-xs font-bold uppercase tracking-widest hover:bg-gray-900 hover:text-white transition-all duration-300 rounded-full cursor-pointer">
+              READ MORE
+            </button>
+          </Link>
         </div>
       </div>
     </section>

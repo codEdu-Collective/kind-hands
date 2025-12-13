@@ -117,6 +117,85 @@ const userData: Prisma.UserCreateInput[] = [
         },
       ],
     },
+    posts: {
+      create: [
+        {
+          title: "Why Giving Is Important | Five Reasons to Donate",
+          excerpt:
+            "There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+          content: "Giving to charity is one of the most powerful ways to make a difference...",
+          imageUrl: "/blog/blog-hero.jpg",
+          isFeatured: true,
+          publishedAt: new Date("2022-03-16"),
+        },
+        {
+          title: "Fighting Hunger: Our Annual Food Drive Success",
+          excerpt:
+            "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.",
+          content:
+            "No one should go to bed hungry. Thanks to our volunteers, we distributed over...",
+          imageUrl: "/blog/blog-volunteer-3.jpg",
+          isFeatured: false,
+          publishedAt: new Date("2022-10-05"),
+        },
+      ],
+    },
+  },
+  {
+    email: "minciya@example.com",
+    password: "hashed_password_here",
+    name: "Minciya",
+    posts: {
+      create: [
+        {
+          title: "We've reached 1 million in donations and counting",
+          excerpt:
+            "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+          content: "Thanks to our generous donors, we have reached a milestone...",
+          imageUrl: "/blog/blog-volunteer-1-0.jpg",
+          isFeatured: false,
+          publishedAt: new Date("2022-08-18"),
+        },
+        {
+          title: "Why were going to alaska and why...",
+          excerpt:
+            "There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+          content: "Our team is heading to Alaska to support the local communities...",
+          imageUrl: "/blog/blog-volunteer-1.jpg",
+          isFeatured: false,
+          publishedAt: new Date("2022-08-18"),
+        },
+        {
+          title: "Clean Water Initiative: A Life-Changing Journey",
+          excerpt:
+            "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested in the sections.",
+          content:
+            "Access to clean water changes everything. Health, education, and growth start with water...",
+          imageUrl: "/blog/blog-volunteer-4.jpg",
+          isFeatured: false,
+          publishedAt: new Date("2022-11-20"),
+        },
+      ],
+    },
+  },
+  {
+    email: "jonathan@example.com",
+    password: "hashed_password_here",
+    name: "Jonathan",
+    posts: {
+      create: [
+        {
+          title: "Education for All: Building Schools in Rural Areas",
+          excerpt:
+            "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+          content:
+            "Education is the foundation of a better future. We are dedicated to building schools...",
+          imageUrl: "/blog/blog-volunteer-2.jpg",
+          isFeatured: false,
+          publishedAt: new Date("2022-09-12"),
+        },
+      ],
+    },
   },
 ];
 
@@ -273,71 +352,6 @@ const causeData: Prisma.CauseCreateInput[] = [
   },
 ];
 
-const postData: Prisma.PostCreateInput[] = [
-  {
-    title: "Why Giving Is Important | Five Reasons to Donate",
-    excerpt:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
-    content: "Giving to charity is one of the most powerful ways to make a difference...",
-    author: "NATTASHA",
-    imageUrl: "/blog/blog-hero.jpg",
-    isFeatured: true,
-    publishedAt: new Date("2022-03-16"),
-  },
-  {
-    title: "We've reached 1 million in donations and counting",
-    excerpt:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
-    content: "Thanks to our generous donors, we have reached a milestone...",
-    author: "MINCIYA",
-    imageUrl: "/blog/blog-volunteer-1-0.jpg",
-    isFeatured: false,
-    publishedAt: new Date("2022-08-18"),
-  },
-  {
-    title: "Why were going to alaska and why...",
-    excerpt:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
-    content: "Our team is heading to Alaska to support the local communities...",
-    author: "MINCIYA",
-    imageUrl: "/blog/blog-volunteer-1.jpg",
-    isFeatured: false,
-    publishedAt: new Date("2022-08-18"),
-  },
-  {
-    title: "Education for All: Building Schools in Rural Areas",
-    excerpt:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    content:
-      "Education is the foundation of a better future. We are dedicated to building schools...",
-    author: "JONATHAN",
-    imageUrl: "/blog/blog-volunteer-2.jpg",
-    isFeatured: false,
-    publishedAt: new Date("2022-09-12"),
-  },
-  {
-    title: "Fighting Hunger: Our Annual Food Drive Success",
-    excerpt:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.",
-    content: "No one should go to bed hungry. Thanks to our volunteers, we distributed over...",
-    author: "NATTASHA",
-    imageUrl: "/blog/blog-volunteer-3.jpg",
-    isFeatured: false,
-    publishedAt: new Date("2022-10-05"),
-  },
-  {
-    title: "Clean Water Initiative: A Life-Changing Journey",
-    excerpt:
-      "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested in the sections.",
-    content:
-      "Access to clean water changes everything. Health, education, and growth start with water...",
-    author: "MINCIYA",
-    imageUrl: "/blog/blog-volunteer-4.jpg",
-    isFeatured: false,
-    publishedAt: new Date("2022-11-20"),
-  },
-];
-
 export async function main() {
   await prisma.event.deleteMany();
   await prisma.cause.deleteMany();
@@ -355,12 +369,6 @@ export async function main() {
   for (const cause of causeData) {
     await prisma.cause.create({
       data: cause,
-    });
-  }
-
-  for (const post of postData) {
-    await prisma.post.create({
-      data: post,
     });
   }
 }
