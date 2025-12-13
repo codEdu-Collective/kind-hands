@@ -11,7 +11,7 @@ const CausesCards = async () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {causes.map(({ id, imageUrl, title, percentage, raised, goal }) => (
             <div key={id} className="flex flex-col bg-white shadow-sm group">
-              <div className="relative h-[300px] w-full overflow-hidden">
+              <div className="relative h-75 w-full overflow-hidden">
                 <Link href={`/causes/${id}`}>
                   <Image
                     src={imageUrl}
@@ -20,7 +20,7 @@ const CausesCards = async () => {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </Link>
-                <div className="absolute top-6 left-6 bg-white px-3 py-2 min-w-[50px] text-center">
+                <div className="absolute top-6 left-6 bg-white px-3 py-2 min-w-12.5 text-center">
                   <span className="block text-rose-500 font-bold text-sm">{percentage}%</span>
                 </div>
               </div>

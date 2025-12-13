@@ -36,7 +36,7 @@ const About = () => {
                 height={502}
                 className="object-cover w-full"
               />
-              <div className="bg-dark md:mt-6 p-3 md:p-4 w-full md:w-auto md:max-w-112.5 flex items-start gap-2 md:gap-3 relative md:absolute md:bottom-[-30px] md:left-4 lg:left-8 xl:left-12">
+              <div className="bg-dark md:mt-6 p-3 md:p-4 w-full md:w-auto md:max-w-112.5 flex items-start gap-2 md:gap-3 relative md:absolute md:-bottom-7.5 md:left-4 lg:left-8 xl:left-12">
                 <div className="shrink-0">
                   <FaQuoteLeft size={40} color="white" aria-label="Quote icon" />
                 </div>
@@ -113,7 +113,7 @@ const About = () => {
                       color={"var(--color-primary)"}
                       size={24}
                       aria-label="check icon"
-                      className="border border-primary overflow-hidden rounded-full p-1.5 shrink-0 md:size-[27px]"
+                      className="border border-primary overflow-hidden rounded-full p-1.5 shrink-0 md:size-6.75"
                     />
                     <span className="font-work text-base md:text-xl text-neutral font-medium">
                       {item}
@@ -151,7 +151,7 @@ const About = () => {
                   height={502}
                   className="object-cover w-full"
                 />
-                <div className="absolute bottom-[-10px] md:bottom-[-20px] left-4 md:left-6 bg-accent p-4 md:p-10">
+                <div className="absolute -bottom-2.5 md:-bottom-5 left-4 md:left-6 bg-accent p-4 md:p-10">
                   <p className="font-shippori font-extrabold text-3xl md:text-6xl">20000+</p>
                   <p className="font-work text-base md:text-xl">Thousand People Helped</p>
                 </div>
@@ -187,22 +187,22 @@ const About = () => {
                     <FaInstagram
                       size={18}
                       aria-label="Instagram icon"
-                      className="w-4 h-4 md:w-[18px] md:h-[18px]"
+                      className="w-4 h-4 md:w-4.5 md:h-4.5"
                     />
                     <FaFacebook
                       size={18}
                       aria-label="Facebook icon"
-                      className="w-4 h-4 md:w-[18px] md:h-[18px]"
+                      className="w-4 h-4 md:w-4.5 md:h-4.5"
                     />
                     <FaSquareXTwitter
                       size={18}
                       aria-label="Twitter icon"
-                      className="w-4 h-4 md:w-[18px] md:h-[18px]"
+                      className="w-4 h-4 md:w-4.5 md:h-4.5"
                     />
                     <FaPinterest
                       size={18}
                       aria-label="Pinterest icon"
-                      className="w-4 h-4 md:w-[18px] md:h-[18px]"
+                      className="w-4 h-4 md:w-4.5 md:h-4.5"
                     />
                   </div>
                 </div>
