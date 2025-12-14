@@ -11,14 +11,14 @@ const Project = () => {
           </h2>
         </div>
       </header>
-      <section className="container mx-auto items-center w-full max-w-200 px-4 md:px-0 my-8 md:my-37.5">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
+      <section className="container max-w-250 mx-auto items-center px-4 md:px-0 my-8 md:my-37.5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-5 justify-items-center">
           {[...Array(9)].map((_, index) => {
             if (index === 5) {
               return (
                 <div
                   key={index}
-                  className="relative bg-primary flex flex-col items-center justify-center w-50 h-57.5 min-h-57.5"
+                  className="relative bg-primary flex flex-col items-center justify-center w-[240px] h-[275px] min-h-[275px]"
                 >
                   <p className="text-white text-center text-lg md:text-xl font-semibold px-3 leading-tight">
                     More than One Life Changed
@@ -28,12 +28,12 @@ const Project = () => {
             }
 
             return (
-              <div key={index} className="relative w-50 h-57.5 min-h-57.5">
+              <div key={index} className="relative w-[240px] h-[275px] min-h-[275px]">
                 <Image
                   src={`/projects/project-${index + 1}.png`}
                   alt="project"
-                  width={200}
-                  height={230}
+                  width={240}
+                  height={275}
                   className="object-cover w-full h-full"
                 />
               </div>
