@@ -21,7 +21,7 @@ const StyleGuidePage = () => {
         />
         <div className="z-10 text-white ml-4 md:ml-90 max-w-full md:max-w-180 px-4 md:px-0">
           <h1 className="font-sue-ellen text-2xl md:text-4xl lg:text-5xl mb-1.5">
-            Humanity Assets
+            Humanity Assets...
           </h1>
           <h2 className="font-shippori font-extrabold text-3xl md:text-5xl lg:text-[5.625rem] leading-tight ">
             Style Guide
