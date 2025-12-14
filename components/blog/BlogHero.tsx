@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { BlogHeroProps } from "@/types/types";
+import { PostProps } from "@/types/types";
 
-export default function BlogHero({ post }: BlogHeroProps) {
+export default function BlogHero({ post }: PostProps) {
   return (
     <section className="relative w-full h-125 lg:h-162.5 flex items-center">
       <div className="absolute inset-0 w-full h-full z-0">

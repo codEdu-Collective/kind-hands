@@ -115,6 +115,34 @@
   --color-neutral-900: #404040;
   --color-neutral-950: #333333;
 
+  /* Cream - Krem (#F7F5F2) */
+  --color-cream: #f7f5f2;
+  --color-cream-50: #fefdfb;
+  --color-cream-100: #fcfaf6;
+  --color-cream-200: #f9f5f0;
+  --color-cream-300: #f7f5f2;
+  --color-cream-400: #f5f3f0;
+  --color-cream-500: #f7f5f2;
+  --color-cream-600: #e8e4df;
+  --color-cream-700: #d9cfcc;
+  --color-cream-800: #cac0b9;
+  --color-cream-900: #bbb0a6;
+  --color-cream-950: #ac9f93;
+
+  /* Navy - Koyu Lacivert (#1A2B3C) */
+  --color-navy: #1a2b3c;
+  --color-navy-50: #e8ecf0;
+  --color-navy-100: #d1d8e0;
+  --color-navy-200: #a3b1c0;
+  --color-navy-300: #758aa0;
+  --color-navy-400: #476380;
+  --color-navy-500: #1a2b3c;
+  --color-navy-600: #182636;
+  --color-navy-700: #162130;
+  --color-navy-800: #141c2a;
+  --color-navy-900: #121724;
+  --color-navy-950: #0f121e;
+
   /* White - Beyaz (#FFFFFF) */
   --color-white: #ffffff;
 
@@ -123,6 +151,7 @@
   --color-foreground: #2e4049;
   --color-muted: #f2f2f2;
   --color-muted-foreground: #727272;
+  --color-muted-background: #f6f6f6;
 
   /* Typography */
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;

@@ -1,5 +1,4 @@
-import BlogCard from "@/components/blog/BlogCard";
-import BlogHero from "@/components/blog/BlogHero";
+import { BlogCard, BlogHero } from "@/components/blog";
 import { getManyPosts } from "@/utils/get/post";
 
 export default async function BlogPage() {
