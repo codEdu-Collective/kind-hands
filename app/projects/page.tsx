@@ -3,16 +3,9 @@ const Project = () => {
   return (
     <main className="w-full">
       <header className="relative h-96 md:h-205.5 flex items-center">
-        <Image
-          src="/projects/project-banner.png"
-          alt="hero"
-          fill
-          className="object-cover"
-        />
+        <Image src="/projects/project-banner.png" alt="hero" fill className="object-cover" />
         <div className="relative z-2 text-white ml-4 md:ml-90 max-w-full md:max-w-180 px-4 md:px-0">
-          <h1 className="font-sue-ellen text-2xl md:text-5xl mb-1.5">
-            Donation...
-          </h1>
+          <h1 className="font-sue-ellen text-2xl md:text-5xl mb-1.5">Donation...</h1>
           <h2 className="font-shippori font-extrabold text-3xl md:text-[5.625rem] leading-tight ">
             Meet Charity Projects
           </h2>
