@@ -1,4 +1,13 @@
 import Image from "next/image";
+import {
+  FaCapsules,
+  FaHandHolding,
+  FaBaby,
+  FaBowlFood,
+  FaGlobe,
+  FaGraduationCap,
+  FaQuoteLeft,
+} from "react-icons/fa6";
 
 const StyleGuidePage = () => {
   return (
@@ -21,14 +30,16 @@ const StyleGuidePage = () => {
       </header>
       <section className="container mx-auto px-4 md:px-0 my-8 md:my-37.5 flex flex-col gap-8 md:gap-16 w-full max-w-7xl">
         <div>
-          <h1 className="font-shippori font-extrabold text-2xl md:text-4xl text-primary mb-6">
+          <h1 className="font-shippori font-extrabold text-2xl md:text-4xl text-primary mb-6 w-[124px] h-[42px]">
             Color
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="flex flex-row items-center gap-4">
               <div className="w-24 h-24 bg-primary rounded-lg shadow-sm shrink-0"></div>
               <div className="flex flex-col">
-                <p className="text-sm font-semibold text-dark">Primary - 01</p>
+                <p className="text-sm font-semibold text-color-dark-500">
+                  Primary - 01
+                </p>
                 <p className="text-xs text-neutral">#FF6D6D</p>
               </div>
             </div>
@@ -36,7 +47,9 @@ const StyleGuidePage = () => {
             <div className="flex flex-row items-center gap-4">
               <div className="w-24 h-24 bg-accent rounded-lg shadow-sm shrink-0"></div>
               <div className="flex flex-col">
-                <p className="text-sm font-semibold text-dark">Primary - 01</p>
+                <p className="text-sm font-semibold text-color-dark-500">
+                  Primary - 01
+                </p>
                 <p className="text-xs text-neutral">#77D7D3</p>
               </div>
             </div>
@@ -44,7 +57,9 @@ const StyleGuidePage = () => {
             <div className="flex flex-row items-center gap-4">
               <div className="w-24 h-24 bg-dark rounded-lg shadow-sm shrink-0"></div>
               <div className="flex flex-col">
-                <p className="text-sm font-semibold text-dark">Primary - 01</p>
+                <p className="text-sm font-semibold text-color-dark-500">
+                  Primary - 01
+                </p>
                 <p className="text-xs text-neutral">#2E4049</p>
               </div>
             </div>
@@ -52,7 +67,9 @@ const StyleGuidePage = () => {
             <div className="flex flex-row items-center gap-4">
               <div className="w-24 h-24 bg-beige rounded-lg shadow-sm border border-gray-200 shrink-0"></div>
               <div className="flex flex-col">
-                <p className="text-sm font-semibold text-dark">Primary - 01</p>
+                <p className="text-sm font-semibold text-color-dark-500">
+                  Primary - 01
+                </p>
                 <p className="text-xs text-neutral">#F1EEEC</p>
               </div>
             </div>
@@ -60,7 +77,9 @@ const StyleGuidePage = () => {
             <div className="flex flex-row items-center gap-4">
               <div className="w-24 h-24 bg-light rounded-lg shadow-sm border border-gray-200 shrink-0"></div>
               <div className="flex flex-col">
-                <p className="text-sm font-semibold text-dark">Primary - 01</p>
+                <p className="text-sm font-semibold text-color-dark-500">
+                  Primary - 01
+                </p>
                 <p className="text-xs text-neutral">#ECF1F0</p>
               </div>
             </div>
@@ -68,7 +87,9 @@ const StyleGuidePage = () => {
             <div className="flex flex-row items-center gap-4">
               <div className="w-24 h-24 bg-gray rounded-lg shadow-sm border border-gray-200 shrink-0"></div>
               <div className="flex flex-col">
-                <p className="text-sm font-semibold text-dark">Primary - 01</p>
+                <p className="text-sm font-semibold text-color-dark-500">
+                  Primary - 01
+                </p>
                 <p className="text-xs text-neutral">#F2F2F2</p>
               </div>
             </div>
@@ -76,7 +97,9 @@ const StyleGuidePage = () => {
             <div className="flex flex-row items-center gap-4">
               <div className="w-24 h-24 bg-neutral rounded-lg shadow-sm shrink-0"></div>
               <div className="flex flex-col">
-                <p className="text-sm font-semibold text-dark">Primary - 01</p>
+                <p className="text-sm font-semibold text-color-dark-500">
+                  Primary - 01
+                </p>
                 <p className="text-xs text-neutral">#727272</p>
               </div>
             </div>
@@ -84,7 +107,9 @@ const StyleGuidePage = () => {
             <div className="flex flex-row items-center gap-4">
               <div className="w-24 h-24 bg-white rounded-lg shadow-sm border border-gray-200 shrink-0"></div>
               <div className="flex flex-col">
-                <p className="text-sm font-semibold text-dark">Primary - 01</p>
+                <p className="text-sm font-semibold text-color-dark-500">
+                  Primary - 01
+                </p>
                 <p className="text-xs text-neutral">#FFFFFF</p>
               </div>
             </div>
@@ -92,54 +117,47 @@ const StyleGuidePage = () => {
         </div>
 
         <div>
-          <h1 className="font-shippori font-extrabold text-2xl md:text-4xl text-primary mb-6">
+          <h1 className="font-shippori font-extrabold text-2xl md:text-4xl text-primary mb-6 w-[124px] h-[42px]">
             Text
           </h1>
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-15">
             <div>
-
-              <h1 className="font-shippori font-extrabold text-5xl md:text-7xl text-dark">
+              <h1 className="font-shippori font-extrabold text-5xl md:text-7xl text-color-dark-500">
                 Heading Banner
               </h1>
             </div>
 
             <div>
-
               <h1 className="font-shippori font-extrabold text-4xl md:text-5xl text-dark">
                 Heading H1
               </h1>
             </div>
 
             <div>
-
               <h2 className="font-shippori font-bold text-3xl md:text-4xl text-dark">
                 Heading H2
               </h2>
             </div>
 
             <div>
-
               <h3 className="font-shippori font-bold text-2xl md:text-3xl text-dark">
                 Heading H3
               </h3>
             </div>
 
             <div>
-
               <h4 className="font-shippori font-bold text-xl md:text-2xl text-dark">
                 Heading H4
               </h4>
             </div>
 
             <div>
-     
               <h5 className="font-shippori font-bold text-lg md:text-xl text-dark">
                 Heading H5
               </h5>
             </div>
 
             <div>
-
               <h6 className="font-shippori font-bold text-base md:text-lg text-dark">
                 Heading H6
               </h6>
@@ -148,7 +166,7 @@ const StyleGuidePage = () => {
         </div>
 
         <div>
-          <h1 className="font-shippori font-extrabold text-2xl md:text-4xl text-primary mb-6">
+          <h1 className="font-shippori font-extrabold text-2xl md:text-4xl text-primary mb-6 w-[124px] h-[42px]">
             Paragraph
           </h1>
           <div className="flex flex-col gap-4">
@@ -168,7 +186,7 @@ const StyleGuidePage = () => {
         </div>
 
         <div>
-          <h1 className="font-shippori font-extrabold text-2xl md:text-4xl text-dark mb-6">
+          <h1 className="font-shippori font-extrabold text-2xl md:text-4xl text-dark mb-6 w-[124px] h-[42px]">
             Lists
           </h1>
           <div className="flex flex-col gap-8">
@@ -194,70 +212,91 @@ const StyleGuidePage = () => {
         </div>
 
         <div>
-          <h1 className="font-shippori font-extrabold text-2xl md:text-4xl text-dark mb-6">
+          <h1 className="font-shippori font-extrabold text-2xl md:text-4xl text-dark mb-6 w-[124px] h-[42px]">
             Quotes
           </h1>
           <div className="bg-primary rounded-lg p-8 md:p-12 flex flex-col items-center justify-center">
             <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-6">
-              <span className="text-black text-4xl md:text-5xl font-bold">
-                "
-              </span>
+              <FaQuoteLeft className="h-10 w-10" />
             </div>
-            <p className="font-work text-lg md:text-xl text-white max-w-3xl text-left leading-relaxed">
+            <p className="font-work italic text-lg md:text-xl text-white max-w-6xl text-center leading-10">
               Veniam quae Nostrum facere repellendus minus quod aut aliquam
-              neque reiciendis. Qui beatae vel magnam ipsum repudiandae.
+              neque reiciendis. Qui beatae vel magnam ipsum repudiandae.Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris.
             </p>
           </div>
         </div>
 
         <div>
-          <h1 className="font-shippori font-extrabold text-2xl md:text-4xl text-dark mb-6">
+          <h1 className="font-shippori font-extrabold text-2xl md:text-4xl text-primary mb-6 w-[124px] h-[42px]">
             Button
           </h1>
           <div className="flex flex-col gap-6">
             <div className="flex flex-wrap items-center gap-4">
-              <button className="px-4 py-2 bg-primary text-white rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity">
+              <button className="p-4 bg-primary text-white rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity">
                 SMALL
               </button>
-              <button className="px-8 py-3 bg-primary text-white rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity">
+              <button className="p-4 bg-primary text-white rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity">
                 BUTTON TEXT
               </button>
-              <button className="px-8 py-3 bg-primary text-white rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity">
+              <button className="p-4 bg-primary text-white rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity">
                 BUTTON TEXT
               </button>
             </div>
 
             <div className="flex flex-wrap items-center gap-4">
-              <button className="px-4 py-2 bg-dark text-white rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity">
+              <button className="p-4 bg-dark-500 text-white rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity">
                 SMALL
               </button>
-              <button className="px-8 py-3 bg-dark text-white rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity">
+              <button className="p-4 bg-dark-500 text-white rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity">
                 BUTTON TEXT
               </button>
-              <button className="px-8 py-3 bg-dark text-white rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity">
+              <button className="p-4 bg-dark-500 text-white rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity">
                 BUTTON TEXT
               </button>
             </div>
 
             <div className="flex flex-wrap items-center gap-4">
-              <button className="px-4 py-2 bg-white text-dark border-2 border-neutral rounded-full text-sm font-bold uppercase tracking-wider hover:bg-gray-50 transition-colors">
+              <button className="p-4 bg-white text-dark-500 border-2 border-dark-500 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-gray-50 transition-colors">
                 SMALL
               </button>
-              <button className="px-8 py-3 bg-white text-dark border-2 border-neutral rounded-full text-sm font-bold uppercase tracking-wider hover:bg-gray-50 transition-colors">
+              <button className="p-4 bg-white text-dark-500 border-2 border-dark-500 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-gray-50 transition-colors">
                 BUTTON TEXT
               </button>
-              <button className="px-8 py-3 bg-white text-dark border-2 border-neutral rounded-full text-sm font-bold uppercase tracking-wider hover:bg-gray-50 transition-colors">
+              <button className="p-4 bg-white text-dark    border-2 border-dark-500 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-gray-50 transition-colors">
                 BUTTON TEXT
               </button>
             </div>
           </div>
         </div>
       </section>
-      <div className="bg-neutral-100 w-full h-auto md:h-91 py-8 md:py-16">
-        <div className="container mx-auto px-4 md:px-0">
-          <h1 className="font-shippori font-extrabold text-2xl md:text-4xl text-primary">
+      <div className="bg-gray w-full h-auto md:h-91 py-8 md:py-16">
+        <div className="container mx-auto px-4 md:px-0 max-w-7xl">
+          <h1 className="font-shippori font-extrabold text-2xl md:text-4xl text-color-dark-500 mb-6 w-[124px] h-[42px]">
             Icon
           </h1>
+          <div className="flex flex-wrap items-center gap-6 md:gap-8">
+            <div className="w-15 h-15 md:w-20 md:h-20 flex items-center justify-center text-primary">
+              <FaCapsules className="w-full h-full" />
+            </div>
+            <div className="w-15 h-15 md:w-15 md:h-15 flex items-center justify-center text-primary">
+              <FaHandHolding className="w-full h-full" />
+            </div>
+            <div className="w-15 h-15 md:w-15 md:h-15 flex items-center justify-center text-primary">
+              <FaBaby className="w-full h-full" />
+            </div>
+            <div className="w-15 h-15 md:w-15 md:h-15 flex items-center justify-center text-primary">
+              <FaBowlFood className="w-full h-full" />
+            </div>
+            <div className="w-15 h-15 md:w-15 md:h-15 flex items-center justify-center text-primary">
+              <FaGlobe className="w-full h-full" />
+            </div>
+            <div className="w-15 h-15 md:w-15 md:h-15 flex items-center justify-center text-primary">
+              <FaGraduationCap className="w-full h-full" />
+            </div>
+          </div>
         </div>
       </div>
     </main>
