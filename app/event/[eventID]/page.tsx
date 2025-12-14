@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
+import { EventParams } from "@/types/types";
 import { getAllEventsID, getOneEvent } from "@/utils/get/event";
 
 export async function generateStaticParams() {
@@ -11,11 +12,7 @@ export async function generateStaticParams() {
   }));
 }
 
-type Props = {
-  params: { eventID: string };
-};
-
-const Home = async ({ params }: Props) => {
+const Home = async ({ params }: EventParams) => {
   const { eventID } = await params;
   const event = await getOneEvent(Number(eventID));
   if (event)

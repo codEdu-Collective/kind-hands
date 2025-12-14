@@ -6,7 +6,7 @@ import { getManyCauses } from "@/utils/get/cause";
 const CausesCards = async () => {
   const causes = await getManyCauses(10);
   return (
-    <section className="w-full py-16 bg-[#F7F5F2]">
+    <section className="w-full py-16 bg-cream">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {causes.map(({ id, imageUrl, title, percentage, raised, goal }) => (
@@ -39,7 +39,7 @@ const CausesCards = async () => {
                     </span>
                   </div>
                   <Link href={`/causes/${id}`} className="w-full sm:w-auto">
-                    <button className="bg-[#1A2B3C] hover:bg-slate-800 text-white text-xs font-bold py-3 px-8 rounded-full transition-colors w-full">
+                    <button className="bg-navy hover:bg-slate-800 text-white text-xs font-bold py-3 px-8 rounded-full transition-colors w-full">
                       DONATE
                     </button>
                   </Link>

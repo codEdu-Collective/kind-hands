@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { BlogHeroProps } from "@/types/types";
+import { PostProps } from "@/types/types";
 
-export default function BlogCard({ post }: BlogHeroProps) {
+export default function BlogCard({ post }: PostProps) {
   return (
     <div className="bg-white flex flex-col md:flex-row shadow-sm hover:shadow-lg transition-shadow overflow-hidden group min-h-70">
       {/* left-picture */}

@@ -8,17 +8,7 @@ export const getManyEvents = async (takeNumber?: number) => {
   cacheTag("events-take-" + (takeNumber ?? 6).toString());
   const events = await prisma.event.findMany({
     take: takeNumber ?? 6,
-    select: {
-      id: true,
-      month: true,
-      day: true,
-      title: true,
-      description: true,
-      imageUrl: true,
-      startTime: true,
-      endTime: true,
-      venue: true,
-      venueAddress: true,
+    include: {
       organizer: {
         select: {
           name: true,
