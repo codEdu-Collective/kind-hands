@@ -1,13 +1,13 @@
-import Image from "next/image";
 import {
-  FaCapsules,
-  FaHandHolding,
   FaBaby,
   FaBowlFood,
+  FaCapsules,
   FaGlobe,
   FaGraduationCap,
+  FaHandHolding,
   FaQuoteLeft,
 } from "react-icons/fa6";
+import Image from "next/image";
 
 const StyleGuidePage = () => {
   return (
@@ -19,7 +19,7 @@ const StyleGuidePage = () => {
           fill
           className="object-cover"
         />
-        <div className=" relative z-2 text-white ml-4 md:ml-90 max-w-full md:max-w-180 px-4 md:px-0">
+        <div className="relative z-10 text-white ml-4 md:ml-90 max-w-full md:max-w-180 px-4 md:px-0">
           <h1 className="font-sue-ellen text-2xl md:text-5xl mb-1.5">
             Humanity Assets
           </h1>
@@ -34,82 +34,70 @@ const StyleGuidePage = () => {
             Color
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="flex flex-row items-center gap-4">
-              <div className="w-24 h-24 bg-primary rounded-lg shadow-sm shrink-0"></div>
+            <div className="flex flex-row items-center gap-4 border border-gray-200 p-2 w-88 h-28">
+              <div className="w-22 h-22 bg-primary shadow-sm shrink-0"></div>
               <div className="flex flex-col">
-                <p className="text-sm font-semibold text-color-dark-500">
-                  Primary - 01
-                </p>
+                <p className="text-sm font-semibold text-dark">Primary - 01</p>
                 <p className="text-xs text-neutral">#FF6D6D</p>
               </div>
             </div>
 
-            <div className="flex flex-row items-center gap-4">
-              <div className="w-24 h-24 bg-accent rounded-lg shadow-sm shrink-0"></div>
+            <div className="flex flex-row items-center gap-4 border border-gray-200 p-2 w-88 h-28">
+              <div className="w-22 h-22 bg-accent shadow-sm shrink-0"></div>
               <div className="flex flex-col">
-                <p className="text-sm font-semibold text-color-dark-500">
-                  Primary - 01
+                <p className="text-sm font-semibold text-dark">
+                  Color - Accent
                 </p>
                 <p className="text-xs text-neutral">#77D7D3</p>
               </div>
             </div>
 
-            <div className="flex flex-row items-center gap-4">
-              <div className="w-24 h-24 bg-dark rounded-lg shadow-sm shrink-0"></div>
+            <div className="flex flex-row items-center gap-4 border border-gray-200 p-2 w-88 h-28">
+              <div className="w-22 h-22 bg-dark shadow-sm shrink-0"></div>
               <div className="flex flex-col">
-                <p className="text-sm font-semibold text-color-dark-500">
-                  Primary - 01
-                </p>
+                <p className="text-sm font-semibold text-dark">Color - Dark</p>
                 <p className="text-xs text-neutral">#2E4049</p>
               </div>
             </div>
 
-            <div className="flex flex-row items-center gap-4">
-              <div className="w-24 h-24 bg-beige rounded-lg shadow-sm border border-gray-200 shrink-0"></div>
+            <div className="flex flex-row items-center gap-4 border border-gray-200 p-2 w-88 h-28">
+              <div className="w-22 h-22 bg-beige shadow-sm border border-gray-200 shrink-0"></div>
               <div className="flex flex-col">
-                <p className="text-sm font-semibold text-color-dark-500">
-                  Primary - 01
-                </p>
-                <p className="text-xs text-neutral">#F1EEEC</p>
-              </div>
-            </div>
-
-            <div className="flex flex-row items-center gap-4">
-              <div className="w-24 h-24 bg-light rounded-lg shadow-sm border border-gray-200 shrink-0"></div>
-              <div className="flex flex-col">
-                <p className="text-sm font-semibold text-color-dark-500">
-                  Primary - 01
-                </p>
-                <p className="text-xs text-neutral">#ECF1F0</p>
-              </div>
-            </div>
-
-            <div className="flex flex-row items-center gap-4">
-              <div className="w-24 h-24 bg-gray rounded-lg shadow-sm border border-gray-200 shrink-0"></div>
-              <div className="flex flex-col">
-                <p className="text-sm font-semibold text-color-dark-500">
-                  Primary - 01
-                </p>
-                <p className="text-xs text-neutral">#F2F2F2</p>
-              </div>
-            </div>
-
-            <div className="flex flex-row items-center gap-4">
-              <div className="w-24 h-24 bg-neutral rounded-lg shadow-sm shrink-0"></div>
-              <div className="flex flex-col">
-                <p className="text-sm font-semibold text-color-dark-500">
-                  Primary - 01
+                <p className="text-sm font-semibold text-dark">
+                  Color - Neutral
                 </p>
                 <p className="text-xs text-neutral">#727272</p>
               </div>
             </div>
 
-            <div className="flex flex-row items-center gap-4">
-              <div className="w-24 h-24 bg-white rounded-lg shadow-sm border border-gray-200 shrink-0"></div>
+            <div className="flex flex-row items-center gap-4 border border-gray-200 p-2 w-88 h-28">
+              <div className="w-22 h-22 bg-light shadow-sm border border-gray-200 shrink-0"></div>
               <div className="flex flex-col">
-                <p className="text-sm font-semibold text-color-dark-500">
-                  Primary - 01
-                </p>
+                <p className="text-sm font-semibold text-dark">Color - Light</p>
+                <p className="text-xs text-neutral">#ECF1F0</p>
+              </div>
+            </div>
+
+            <div className="flex flex-row items-center gap-4 border border-gray-200 p-2 w-88 h-28">
+              <div className="w-22 h-22 bg-gray shadow-sm border border-gray-200 shrink-0"></div>
+              <div className="flex flex-col">
+                <p className="text-sm font-semibold text-dark">Color - Beige</p>
+                <p className="text-xs text-neutral">#F1EEEC</p>
+              </div>
+            </div>
+
+            <div className="flex flex-row items-center gap-4 border border-gray-200 p-2 w-88 h-28">
+              <div className="w-22 h-22 bg-neutral shadow-sm shrink-0"></div>
+              <div className="flex flex-col">
+                <p className="text-sm font-semibold text-dark">Color - Navy</p>
+                <p className="text-xs text-neutral">#1A2B3C</p>
+              </div>
+            </div>
+
+            <div className="flex flex-row items-center gap-4 border border-gray-200 p-2 w-88 h-28">
+              <div className="w-22 h-22 bg-white shadow-sm border border-gray-200 shrink-0"></div>
+              <div className="flex flex-col">
+                <p className="text-sm font-semibold text-dark">Color - White</p>
                 <p className="text-xs text-neutral">#FFFFFF</p>
               </div>
             </div>
@@ -120,9 +108,9 @@ const StyleGuidePage = () => {
           <h1 className="font-shippori font-extrabold text-2xl md:text-4xl text-primary mb-6 w-[124px] h-[42px]">
             Text
           </h1>
-          <div className="flex flex-col gap-15">
+          <div className="flex flex-col gap-[70px]">
             <div>
-              <h1 className="font-shippori font-extrabold text-5xl md:text-7xl text-color-dark-500">
+              <h1 className="font-shippori font-extrabold text-5xl md:text-7xl text-dark">
                 Heading Banner
               </h1>
             </div>
@@ -171,12 +159,12 @@ const StyleGuidePage = () => {
           </h1>
           <div className="flex flex-col gap-4">
             <p className="font-work text-lg font-semibold text-dark">Para</p>
-            <p className="font-work text-base text-dark leading-relaxed">
+            <p className="font-work text-base text-neutral leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris.
             </p>
-            <p className="font-work text-base text-dark leading-relaxed">
+            <p className="font-work text-base text-neutral leading-relaxed">
               Duis aute irure dolor in reprehenderit in voluptate velit esse
               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
               cupidatat non proident, sunt in culpa qui officia deserunt mollit
@@ -191,7 +179,7 @@ const StyleGuidePage = () => {
           </h1>
           <div className="flex flex-col gap-8">
             <div className="flex-1">
-              <ol className="list-decimal list-inside space-y-2 font-work text-base text-dark">
+              <ol className="list-decimal list-inside space-y-2 font-work text-base text-neutral">
                 <li>Neque sodales ut etiam</li>
                 <li>Neque sodales ut etiam</li>
                 <li>Neque sodales ut etiam</li>
@@ -200,7 +188,7 @@ const StyleGuidePage = () => {
             </div>
 
             <div className="flex-1">
-              <ul className="list-disc list-inside space-y-2 font-work text-base text-dark">
+              <ul className="list-disc list-inside space-y-2 font-work text-base text-neutral">
                 <li>Efficiently myoscardinate</li>
                 <li>Efficiently myoscardinate</li>
                 <li>Efficiently myoscardinate</li>
@@ -219,12 +207,10 @@ const StyleGuidePage = () => {
             <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-6">
               <FaQuoteLeft className="h-10 w-10" />
             </div>
-            <p className="font-work italic text-lg md:text-xl text-white max-w-6xl text-center leading-10">
+            <p className="font-work italic text-lg md:text-2xl text-white max-w-180 text-center leading-10">
               Veniam quae Nostrum facere repellendus minus quod aut aliquam
               neque reiciendis. Qui beatae vel magnam ipsum repudiandae.Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris.
+              ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
         </div>
@@ -247,25 +233,25 @@ const StyleGuidePage = () => {
             </div>
 
             <div className="flex flex-wrap items-center gap-4">
-              <button className="p-4 bg-dark-500 text-white rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity">
+              <button className="p-4 bg-dark text-white rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity">
                 SMALL
               </button>
-              <button className="p-4 bg-dark-500 text-white rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity">
+              <button className="p-4 bg-dark text-white rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity">
                 BUTTON TEXT
               </button>
-              <button className="p-4 bg-dark-500 text-white rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity">
+              <button className="p-4 bg-dark text-white rounded-full text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity">
                 BUTTON TEXT
               </button>
             </div>
 
             <div className="flex flex-wrap items-center gap-4">
-              <button className="p-4 bg-white text-dark-500 border-2 border-dark-500 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-gray-50 transition-colors">
+              <button className="p-4 bg-white text-dark border-2 border-dark rounded-full text-sm font-bold uppercase tracking-wider hover:bg-gray-50 transition-colors">
                 SMALL
               </button>
-              <button className="p-4 bg-white text-dark-500 border-2 border-dark-500 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-gray-50 transition-colors">
+              <button className="p-4 bg-white text-dark border-2 border-dark rounded-full text-sm font-bold uppercase tracking-wider hover:bg-gray-50 transition-colors">
                 BUTTON TEXT
               </button>
-              <button className="p-4 bg-white text-dark    border-2 border-dark-500 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-gray-50 transition-colors">
+              <button className="p-4 bg-white text-dark border-2 border-dark rounded-full text-sm font-bold uppercase tracking-wider hover:bg-gray-50 transition-colors">
                 BUTTON TEXT
               </button>
             </div>
@@ -274,26 +260,26 @@ const StyleGuidePage = () => {
       </section>
       <div className="bg-gray w-full h-auto md:h-91 py-8 md:py-16">
         <div className="container mx-auto px-4 md:px-0 max-w-7xl">
-          <h1 className="font-shippori font-extrabold text-2xl md:text-4xl text-color-dark-500 mb-6 w-[124px] h-[42px]">
+          <h1 className="font-shippori font-extrabold text-2xl md:text-4xl text-dark mb-6 w-[124px] h-[42px]">
             Icon
           </h1>
           <div className="flex flex-wrap items-center gap-6 md:gap-8">
-            <div className="w-15 h-15 md:w-20 md:h-20 flex items-center justify-center text-primary">
+            <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center text-primary">
               <FaCapsules className="w-full h-full" />
             </div>
-            <div className="w-15 h-15 md:w-15 md:h-15 flex items-center justify-center text-primary">
+            <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center text-primary">
               <FaHandHolding className="w-full h-full" />
             </div>
-            <div className="w-15 h-15 md:w-15 md:h-15 flex items-center justify-center text-primary">
+            <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center text-primary">
               <FaBaby className="w-full h-full" />
             </div>
-            <div className="w-15 h-15 md:w-15 md:h-15 flex items-center justify-center text-primary">
+            <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center text-primary">
               <FaBowlFood className="w-full h-full" />
             </div>
-            <div className="w-15 h-15 md:w-15 md:h-15 flex items-center justify-center text-primary">
+            <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center text-primary">
               <FaGlobe className="w-full h-full" />
             </div>
-            <div className="w-15 h-15 md:w-15 md:h-15 flex items-center justify-center text-primary">
+            <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center text-primary">
               <FaGraduationCap className="w-full h-full" />
             </div>
           </div>
