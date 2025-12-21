@@ -1,25 +1,10 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @theme {
-  /* Figma Design Colors - Kind Hands Charity Website */
-
-  /* Primary - Kırmızı/Pembe (#FF6D6D) */
   --color-primary: #ff6d6d;
-  --color-primary-50: #fff0f0;
-  --color-primary-100: #ffe0e0;
-  --color-primary-200: #ffc0c0;
-  --color-primary-300: #ff9090;
-  --color-primary-400: #ff6d6d;
-  --color-primary-500: #ff6d6d;
-  --color-primary-600: #e55c5c;
-  --color-primary-700: #cc4a4a;
-  --color-primary-800: #b23838;
-  --color-primary-900: #992626;
-  --color-primary-950: #7a1f1f;
-
-  /* Custom Colors from Components */
   --color-slate-ink: #202d33;
   --color-coral-red: #e85353;
   --color-mist-gray: #c5cecc;
@@ -30,130 +15,21 @@
   --color-steel: #384c56;
   --color-cool-slate: #465a64;
   --color-charcoal: #4a4a4a;
-
-  /* Accent - Turkuaz/Aqua (#77D7D3) */
   --color-accent: #77d7d3;
-  --color-accent-50: #e6f7f6;
-  --color-accent-100: #ccefef;
-  --color-accent-200: #99dfdf;
-  --color-accent-300: #77d7d3;
-  --color-accent-400: #77d7d3;
-  --color-accent-500: #77d7d3;
-  --color-accent-600: #6bc1bd;
-  --color-accent-700: #5faba7;
-  --color-accent-800: #539591;
-  --color-accent-900: #477f7b;
-  --color-accent-950: #3b6965;
-
-  /* Dark - Koyu Mavi/Gri (#2E4049) */
   --color-dark: #2e4049;
-  --color-dark-50: #e8ebed;
-  --color-dark-100: #d1d7db;
-  --color-dark-200: #a3afb7;
-  --color-dark-300: #758793;
-  --color-dark-400: #475f6f;
-  --color-dark-500: #2e4049;
-  --color-dark-600: #293a42;
-  --color-dark-700: #24333b;
-  --color-dark-800: #1f2d34;
-  --color-dark-900: #1a262d;
-  --color-dark-950: #151f26;
-
-  /* Beige - Açık Bej/Krem (#F1EEEC) */
   --color-beige: #f1eeec;
-  --color-beige-50: #f1eeec;
-  --color-beige-100: #f1eeec;
-  --color-beige-200: #e8e3e0;
-  --color-beige-300: #dfd8d4;
-  --color-beige-400: #d6cdc8;
-  --color-beige-500: #f1eeec;
-  --color-beige-600: #d4c9c3;
-  --color-beige-700: #c7b8b0;
-  --color-beige-800: #baa79d;
-  --color-beige-900: #ad968a;
-  --color-beige-950: #a08577;
-
-  /* Light - Açık Yeşilimsi (#ECF1F0) */
   --color-light: #ecf1f0;
-  --color-light-50: #ecf1f0;
-  --color-light-100: #ecf1f0;
-  --color-light-200: #d9e3e1;
-  --color-light-300: #c6d5d2;
-  --color-light-400: #b3c7c3;
-  --color-light-500: #ecf1f0;
-  --color-light-600: #a0b9b4;
-  --color-light-700: #8daba5;
-  --color-light-800: #7a9d96;
-  --color-light-900: #678f87;
-  --color-light-950: #548178;
-
-  /* Gray - Açık Gri (#F2F2F2) */
   --color-gray: #f2f2f2;
-  --color-gray-50: #f2f2f2;
-  --color-gray-100: #f2f2f2;
-  --color-gray-200: #e5e5e5;
-  --color-gray-300: #d8d8d8;
-  --color-gray-400: #cbcbcb;
-  --color-gray-500: #f2f2f2;
-  --color-gray-600: #bebebe;
-  --color-gray-700: #b1b1b1;
-  --color-gray-800: #a4a4a4;
-  --color-gray-900: #979797;
-  --color-gray-950: #8a8a8a;
-
-  /* Neutral - Orta Gri (#727272) */
   --color-neutral: #727272;
-  --color-neutral-50: #e5e5e5;
-  --color-neutral-100: #cccccc;
-  --color-neutral-200: #b3b3b3;
-  --color-neutral-300: #9a9a9a;
-  --color-neutral-400: #808080;
-  --color-neutral-500: #727272;
-  --color-neutral-600: #666666;
-  --color-neutral-700: #595959;
-  --color-neutral-800: #4d4d4d;
-  --color-neutral-900: #404040;
-  --color-neutral-950: #333333;
-
-  /* Cream - Krem (#F7F5F2) */
   --color-cream: #f7f5f2;
-  --color-cream-50: #fefdfb;
-  --color-cream-100: #fcfaf6;
-  --color-cream-200: #f9f5f0;
-  --color-cream-300: #f7f5f2;
-  --color-cream-400: #f5f3f0;
-  --color-cream-500: #f7f5f2;
-  --color-cream-600: #e8e4df;
-  --color-cream-700: #d9cfcc;
-  --color-cream-800: #cac0b9;
-  --color-cream-900: #bbb0a6;
-  --color-cream-950: #ac9f93;
-
-  /* Navy - Koyu Lacivert (#1A2B3C) */
   --color-navy: #1a2b3c;
-  --color-navy-50: #e8ecf0;
-  --color-navy-100: #d1d8e0;
-  --color-navy-200: #a3b1c0;
-  --color-navy-300: #758aa0;
-  --color-navy-400: #476380;
-  --color-navy-500: #1a2b3c;
-  --color-navy-600: #182636;
-  --color-navy-700: #162130;
-  --color-navy-800: #141c2a;
-  --color-navy-900: #121724;
-  --color-navy-950: #0f121e;
-
-  /* White - Beyaz (#FFFFFF) */
   --color-white: #ffffff;
-
-  /* Background & Foreground */
   --color-background: #ffffff;
   --color-foreground: #2e4049;
   --color-muted: #f2f2f2;
   --color-muted-foreground: #727272;
   --color-muted-background: #f6f6f6;
 
-  /* Typography */
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
   --font-sue-ellen: var(
@@ -165,7 +41,6 @@
   --font-work: var(--font-work-sans, "Work Sans", sans-serif);
   --font-inter: var(--font-inter-sans, "Inter", sans-serif);
 
-  /* Font Sizes */
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
@@ -180,14 +55,12 @@
   --font-size-8xl: 6rem;
   --font-size-9xl: 8rem;
 
-  /* Line Heights */
   --line-height-tight: 1.25;
   --line-height-snug: 1.375;
   --line-height-normal: 1.5;
   --line-height-relaxed: 1.625;
   --line-height-loose: 2;
 
-  /* Spacing Scale */
   --spacing-0: 0;
   --spacing-1: 0.25rem;
   --spacing-2: 0.5rem;
@@ -207,7 +80,6 @@
   --spacing-56: 14rem;
   --spacing-64: 16rem;
 
-  /* Border Radius */
   --radius-none: 0;
   --radius-sm: 0.125rem;
   --radius-base: 0.25rem;
@@ -218,7 +90,6 @@
   --radius-3xl: 1.5rem;
   --radius-full: 9999px;
 
-  /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-base: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -229,7 +100,6 @@
   --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
 
-  /* Breakpoints */
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
@@ -246,4 +116,92 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+}
+
+@theme inline {
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary-black: var(--primary-black);
+  --color-primary-black-foreground: var(--primary-black-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary-black: var(--sidebar-primary-black);
+  --color-sidebar-primary-black-foreground: var(
+    --sidebar-primary-black-foreground
+  );
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.625rem;
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary-black: oklch(0.205 0 0);
+  --primary-black-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary-black: oklch(0.205 0 0);
+  --sidebar-primary-black-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary-black: oklch(0.922 0 0);
+  --primary-black-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary-black: oklch(0.488 0.243 264.376);
+  --sidebar-primary-black-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
 }

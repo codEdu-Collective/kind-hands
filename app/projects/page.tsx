@@ -18,7 +18,7 @@ const Project = () => {
               return (
                 <div
                   key={index}
-                  className="relative bg-primary flex flex-col items-center justify-center w-[240px] h-[275px] min-h-[275px]"
+                  className="relative bg-primary flex flex-col items-center justify-center w-60 h-68.75 min-h-68.75"
                 >
                   <p className="text-white text-center text-lg md:text-xl font-semibold px-3 leading-tight">
                     More than One Life Changed
@@ -28,7 +28,7 @@ const Project = () => {
             }
 
             return (
-              <div key={index} className="relative w-[240px] h-[275px] min-h-[275px]">
+              <div key={index} className="relative w-60 h-68.75 min-h-68.75">
                 <Image
                   src={`/projects/project-${index + 1}.png`}
                   alt="project"
