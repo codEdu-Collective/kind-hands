@@ -18,7 +18,7 @@ const Project = () => {
               return (
                 <div
                   key={index}
-                  className="bg-primary relative flex flex-col items-center justify-center w-full md:w-[340px] md:h-[408px] lg:w-[300px] lg:h-[360px] h-[360px]"
+                  className="bg-primary relative flex flex-col items-center justify-center w-full md:w-90 md:h-102 lg:w-75 lg:h-90 h-90"
                 >
                   <p className="text-white absolute bottom-10 left-0 text-xl md:text-3xl font-semibold px-6 leading-tight font-shippori font-extrabold">
                     More than One Life Changed
@@ -30,7 +30,7 @@ const Project = () => {
             return (
               <div
                 key={index}
-                className="relative w-full md:w-[340px] md:h-[408px] lg:w-[300px] lg:h-[360px] h-[360px] overflow-hidden"
+                className="relative w-full md:w-85 md:h-102 lg:w-75 lg:h-90 h-90 overflow-hidden"
               >
                 <Image
                   src={`/projects/project-${index + 1}.png`}

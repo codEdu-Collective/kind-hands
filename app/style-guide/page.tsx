@@ -33,7 +33,7 @@ const StyleGuidePage = () => {
               <div className="w-16 h-16 md:w-20 md:h-20 lg:w-22 lg:h-22 bg-primary shadow-sm shrink-0"></div>
               <div className="flex flex-col">
                 <p className="text-xs md:text-sm font-semibold text-dark">Primary - 01</p>
-                <p className="text-[10px] md:text-xs text-neutral">#FF6D6D</p>
+                <p className="text-[0.625rem] md:text-xs text-neutral">#FF6D6D</p>
               </div>
             </div>
 
@@ -41,7 +41,7 @@ const StyleGuidePage = () => {
               <div className="w-16 h-16 md:w-20 md:h-20 lg:w-22 lg:h-22 bg-accent shadow-sm shrink-0"></div>
               <div className="flex flex-col">
                 <p className="text-xs md:text-sm font-semibold text-dark">Color - Accent</p>
-                <p className="text-[10px] md:text-xs text-neutral">#77D7D3</p>
+                <p className="text-[0.625rem] md:text-xs text-neutral">#77D7D3</p>
               </div>
             </div>
 
@@ -49,7 +49,7 @@ const StyleGuidePage = () => {
               <div className="w-16 h-16 md:w-20 md:h-20 lg:w-22 lg:h-22 bg-dark shadow-sm shrink-0"></div>
               <div className="flex flex-col">
                 <p className="text-xs md:text-sm font-semibold text-dark">Color - Dark</p>
-                <p className="text-[10px] md:text-xs text-neutral">#2E4049</p>
+                <p className="text-[0.625rem] md:text-xs text-neutral">#2E4049</p>
               </div>
             </div>
 
@@ -57,7 +57,7 @@ const StyleGuidePage = () => {
               <div className="w-16 h-16 md:w-20 md:h-20 lg:w-22 lg:h-22 bg-neutral shadow-sm border border-gray-200 shrink-0"></div>
               <div className="flex flex-col">
                 <p className="text-xs md:text-sm font-semibold text-dark">Color - Neutral</p>
-                <p className="text-[10px] md:text-xs text-neutral">#727272</p>
+                <p className="text-[0.625rem] md:text-xs text-neutral">#727272</p>
               </div>
             </div>
 
@@ -65,7 +65,7 @@ const StyleGuidePage = () => {
               <div className="w-16 h-16 md:w-20 md:h-20 lg:w-22 lg:h-22 bg-light shadow-sm border border-gray-200 shrink-0"></div>
               <div className="flex flex-col">
                 <p className="text-xs md:text-sm font-semibold text-dark">Color - Light</p>
-                <p className="text-[10px] md:text-xs text-neutral">#ECF1F0</p>
+                <p className="text-[0.625rem] md:text-xs text-neutral">#ECF1F0</p>
               </div>
             </div>
 
@@ -73,7 +73,7 @@ const StyleGuidePage = () => {
               <div className="w-16 h-16 md:w-20 md:h-20 lg:w-22 lg:h-22 bg-beige shadow-sm border border-gray-200 shrink-0"></div>
               <div className="flex flex-col">
                 <p className="text-xs md:text-sm font-semibold text-dark">Color - Beige</p>
-                <p className="text-[10px] md:text-xs text-neutral">#F1EEEC</p>
+                <p className="text-[0.625rem] md:text-xs text-neutral">#F1EEEC</p>
               </div>
             </div>
 
@@ -81,7 +81,7 @@ const StyleGuidePage = () => {
               <div className="w-16 h-16 md:w-20 md:h-20 lg:w-22 lg:h-22 bg-navy shadow-sm shrink-0"></div>
               <div className="flex flex-col">
                 <p className="text-xs md:text-sm font-semibold text-dark">Color - Navy</p>
-                <p className="text-[10px] md:text-xs text-neutral">#1A2B3C</p>
+                <p className="text-[0.625rem] md:text-xs text-neutral">#1A2B3C</p>
               </div>
             </div>
 
@@ -89,7 +89,7 @@ const StyleGuidePage = () => {
               <div className="w-16 h-16 md:w-20 md:h-20 lg:w-22 lg:h-22 bg-white shadow-sm border border-gray-200 shrink-0"></div>
               <div className="flex flex-col">
                 <p className="text-xs md:text-sm font-semibold text-dark">Color - White</p>
-                <p className="text-[10px] md:text-xs text-neutral">#FFFFFF</p>
+                <p className="text-[0.625rem] md:text-xs text-neutral">#FFFFFF</p>
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@ const StyleGuidePage = () => {
           <h1 className="font-shippori font-extrabold text-2xl md:text-3xl lg:text-4xl text-primary mb-6">
             Text
           </h1>
-          <div className="flex flex-col gap-8 md:gap-12 lg:gap-[70px]">
+          <div className="flex flex-col gap-8 md:gap-12 lg:gap-17.5">
             <div>
               <h1 className="font-shippori font-extrabold text-4xl md:text-6xl lg:text-7xl text-dark">
                 Heading Banner
@@ -254,22 +254,22 @@ const StyleGuidePage = () => {
             Icon
           </h1>
           <div className="flex flex-wrap items-center gap-4 md:gap-6 lg:gap-8">
-            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-[64px] lg:h-[64px] flex items-center justify-center text-primary">
+            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center text-primary">
               <FaCapsules className="w-full h-full" />
             </div>
-            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-[64px] lg:h-[64px] flex items-center justify-center text-primary">
+            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center text-primary">
               <FaHandHolding className="w-full h-full" />
             </div>
-            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-[64px] lg:h-[64px] flex items-center justify-center text-primary">
+            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center text-primary">
               <FaBaby className="w-full h-full" />
             </div>
-            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-[64px] lg:h-[64px] flex items-center justify-center text-primary">
+            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center text-primary">
               <FaBowlFood className="w-full h-full" />
             </div>
-            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-[64px] lg:h-[64px] flex items-center justify-center text-primary">
+            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center text-primary">
               <FaGlobe className="w-full h-full" />
             </div>
-            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-[64px] lg:h-[64px] flex items-center justify-center text-primary">
+            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center text-primary">
               <FaGraduationCap className="w-full h-full" />
             </div>
           </div>
