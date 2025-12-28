@@ -53,17 +53,15 @@ const Testimonal = () => {
       <div className="flex mt-6 sm:mt-8 mb-12 sm:mb-16 md:mb-25 items-center gap-4 sm:gap-6">
         <MdOutlineKeyboardArrowLeft
           size={48}
-          className="sm:w-[60px] sm:h-[60px] lg:w-[73px] lg:h-[73px]"
+          className="sm:w-[60px] sm:h-[60px] lg:w-[73px] lg:h-[73px] rounded-full overflow-hidden border border-soft-gray cursor-pointer hover:opacity-80 transition-opacity"
           color="black"
-          className="rounded-full overflow-hidden border border-soft-gray cursor-pointer hover:opacity-80 transition-opacity"
           aria-label="previous testimonial"
         />
         <div className="w-16 sm:w-24 md:w-48 lg:w-111 h-px bg-soft-gray" />
         <MdOutlineKeyboardArrowRight
           size={48}
-          className="sm:w-[60px] sm:h-[60px] lg:w-[73px] lg:h-[73px]"
+          className="sm:w-[60px] sm:h-[60px] lg:w-[73px] lg:h-[73px] rounded-full overflow-hidden border border-soft-gray cursor-pointer hover:opacity-80 transition-opacity"
           color="black"
-          className="rounded-full overflow-hidden border border-soft-gray cursor-pointer hover:opacity-80 transition-opacity"
           aria-label="next testimonial"
         />
       </div>
