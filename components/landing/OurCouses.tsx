@@ -13,7 +13,7 @@ const OurCouses = async () => {
     <section className="w-full min-h-auto bg-beige flex flex-col items-center justify-center text-dark px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-20">
       <div className="w-full max-w-7xl">
         <h3 className="font-sue-ellen text-2xl sm:text-3xl md:text-4xl text-primary mb-4 sm:mb-6">
-          Our Couses
+          Our Causes
         </h3>
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-6">
           <h2 className="font-shippori font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem] flex-1">
@@ -25,7 +25,7 @@ const OurCouses = async () => {
           </button>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row flex-wrap justify-center px-4 sm:px-6 md:px-9 gap-4 sm:gap-6 md:gap-9 mt-8 sm:mt-10 md:mt-12 w-full max-w-7xl">
+      <div className="flex flex-col sm:flex-row flex-wrap justify-center px-4 sm:px-6 md:px-9 gap-4 sm:gap-6 md:gap-7 mt-8 sm:mt-10 md:mt-12 w-full max-w-7xl">
         {causes.map(
           ({ id, percentage, raised, goal, imageUrl, title }, index) => (
             <div

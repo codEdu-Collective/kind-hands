@@ -4,7 +4,7 @@ const WhatWeDid = () => {
   return (
     <section className="w-full min-h-auto bg-slate-ink dark:bg-gray-200 text-white dark:text-dark font-shippori">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-        <div className="col-span-1 sm:col-span-2 pt-8 sm:pt-12 md:pt-16 lg:pt-21 px-4 sm:px-6 md:px-12 lg:px-25">
+        <div className="col-span-1 sm:col-span-2 pt-8 sm:pt-12 md:pt-16 lg:pt-21 px-4 sm:px-6 md:px-12 lg:px-25 mb-3">
           <h3 className="font-sue-ellen text-2xl sm:text-3xl md:text-4xl text-primary dark:text-primary">What We Did</h3>
           <h2 className="font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem] dark:text-white">Featured Projects</h2>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl mt-3 sm:mt-4 mb-6 sm:mb-8 font-work dark:text-dark">

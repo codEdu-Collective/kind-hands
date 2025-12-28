@@ -11,7 +11,7 @@ export default function MobileMenu() {
   const mobileLinkClass =
     "block font-work text-dark dark:text-gray-100 font-medium text-lg py-2 border-b border-gray-100 dark:border-gray-800";
   const mobileSubLinkClass =
-    "block font-work text-gray-600 dark:text-gray-400 py-2 hover:text-primary text-base";
+    "block font-work text-gray-600 dark:text-white py-2 hover:text-primary text-base";
 
   return (
     <>
@@ -88,7 +88,7 @@ export default function MobileMenu() {
                 </Link>
                 <Link
                   href="/blog"
-                  className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 text-dark dark:text-gray-200 transition-colors"
+                  className={mobileSubLinkClass}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Blog
@@ -96,7 +96,7 @@ export default function MobileMenu() {
 
                 <Link
                   href="/faq"
-                  className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 text-dark dark:text-gray-200 transition-colors"
+                  className={mobileSubLinkClass}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   FAQ
@@ -121,7 +121,7 @@ export default function MobileMenu() {
           </Link>
 
           <div className="pt-4 pb-10">
-            <button className="w-full bg-primary text-white px-6 py-3 rounded-full font-medium hover:bg-primary-600 transition duration-300 font-work">
+            <button className="w-1/2 bg-primary text-white px-6 py-3 rounded-full font-medium hover:bg-primary-600 transition duration-300 font-work">
               Donate
             </button>
           </div>
