@@ -32,7 +32,9 @@ const OurCouses = async () => {
               </p>
             </div>
             <div className="bg-background dark:bg-gray-800 w-full max-w-109 p-8">
-              <h2 className="font-shippori text-2xl font-extrabold mb-8 dark:text-white">{title}</h2>
+              <h2 className="font-shippori text-2xl font-extrabold mb-8 dark:text-white">
+                {title}
+              </h2>
               <div className="w-full h-1.5 bg-mist-gray rounded-3xl relative">
                 <div className="h-1.5 bg-primary rounded-3xl" style={{ width: `${percentage}%` }} />
               </div>

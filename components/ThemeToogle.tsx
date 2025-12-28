@@ -3,21 +3,37 @@
 import { useEffect, useState } from "react";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 
+const getInitialTheme = (): "light" | "dark" => {
+  if (typeof window === "undefined") return "light";
+
+  const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
+  if (savedTheme) {
+    return savedTheme;
+  }
+
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  return prefersDark ? "dark" : "light";
+};
+
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [theme, setTheme] = useState<"light" | "dark">(getInitialTheme);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
-    if (savedTheme) {
-      setTheme(savedTheme);
-      document.documentElement.setAttribute("data-theme", savedTheme);
-    } else {
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      const defaultTheme = prefersDark ? "dark" : "light";
-      setTheme(defaultTheme);
-      document.documentElement.setAttribute("data-theme", defaultTheme);
-    }
-  }, []);
+    // Sync DOM with current theme state
+    document.documentElement.setAttribute("data-theme", theme);
+
+    // Listen for changes in other tabs/windows
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === "theme" && e.newValue) {
+        const newTheme = e.newValue as "light" | "dark";
+        setTheme(newTheme);
+        document.documentElement.setAttribute("data-theme", newTheme);
+      }
+    };
+
+    window.addEventListener("storage", handleStorageChange);
+    return () => window.removeEventListener("storage", handleStorageChange);
+  }, [theme]);
 
   const toggleTheme = () => {
     const selectedTheme = localStorage.getItem("theme") as "light" | "dark" | null;

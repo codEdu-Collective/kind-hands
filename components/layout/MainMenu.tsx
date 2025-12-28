@@ -19,13 +19,7 @@ export default function MainMenu() {
             href="/"
             className="text-2xl text-dark dark:text-white font-extrabold flex items-center space-x-2 font-shippori shrink-0"
           >
-            <Image
-              src={`/images/logo.png`}
-              alt="Logo"
-              width={32}
-              height={32}
-              className="w-8 h-8"
-            />
+            <Image src={`/images/logo.png`} alt="Logo" width={32} height={32} className="w-8 h-8" />
             <span>Kind Hands</span>
           </Link>
 

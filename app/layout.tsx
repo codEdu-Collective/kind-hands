@@ -1,6 +1,5 @@
 import { type ReactNode } from "react";
 import type { Metadata } from "next";
-import Script from "next/script";
 import {
   Geist,
   Geist_Mono,
@@ -61,20 +60,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
-      <Script
-        id="theme-init"
-        strategy="beforeInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function() {
-              const theme = localStorage.getItem('theme');
-              const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-              const defaultTheme = theme || (prefersDark ? 'dark' : 'light');
-              document.documentElement.setAttribute('data-theme', defaultTheme);
-            })();
-          `,
-        }}
-      />
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}  ${sueEllenFrancisco.variable} ${shipporiMincho.variable} ${workSans.variable} antialiased w-full max-w-480`}
       >

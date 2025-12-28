@@ -28,9 +28,14 @@ const HowWeHelp = () => {
           </button>
         </div>
         <div className="border border-white dark:border-gray-400 dark:bg-gray-200 px-16 py-12">
-          <h2 className="font-shippori font-extrabold text-4xl dark:text-dark">Become A Volunteer</h2>
+          <h2 className="font-shippori font-extrabold text-4xl dark:text-dark">
+            Become A Volunteer
+          </h2>
           {["Full Name*", "Email Address*", "Phone Number*"].map((item, index) => (
-            <div key={index} className="w-full h-16 border border-white dark:border-gray-400 dark:bg-white my-8">
+            <div
+              key={index}
+              className="w-full h-16 border border-white dark:border-gray-400 dark:bg-white my-8"
+            >
               <p className="p-4 font-work text-lg dark:text-gray-600">{item}</p>
             </div>
           ))}

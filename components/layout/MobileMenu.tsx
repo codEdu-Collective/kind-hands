@@ -27,11 +27,7 @@ export default function MobileMenu() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="lg:hidden bg-white dark:bg-dark-950 border-t dark:border-gray-800 absolute w-full left-0 top-20 shadow-lg px-4 py-6 flex flex-col space-y-4 h-[calc(100vh-5rem)] overflow-y-auto z-50">
-          <Link
-            href="/"
-            className={mobileLinkClass}
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
+          <Link href="/" className={mobileLinkClass} onClick={() => setIsMobileMenuOpen(false)}>
             Home
           </Link>
           <Link

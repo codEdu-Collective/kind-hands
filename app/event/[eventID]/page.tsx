@@ -70,9 +70,15 @@ const Home = async ({ params }: EventParams) => {
             </div>
             <article className="w-220.5 text-justify">
               <div>
-                <h1 className="font-shippori font-extrabold text-4xl mb-3 dark:text-white">Event Description</h1>
-                <p className="font-work text-xl text-neutral dark:text-gray-300">{event.description}</p>
-                <h2 className="font-shippori font-extrabold text-2xl mt-10 mb-4 dark:text-white">Event Content</h2>
+                <h1 className="font-shippori font-extrabold text-4xl mb-3 dark:text-white">
+                  Event Description
+                </h1>
+                <p className="font-work text-xl text-neutral dark:text-gray-300">
+                  {event.description}
+                </p>
+                <h2 className="font-shippori font-extrabold text-2xl mt-10 mb-4 dark:text-white">
+                  Event Content
+                </h2>
                 <p className="font-work text-xl text-neutral dark:text-gray-300">{event.content}</p>
                 <h3 className="font-shippori font-extrabold text-2xl mt-10 mb-4 dark:text-white">
                   Details about the Event

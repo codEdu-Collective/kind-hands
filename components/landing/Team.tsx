@@ -16,7 +16,9 @@ const Team = () => {
               height={382}
               className="object-cover"
             />
-            <h4 className="my-4.5 font-shippori font-extrabold text-xl dark:text-white">{member}</h4>
+            <h4 className="my-4.5 font-shippori font-extrabold text-xl dark:text-white">
+              {member}
+            </h4>
             <div className="flex justify-center gap-4 text-dark dark:text-white">
               <FaInstagram size={18} aria-label="Instagram icon" />
               <FaFacebook size={18} aria-label="Facebook icon" />

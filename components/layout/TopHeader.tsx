@@ -1,9 +1,4 @@
-import {
-  FaFacebook,
-  FaInstagram,
-  FaPinterest,
-  FaSquareXTwitter,
-} from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaPinterest, FaSquareXTwitter } from "react-icons/fa6";
 import { LuMail, LuPhone } from "react-icons/lu";
 
 export default function TopHeader() {
@@ -16,10 +11,7 @@ export default function TopHeader() {
               href="tel:+905551234567"
               className="flex items-center space-x-2 hover:text-gray-600 dark:hover:text-gray-200 transition-colors"
             >
-              <LuPhone
-                className="text-sm md:text-base"
-                aria-label="phone icon"
-              />
+              <LuPhone className="text-sm md:text-base" aria-label="phone icon" />
               <span>+90 555 123 45 67</span>
             </a>
             <a

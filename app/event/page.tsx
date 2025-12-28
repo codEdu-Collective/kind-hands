@@ -41,7 +41,8 @@ const Home = async () => {
                 <p className="text-2xl">{month}</p>
               </div>
               <div className="font-work text-xl text-neutral dark:text-gray-300 mt-5">
-                Organized By :<span className="font-medium text-dark dark:text-white"> {organizer.name}</span>
+                Organized By :
+                <span className="font-medium text-dark dark:text-white"> {organizer.name}</span>
               </div>
               <div className="w-full h-0.5 bg-cloud-gray dark:bg-gray-600 mt-7 mb-4" />
               <div>
@@ -52,7 +53,9 @@ const Home = async () => {
                 >
                   {title}
                 </h3>
-                <h4 className="font-work text-xl text-neutral dark:text-gray-300 line-clamp-2">{description}</h4>
+                <h4 className="font-work text-xl text-neutral dark:text-gray-300 line-clamp-2">
+                  {description}
+                </h4>
               </div>
             </div>
           ))}
