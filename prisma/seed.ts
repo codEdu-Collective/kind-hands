@@ -1,5 +1,7 @@
 import { PrismaPg } from "@prisma/adapter-pg";
 
+import { ModelDelegate } from "@/types/types";
+
 import { Prisma, PrismaClient } from "./generated/prisma/client";
 
 import "dotenv/config";
@@ -353,12 +355,14 @@ const causeData: Prisma.CauseCreateInput[] = [
 ];
 
 export async function main() {
-  await prisma.event.deleteMany();
-  await prisma.cause.deleteMany();
-  await prisma.post.deleteMany();
-  await prisma.volunteer.deleteMany();
+  const models = ["event", "cause", "post", "volunteer", "user"] as const;
 
-  await prisma.user.deleteMany();
+  await Promise.all(
+    models.map((model) => {
+      const delegate = prisma[model] as unknown as ModelDelegate;
+      return delegate.deleteMany();
+    }),
+  );
 
   for (const user of userData) {
     await prisma.user.create({

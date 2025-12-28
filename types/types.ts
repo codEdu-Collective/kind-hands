@@ -28,3 +28,7 @@ export type CauseParams = {
 export type EventParams = {
   params: { eventID: string };
 };
+
+export type ModelDelegate = {
+  deleteMany(args?: unknown): unknown;
+};

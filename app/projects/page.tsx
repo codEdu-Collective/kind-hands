@@ -5,22 +5,22 @@ const Project = () => {
       <header className="relative h-96 md:h-205.5 flex items-center">
         <Image src="/projects/project-banner.png" alt="hero" fill className="object-cover" />
         <div className="relative z-2 text-white ml-4 md:ml-90 max-w-full md:max-w-180 px-4 md:px-0">
-          <h1 className="font-sue-ellen text-2xl md:text-5xl mb-1.5">Donation</h1>
+          <h1 className="font-sue-ellen text-2xl md:text-5xl mb-1.5">Donation...</h1>
           <h2 className="font-shippori font-extrabold text-3xl md:text-[5.625rem] leading-tight ">
             Meet Charity Projects
           </h2>
         </div>
       </header>
-      <section className="container max-w-250 mx-auto items-center px-4 md:px-0 my-8 md:my-37.5">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-5 justify-items-center">
+      <section className=" mx-auto items-center px-4 md:px-0 my-8 md:my-37.5">
+        <div className="w-full max-w-[948px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-[9px] lg:gap-[24px] justify-items-center">
           {[...Array(9)].map((_, index) => {
             if (index === 5) {
               return (
                 <div
                   key={index}
-                  className="relative bg-primary flex flex-col items-center justify-center w-[240px] h-[275px] min-h-[275px]"
+                  className="bg-primary relative flex flex-col items-center justify-center w-full md:w-90 md:h-102 lg:w-75 lg:h-90 h-90"
                 >
-                  <p className="text-white text-center text-lg md:text-xl font-semibold px-3 leading-tight">
+                  <p className="text-white absolute bottom-10 left-0 text-xl md:text-3xl font-semibold px-6 leading-tight font-shippori font-extrabold">
                     More than One Life Changed
                   </p>
                 </div>
@@ -28,13 +28,15 @@ const Project = () => {
             }
 
             return (
-              <div key={index} className="relative w-[240px] h-[275px] min-h-[275px]">
+              <div
+                key={index}
+                className="relative w-full md:w-85 md:h-102 lg:w-75 lg:h-90 h-90 overflow-hidden"
+              >
                 <Image
                   src={`/projects/project-${index + 1}.png`}
                   alt="project"
-                  width={240}
-                  height={275}
-                  className="object-cover w-full h-full"
+                  fill
+                  className="object-cover"
                 />
               </div>
             );
