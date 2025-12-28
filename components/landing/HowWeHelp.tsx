@@ -18,11 +18,17 @@ const HowWeHelp = () => {
             Join The Community To Give Education For Children
           </h2>
           <p className="text-justify font-work text-base sm:text-lg md:text-xl mb-4 dark:text-gray-300">
-            Lorem Ipsum is simply dummy text of the printin typesetting dummy text ever when an
-            unknown printer took a galley of type and scrambled it to make a type specimen book.
+            Lorem Ipsum is simply dummy text of the printin typesetting dummy
+            text ever when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
           </p>
           <div className="w-full h-48 sm:h-64 md:h-80 relative mb-6 sm:mb-8">
-            <Image src={`/images/howHelp-kids.jpg`} alt="kids" fill className="object-cover" />
+            <Image
+              src={`/images/howHelp-kids.jpg`}
+              alt="kids"
+              fill
+              className="object-cover"
+            />
           </div>
           <button className="uppercase w-full sm:w-50 h-12 sm:h-14 md:h-16 bg-primary rounded-4xl text-white text-sm sm:text-base md:text-lg font-work font-medium">
             Donate NOW
@@ -32,16 +38,18 @@ const HowWeHelp = () => {
           <h2 className="font-shippori font-extrabold text-2xl sm:text-3xl md:text-4xl dark:text-dark mb-6">
             Become A Volunteer
           </h2>
-          {["Full Name*", "Email Address*", "Phone Number*"].map((item, index) => (
-            <div
-              key={index}
-              className="w-full h-12 sm:h-14 md:h-16 border border-white dark:border-gray-400 dark:bg-white my-4 sm:my-6 md:my-8"
-            >
-              <p className="p-3 sm:p-4 font-work text-sm sm:text-base md:text-lg dark:text-gray-600">
-                {item}
-              </p>
-            </div>
-          ))}
+          {["Full Name*", "Email Address*", "Phone Number*"].map(
+            (item, index) => (
+              <div
+                key={index}
+                className="w-full h-12 sm:h-14 md:h-16 border border-white dark:border-gray-400 dark:bg-white my-4 sm:my-6 md:my-8"
+              >
+                <p className="p-3 sm:p-4 font-work text-sm sm:text-base md:text-lg dark:text-gray-600">
+                  {item}
+                </p>
+              </div>
+            )
+          )}
           <div className="w-full h-24 sm:h-32 md:h-39 border border-white dark:border-gray-400 dark:bg-white my-4 sm:my-6 md:my-8">
             <p className="p-4 sm:p-5 font-work text-sm sm:text-base md:text-lg dark:text-gray-600">
               Message*

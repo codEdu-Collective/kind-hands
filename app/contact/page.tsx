@@ -1,6 +1,11 @@
 import { BiPhone } from "react-icons/bi";
 import { BsMailbox } from "react-icons/bs";
-import { FaFacebook, FaInstagram, FaPinterest, FaSquareXTwitter } from "react-icons/fa6";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaPinterest,
+  FaSquareXTwitter,
+} from "react-icons/fa6";
 import Image from "next/image";
 
 const Contact = () => {
@@ -19,15 +24,18 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 xl:gap-24">
           {/* --- LEFT SIDE (Contact Information) --- */}
           <div className="flex flex-col justify-center text-center lg:text-left">
-            <span className="text-primary font-medium text-4xl mb-2 font-sue-ellen">Contact</span>
+            <span className="text-primary font-medium text-4xl mb-2 font-sue-ellen">
+              Contact
+            </span>
 
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-shippori font-extrabold text-dark dark:text-white mb-6 leading-tight">
               Get in Touch With Us
             </h2>
 
             <p className="text-dark-800 mb-8 md:mb-10 leading-relaxed text-sm md:text-base">
-              Lorem Ipsum is simply dummy text of the printing and typesetting dummy text ever since
-              the 1500s, when an unknown printer took a galley of type.
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              dummy text ever since the 1500s, when an unknown printer took a
+              galley of type.
             </p>
 
             {/* Contact Boxes */}
@@ -38,7 +46,9 @@ const Contact = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-bold text-dark text-lg">Message</h4>
-                  <p className="text-neutral-500 text-sm md:text-base">support@walfare.com</p>
+                  <p className="text-neutral-500 text-sm md:text-base">
+                    support@walfare.com
+                  </p>
                 </div>
               </div>
 
@@ -49,7 +59,9 @@ const Contact = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-bold text-dark text-lg">Contact Us</h4>
-                  <p className="text-neutral-500 text-sm md:text-base">+01 (000) 265 458</p>
+                  <p className="text-neutral-500 text-sm md:text-base">
+                    +01 (000) 265 458
+                  </p>
                 </div>
               </div>
             </div>
@@ -60,7 +72,8 @@ const Contact = () => {
                 Follow us on social media
               </h3>
               <p className="text-neutral-500 mb-6 text-sm md:text-base text-center lg:text-left max-w-md lg:max-w-none">
-                Veniam quae. Nostrum facere repellendus minus quod aut aliquam neque reiciendis.
+                Veniam quae. Nostrum facere repellendus minus quod aut aliquam
+                neque reiciendis.
               </p>
               <div className="flex gap-6 text-dark-600">
                 <a
