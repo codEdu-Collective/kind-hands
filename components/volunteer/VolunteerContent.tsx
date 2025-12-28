@@ -7,9 +7,11 @@ const VolunteerContent = () => {
         {/* --- left text right image --- */}
         <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-10 lg:gap-16">
           <div className="w-full md:w-1/2 space-y-4 sm:space-y-5">
-            <span className="text-primary dark:text-primary-500 text-2xl sm:text-3xl md:text-4xl font-sue-ellen">Help First</span>
+            <span className="text-primary dark:text-primary-500 text-2xl sm:text-3xl md:text-4xl font-sue-ellen">
+              Help First
+            </span>
             <h2 className="text-2xl sm:text-3xl md:text-[2.5rem] lg:text-4xl font-shippori font-extrabold text-dark dark:text-white">
-              Let's help together
+              Let&apos;s help together
             </h2>
             <p className="text-neutral dark:text-gray-300 leading-relaxed text-base sm:text-lg md:text-xl">
               We believe that meaningful change starts with a single act of kindness. By joining

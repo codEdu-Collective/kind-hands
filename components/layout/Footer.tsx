@@ -1,9 +1,4 @@
-import {
-  FaFacebook,
-  FaInstagram,
-  FaPinterest,
-  FaSquareXTwitter,
-} from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaPinterest, FaSquareXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,32 +19,25 @@ export default function Footer() {
                 alt="Kind Hands Logo"
                 className="w-auto h-10 md:h-11"
               />
-              <span className="font-shippori font-extrabold text-3xl md:text-4xl">
-                Kind Hands
-              </span>
+              <span className="font-shippori font-extrabold text-3xl md:text-4xl">Kind Hands</span>
             </Link>
 
             <p className="font-work text-base md:text-lg lg:text-xl text-gray-300 mb-8 leading-relaxed max-w-md lg:max-w-none mx-auto lg:mx-0">
-              Care about people to transforming their lives and exudes a
-              positives Impressiono believe. fundraising NGO organizations.
+              Care about people to transforming their lives and exudes a positives Impressiono
+              believe. fundraising NGO organizations.
             </p>
 
             <div className="flex gap-4">
-              {[FaInstagram, FaFacebook, FaSquareXTwitter, FaPinterest].map(
-                (Icon, index) => (
-                  <Link
-                    key={index}
-                    href="#"
-                    className="bg-steel hover:bg-primary transition-colors duration-300 p-3 md:p-4 rounded-full group"
-                    aria-label="Social Media Link"
-                  >
-                    <Icon
-                      size={24}
-                      className="text-white group-hover:text-white transition-colors"
-                    />
-                  </Link>
-                )
-              )}
+              {[FaInstagram, FaFacebook, FaSquareXTwitter, FaPinterest].map((Icon, index) => (
+                <Link
+                  key={index}
+                  href="#"
+                  className="bg-steel hover:bg-primary transition-colors duration-300 p-3 md:p-4 rounded-full group"
+                  aria-label="Social Media Link"
+                >
+                  <Icon size={24} className="text-white group-hover:text-white transition-colors" />
+                </Link>
+              ))}
             </div>
           </div>
 
@@ -62,9 +50,7 @@ export default function Footer() {
             <div className="grid grid-cols-1 sm:grid-cols-3  gap-8">
               {/* Kolon 1: Get Involved */}
               <div className="text-center sm:text-left">
-                <h2 className="font-shippori font-bold text-2xl mb-6 text-white">
-                  Get Involved
-                </h2>
+                <h2 className="font-shippori font-bold text-2xl mb-6 text-white">Get Involved</h2>
                 <ul className="space-y-4">
                   {involvedLinks.map((item, index) => (
                     <li key={index}>
@@ -81,9 +67,7 @@ export default function Footer() {
 
               {/* Kolon 2: Utility */}
               <div className="text-center sm:text-left">
-                <h2 className="font-shippori font-bold text-2xl mb-6 text-white">
-                  Utility
-                </h2>
+                <h2 className="font-shippori font-bold text-2xl mb-6 text-white">Utility</h2>
                 <ul className="space-y-4">
                   {utilityLinks.map((item, index) => (
                     <li key={index}>
@@ -100,9 +84,7 @@ export default function Footer() {
 
               {/* Kolon 3: Contact */}
               <div className="text-center sm:text-left">
-                <h2 className="font-shippori font-bold text-2xl mb-6 text-white">
-                  Contact
-                </h2>
+                <h2 className="font-shippori font-bold text-2xl mb-6 text-white">Contact</h2>
                 <div className="space-y-4 font-work text-lg text-gray-300">
                   <p>
                     660 Brooklyn Street, 88

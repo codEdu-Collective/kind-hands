@@ -19,7 +19,9 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-20 xl:gap-24">
           {/* --- LEFT SIDE (Contact Information) --- */}
           <div className="flex flex-col justify-center text-center lg:text-left">
-            <span className="text-primary font-medium text-base sm:text-lg mb-2 font-sue-ellen">Contact</span>
+            <span className="text-primary font-medium text-base sm:text-lg mb-2 font-sue-ellen">
+              Contact
+            </span>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[5rem] font-shippori font-extrabold text-dark dark:text-white mb-4 sm:mb-6 leading-tight">
               Get in Touch With Us
@@ -37,8 +39,12 @@ const Contact = () => {
                   <BsMailbox className="text-lg sm:text-xl md:text-2xl" />
                 </div>
                 <div className="text-left flex-1">
-                  <h4 className="font-bold text-dark dark:text-dark text-base sm:text-lg">Message</h4>
-                  <p className="text-neutral-500 dark:text-gray-400 text-sm sm:text-base">support@walfare.com</p>
+                  <h4 className="font-bold text-dark dark:text-dark text-base sm:text-lg">
+                    Message
+                  </h4>
+                  <p className="text-neutral-500 dark:text-gray-400 text-sm sm:text-base">
+                    support@walfare.com
+                  </p>
                 </div>
               </div>
 
@@ -48,8 +54,12 @@ const Contact = () => {
                   <BiPhone className="text-lg sm:text-xl md:text-2xl" />
                 </div>
                 <div className="text-left flex-1">
-                  <h4 className="font-bold text-dark dark:text-dark text-base sm:text-lg">Contact Us</h4>
-                  <p className="text-neutral-500 dark:text-gray-400 text-sm sm:text-base">+01 (000) 265 458</p>
+                  <h4 className="font-bold text-dark dark:text-dark text-base sm:text-lg">
+                    Contact Us
+                  </h4>
+                  <p className="text-neutral-500 dark:text-gray-400 text-sm sm:text-base">
+                    +01 (000) 265 458
+                  </p>
                 </div>
               </div>
             </div>

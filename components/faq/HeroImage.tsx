@@ -11,7 +11,9 @@ const HeroImage = () => {
         className="object-cover"
       />
       <div className="relative z-2 text-dark dark:text-dark w-full h-full px-4 sm:px-6 md:px-8 lg:px-12.5 py-8 sm:py-12 md:py-14 lg:py-18 flex flex-col justify-center">
-        <h2 className="font-shippori font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem]">Any Question?</h2>
+        <h2 className="font-shippori font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem]">
+          Any Question?
+        </h2>
         <h3 className="font-work font-medium text-sm sm:text-base md:text-lg lg:text-2xl my-4 sm:my-5 md:my-6 lg:my-7 text-justify">
           We are always here to help the needy peoples any where in the world
         </h3>

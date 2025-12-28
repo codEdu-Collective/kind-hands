@@ -25,7 +25,9 @@ const VolunteerSteps = () => {
   return (
     <div className="w-full lg:w-1/2 space-y-6 sm:space-y-8">
       <div className="space-y-3 sm:space-y-4">
-        <span className="text-primary dark:text-primary-500 text-2xl sm:text-3xl md:text-4xl font-sue-ellen block">Help The People With us</span>
+        <span className="text-primary dark:text-primary-500 text-2xl sm:text-3xl md:text-4xl font-sue-ellen block">
+          Help The People With us
+        </span>
         <h2 className="text-2xl sm:text-3xl md:text-[2.5rem] font-shippori font-extrabold text-dark dark:text-white">
           Need Your Heartful Help
         </h2>
@@ -42,8 +44,12 @@ const VolunteerSteps = () => {
               {step.id}
             </div>
             <div>
-              <h4 className="text-base sm:text-lg font-serif font-bold text-foreground dark:text-white">{step.title}</h4>
-              <p className="text-neutral dark:text-gray-300 text-sm mt-1 leading-relaxed">{step.desc}</p>
+              <h4 className="text-base sm:text-lg font-serif font-bold text-foreground dark:text-white">
+                {step.title}
+              </h4>
+              <p className="text-neutral dark:text-gray-300 text-sm mt-1 leading-relaxed">
+                {step.desc}
+              </p>
             </div>
           </div>
         ))}

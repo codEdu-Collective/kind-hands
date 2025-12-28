@@ -42,7 +42,9 @@ const AboutUs = () => {
       </div>
       <div className="w-full max-w-7xl h-full flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 lg:gap-12 mt-8 sm:mt-12">
         <div className="w-full lg:w-1/2 xl:w-150">
-          <h3 className="font-sue-ellen text-2xl sm:text-3xl md:text-4xl text-primary mb-1">About US</h3>
+          <h3 className="font-sue-ellen text-2xl sm:text-3xl md:text-4xl text-primary mb-1">
+            About US
+          </h3>
           <h2 className="font-shippori font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem] mb-3">
             Help People, <br />
             Our Main Goals
@@ -79,7 +81,9 @@ const AboutUs = () => {
                   aria-label="check icon"
                   className="bg-accent overflow-hidden rounded-full p-1.5"
                 />
-                <span className="font-work text-sm sm:text-base md:text-lg lg:text-xl text-neutral font-medium">{item}</span>
+                <span className="font-work text-sm sm:text-base md:text-lg lg:text-xl text-neutral font-medium">
+                  {item}
+                </span>
               </div>
             ))}
           </div>

@@ -11,7 +11,9 @@ const OurEvents = async () => {
     <section className="w-full min-h-auto flex flex-col justify-center items-center text-dark px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-20">
       <article className="w-full max-w-7xl flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-6 mb-8 sm:mb-10 md:mb-12.5">
         <div className="flex-1">
-          <h2 className="font-sue-ellen text-2xl sm:text-3xl md:text-4xl text-primary mb-2 sm:mb-4">Our Events</h2>
+          <h2 className="font-sue-ellen text-2xl sm:text-3xl md:text-4xl text-primary mb-2 sm:mb-4">
+            Our Events
+          </h2>
           <h3 className="font-shippori font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem] dark:text-white">
             Join Upcoming Events <br /> Replays & Webinars
           </h3>
@@ -43,7 +45,11 @@ const OurEvents = async () => {
               <span className="text-neutral font-normal">Organized By :</span>
               Nattasha
             </p>
-            <MdOutlineWatchLater size={18} className="sm:w-5 sm:h-5 text-primary" aria-label="watch icon" />
+            <MdOutlineWatchLater
+              size={18}
+              className="sm:w-5 sm:h-5 text-primary"
+              aria-label="watch icon"
+            />
             <p className="uppercase text-sm sm:text-base md:text-lg">
               {" "}
               {events[0]?.startTime.toLocaleTimeString("en-US", {
@@ -61,10 +67,18 @@ const OurEvents = async () => {
             </p>
           </div>
           <div className="w-full bg-cloud-gray h-0.5 my-3 sm:my-4" />
-          <h4 className="font-shippori font-extrabold text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3">{events[0]?.title}</h4>
-          <p className="font-work text-sm sm:text-base md:text-lg lg:text-xl text-neutral line-clamp-2">{events[0]?.description}</p>
+          <h4 className="font-shippori font-extrabold text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3">
+            {events[0]?.title}
+          </h4>
+          <p className="font-work text-sm sm:text-base md:text-lg lg:text-xl text-neutral line-clamp-2">
+            {events[0]?.description}
+          </p>
           <div className="flex items-center justify-evenly w-full sm:w-108.5 h-12 sm:h-15 mt-4 sm:mt-6 md:mt-7 bg-snow rounded px-2 sm:px-4">
-            <IoLocationOutline size={20} className="sm:w-6 sm:h-6 md:w-7 md:h-7 text-primary shrink-0" aria-label="location icon" />
+            <IoLocationOutline
+              size={20}
+              className="sm:w-6 sm:h-6 md:w-7 md:h-7 text-primary shrink-0"
+              aria-label="location icon"
+            />
             <p className="font-work font-medium text-xs sm:text-sm md:text-base lg:text-lg line-clamp-1">
               {events[0]?.venue}, {events[0]?.venueAddress}
             </p>
@@ -85,8 +99,12 @@ const OurEvents = async () => {
                         Organized By :
                         <span className="font-medium text-primary"> {organizer.name}</span>
                       </h3>
-                      <h2 className="font-shippori font-extrabold text-lg sm:text-xl md:text-2xl mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-6">{title}</h2>
-                      <p className="font-work text-neutral text-sm sm:text-base md:text-lg lg:text-xl line-clamp-2">{description}</p>
+                      <h2 className="font-shippori font-extrabold text-lg sm:text-xl md:text-2xl mt-2 sm:mt-3 mb-3 sm:mb-4 md:mb-6">
+                        {title}
+                      </h2>
+                      <p className="font-work text-neutral text-sm sm:text-base md:text-lg lg:text-xl line-clamp-2">
+                        {description}
+                      </p>
                     </Link>
                   </article>
                   <div className="w-full h-0.5 bg-cloud-gray my-4 sm:my-5 md:my-6" />

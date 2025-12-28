@@ -4,7 +4,10 @@ import { PostProps } from "@/types/types";
 
 const BlogSingleAuthor = ({ post }: PostProps) => {
   return (
-    <div id="author" className="bg-muted-background dark:bg-gray-800 p-4 sm:p-6 md:p-8 lg:p-13.5 flex flex-col sm:flex-row gap-4 sm:gap-5 mt-8 sm:mt-10 md:mt-12">
+    <div
+      id="author"
+      className="bg-muted-background dark:bg-gray-800 p-4 sm:p-6 md:p-8 lg:p-13.5 flex flex-col sm:flex-row gap-4 sm:gap-5 mt-8 sm:mt-10 md:mt-12"
+    >
       <aside className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 shrink-0 mx-auto sm:mx-0">
         <Image
           src={`/blog/blog-avatar.jpg`}

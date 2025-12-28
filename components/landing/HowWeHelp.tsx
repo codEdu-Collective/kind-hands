@@ -18,9 +18,8 @@ const HowWeHelp = () => {
             Join The Community To Give Education For Children
           </h2>
           <p className="text-justify font-work text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4 sm:mb-6 md:mb-8 dark:text-gray-300">
-            Lorem Ipsum is simply dummy text of the printin typesetting dummy
-            text ever when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book.
+            Lorem Ipsum is simply dummy text of the printin typesetting dummy text ever when an
+            unknown printer took a galley of type and scrambled it to make a type specimen book.
           </p>
           <div className="w-full h-32 sm:h-40 md:h-48 lg:h-56 xl:h-64 relative mb-4 sm:mb-6 md:mb-8 lg:mb-10">
             <Image
@@ -38,18 +37,16 @@ const HowWeHelp = () => {
           <h2 className="font-shippori font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl dark:text-dark mb-3 sm:mb-4 md:mb-6 lg:mb-8">
             Become A Volunteer
           </h2>
-          {["Full Name*", "Email Address*", "Phone Number*"].map(
-            (item, index) => (
-              <div
-                key={index}
-                className="w-full h-10 sm:h-12 md:h-14 lg:h-16 xl:h-18 border border-white dark:border-gray-400 dark:bg-white my-3 sm:my-4 md:my-6 lg:my-8 rounded-md"
-              >
-                <p className="p-2 sm:p-3 md:p-4 lg:p-5 xl:p-6 font-work text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl dark:text-gray-600">
-                  {item}
-                </p>
-              </div>
-            )
-          )}
+          {["Full Name*", "Email Address*", "Phone Number*"].map((item, index) => (
+            <div
+              key={index}
+              className="w-full h-10 sm:h-12 md:h-14 lg:h-16 xl:h-18 border border-white dark:border-gray-400 dark:bg-white my-3 sm:my-4 md:my-6 lg:my-8 rounded-md"
+            >
+              <p className="p-2 sm:p-3 md:p-4 lg:p-5 xl:p-6 font-work text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl dark:text-gray-600">
+                {item}
+              </p>
+            </div>
+          ))}
           <div className="w-full h-20 sm:h-24 md:h-32 lg:h-39 xl:h-44 border border-white dark:border-gray-400 dark:bg-white my-3 sm:my-4 md:my-6 lg:my-8 rounded-md">
             <p className="p-2 sm:p-3 md:p-4 lg:p-5 xl:p-6 font-work text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl dark:text-gray-600">
               Message*

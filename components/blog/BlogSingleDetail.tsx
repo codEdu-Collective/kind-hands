@@ -15,7 +15,9 @@ const BlogSingleDetail = ({ post }: PostProps) => {
         <li className="mt-2 sm:mt-4">
           Nostrum facere repellendus minus quod aut aliquam neque reiciendis.
         </li>
-        <li className="mt-2 sm:mt-4">A rich text element can be used with static or dynamic content.</li>
+        <li className="mt-2 sm:mt-4">
+          A rich text element can be used with static or dynamic content.
+        </li>
       </ul>
       <BlogSingleQuote />
       <h3 className="font-shippori font-extrabold text-dark dark:text-white text-lg sm:text-xl md:text-2xl mt-6 sm:mt-8 md:mt-10 lg:mt-12.5 mb-3 sm:mb-4">

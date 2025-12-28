@@ -3,13 +3,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[920px]">
-      <Image
-        src={`/images/hero.jpg`}
-        alt="Hero Image"
-        fill
-        className="object-cover"
-        priority
-      />
+      <Image src={`/images/hero.jpg`} alt="Hero Image" fill className="object-cover" priority />
       <div className="absolute top-1/2 -translate-y-1/2 lg:top-20 lg:translate-y-0 left-4 sm:left-6 md:left-8 lg:left-20 xl:top-1/5 xl:left-1/5 w-[calc(100%-2rem)] sm:w-[calc(100%-3rem)] md:w-[calc(100%-4rem)] lg:w-[calc(100%-8rem)] xl:w-full xl:max-w-190">
         <h1 className="text-white font-sue-ellen text-2xl sm:text-3xl md:text-4xl lg:text-[3.125rem] text-left">
           Need Help...

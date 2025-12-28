@@ -11,7 +11,9 @@ const Head = () => {
         className="object-cover"
       />
       <div className="relative z-2 text-white ml-4 sm:ml-8 md:ml-12 lg:ml-16 xl:ml-90 px-4 sm:px-6">
-        <h1 className="font-sue-ellen text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-1 sm:mb-1.5">Faq</h1>
+        <h1 className="font-sue-ellen text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-1 sm:mb-1.5">
+          Faq
+        </h1>
         <h2 className="font-shippori font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5.625rem] leading-tight">
           General <br /> Questions
         </h2>

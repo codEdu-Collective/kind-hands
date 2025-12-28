@@ -10,7 +10,10 @@ const CausesCards = async () => {
       <div className="container mx-auto px-4 sm:px-6 md:px-8 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {causes.map(({ id, imageUrl, title, percentage, raised, goal }) => (
-            <div key={id} className="flex flex-col bg-white dark:bg-gray-300 shadow-sm group rounded-lg overflow-hidden">
+            <div
+              key={id}
+              className="flex flex-col bg-white dark:bg-gray-300 shadow-sm group rounded-lg overflow-hidden"
+            >
               <div className="relative h-48 sm:h-64 md:h-80 lg:h-75 w-full overflow-hidden">
                 <Link href={`/causes/${id}`}>
                   <Image
@@ -21,7 +24,9 @@ const CausesCards = async () => {
                   />
                 </Link>
                 <div className="absolute top-3 sm:top-4 md:top-6 left-3 sm:left-4 md:left-6 bg-white dark:bg-gray-100 px-2 sm:px-3 py-1.5 sm:py-2 min-w-10 sm:min-w-12.5 text-center rounded">
-                  <span className="block text-rose-500 dark:text-primary font-bold text-xs sm:text-sm">{percentage}%</span>
+                  <span className="block text-rose-500 dark:text-primary font-bold text-xs sm:text-sm">
+                    {percentage}%
+                  </span>
                 </div>
               </div>
 

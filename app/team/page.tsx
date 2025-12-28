@@ -1,9 +1,4 @@
-import {
-  FaFacebook,
-  FaInstagram,
-  FaPinterest,
-  FaSquareXTwitter,
-} from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaPinterest, FaSquareXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 
 const teamMembers = [
@@ -43,17 +38,9 @@ const Team = () => {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 gap-y-8 sm:gap-y-10 md:gap-y-12">
           {teamMembers.map((member, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center text-center group"
-            >
+            <div key={index} className="flex flex-col items-center text-center group">
               <div className="relative overflow-hidden w-full max-w-[400px] mx-auto aspect-3/4 mb-4 sm:mb-6 rounded-lg">
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  fill
-                  className="object-cover"
-                />
+                <Image src={member.image} alt={member.name} fill className="object-cover" />
               </div>
 
               <h4 className="font-shippori font-extrabold text-lg sm:text-xl md:text-2xl text-dark dark:text-white mb-2 sm:mb-3">

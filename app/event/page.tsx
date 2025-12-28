@@ -15,8 +15,12 @@ const Home = async () => {
           className="object-cover"
         />
         <div className="relative z-2 text-white ml-4 sm:ml-8 md:ml-12 lg:ml-16 xl:ml-90 px-4 sm:px-6">
-          <h1 className="font-sue-ellen text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-1 sm:mb-1.5">Donation</h1>
-          <h2 className="font-shippori font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5.625rem]">Our Events</h2>
+          <h1 className="font-sue-ellen text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-1 sm:mb-1.5">
+            Donation
+          </h1>
+          <h2 className="font-shippori font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5.625rem]">
+            Our Events
+          </h2>
         </div>
       </header>
       <section className="flex justify-center px-4 sm:px-6 lg:px-8">
@@ -42,7 +46,8 @@ const Home = async () => {
                 <p className="text-sm sm:text-base md:text-lg lg:text-2xl">{month}</p>
               </div>
               <div className="font-work text-sm sm:text-base md:text-lg lg:text-xl text-neutral dark:text-gray-300 mt-4 sm:mt-5">
-                Organized By :<span className="font-medium text-dark dark:text-white"> {organizer.name}</span>
+                Organized By :
+                <span className="font-medium text-dark dark:text-white"> {organizer.name}</span>
               </div>
               <div className="w-full h-0.5 bg-cloud-gray dark:bg-gray-600 mt-4 sm:mt-6 md:mt-7 mb-3 sm:mb-4" />
               <div>
@@ -53,7 +58,9 @@ const Home = async () => {
                 >
                   {title}
                 </h3>
-                <h4 className="font-work text-sm sm:text-base md:text-lg lg:text-xl text-neutral dark:text-gray-300 line-clamp-2">{description}</h4>
+                <h4 className="font-work text-sm sm:text-base md:text-lg lg:text-xl text-neutral dark:text-gray-300 line-clamp-2">
+                  {description}
+                </h4>
               </div>
             </div>
           ))}

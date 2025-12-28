@@ -64,14 +64,21 @@ const Home = async ({ params }: CauseParams) => {
 
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 text-xs sm:text-sm text-gray-500 dark:text-gray-400 mb-6 sm:mb-8 border-b border-gray-200 dark:border-gray-600 pb-4 sm:pb-6">
                 <span>
-                  By <span className="text-slate-800 dark:text-dark font-semibold">{cause.organizer}</span>
+                  By{" "}
+                  <span className="text-slate-800 dark:text-dark font-semibold">
+                    {cause.organizer}
+                  </span>
                 </span>
                 <span>{new Date(cause.date).toLocaleDateString()}</span>
               </div>
 
               <div className="prose prose-sm sm:prose-base md:prose-lg text-gray-600 dark:text-gray-300 max-w-none">
-                <h3 className="text-lg sm:text-xl font-serif text-slate-800 dark:text-dark mb-2 sm:mb-3">Description</h3>
-                <p className="whitespace-pre-line leading-relaxed text-sm sm:text-base">{cause.description}</p>
+                <h3 className="text-lg sm:text-xl font-serif text-slate-800 dark:text-dark mb-2 sm:mb-3">
+                  Description
+                </h3>
+                <p className="whitespace-pre-line leading-relaxed text-sm sm:text-base">
+                  {cause.description}
+                </p>
               </div>
             </div>
 
@@ -80,8 +87,12 @@ const Home = async ({ params }: CauseParams) => {
               <div className="bg-white dark:bg-gray-300 p-6 sm:p-8 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100 dark:border-gray-400 sticky top-4 sm:top-8">
                 <div className="mb-4 sm:mb-6">
                   <div className="flex justify-between items-end mb-2">
-                    <span className="text-2xl sm:text-3xl font-bold text-slate-800 dark:text-dark">${cause.raised}</span>
-                    <span className="text-gray-500 dark:text-gray-600 text-xs sm:text-sm mb-1">of ${cause.goal} goal</span>
+                    <span className="text-2xl sm:text-3xl font-bold text-slate-800 dark:text-dark">
+                      ${cause.raised}
+                    </span>
+                    <span className="text-gray-500 dark:text-gray-600 text-xs sm:text-sm mb-1">
+                      of ${cause.goal} goal
+                    </span>
                   </div>
 
                   <div className="w-full bg-gray-100 dark:bg-gray-500 rounded-full h-2 sm:h-3 mb-2 overflow-hidden">

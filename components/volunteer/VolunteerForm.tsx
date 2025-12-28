@@ -11,8 +11,12 @@ const VolunteerForm = () => {
   return (
     <div className="bg-white dark:bg-gray-800 p-4 sm:p-6 md:p-8 lg:p-10 shadow-xl rounded-sm h-full">
       <div className="mb-6 sm:mb-8">
-        <h3 className="text-xl sm:text-2xl font-serif font-bold text-gray-800 dark:text-white">Complete the Form</h3>
-        <p className="text-rose-400 dark:text-primary text-sm mt-2 font-bold">Fill Form and Become Volunteer</p>
+        <h3 className="text-xl sm:text-2xl font-serif font-bold text-gray-800 dark:text-white">
+          Complete the Form
+        </h3>
+        <p className="text-rose-400 dark:text-primary text-sm mt-2 font-bold">
+          Fill Form and Become Volunteer
+        </p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
