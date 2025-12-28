@@ -12,8 +12,8 @@ const BlogSingleHeader = ({ post }: PostProps) => {
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
         className="object-cover"
       />
-      <div className="relative z-2 text-white ml-90">
-        <h1 className="font-sue-ellen text-5xl mb-1.5">
+      <div className="relative z-2 text-white ml-4 sm:ml-8 md:ml-16 lg:ml-90 max-w-full md:max-w-lg lg:max-w-220 px-4 md:px-0">
+        <h1 className="font-sue-ellen text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-1.5">
           {new Date(post.publishedAt).toLocaleDateString("en-US", {
             year: "numeric",
             month: "long",
@@ -21,7 +21,9 @@ const BlogSingleHeader = ({ post }: PostProps) => {
           })}{" "}
           | {post.author.name}
         </h1>
-        <h2 className="font-shippori font-extrabold text-[5.625rem]">{post.title}</h2>
+        <h2 className="font-shippori font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[5.625rem] leading-tight">
+          {post.title}
+        </h2>
       </div>
     </>
   );
