@@ -27,7 +27,11 @@ export default function MobileMenu() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="lg:hidden bg-white dark:bg-gray-900 border-t dark:border-gray-700 absolute w-full left-0 top-20 shadow-lg px-4 py-6 flex flex-col space-y-4 h-[calc(100vh-5rem)] overflow-y-auto z-50">
-          <Link href="/" className={mobileLinkClass} onClick={() => setIsMobileMenuOpen(false)}>
+          <Link
+            href="/"
+            className={mobileLinkClass}
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
             Home
           </Link>
           <Link
@@ -85,6 +89,7 @@ export default function MobileMenu() {
                 <Link
                   href="/blog"
                   className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 text-dark dark:text-gray-200 transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Blog
                 </Link>
@@ -92,6 +97,7 @@ export default function MobileMenu() {
                 <Link
                   href="/faq"
                   className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 text-dark dark:text-gray-200 transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
                   FAQ
                 </Link>

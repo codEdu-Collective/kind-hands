@@ -22,11 +22,11 @@ const Hero = () => {
             Below Poverty Line
           </h3>
         </div>
-        <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-3.5 mt-4 sm:mt-6 md:mt-7">
-          <button className="uppercase w-full sm:w-28 md:w-36 h-10 sm:h-12 md:h-14 lg:h-16 bg-primary rounded-2xl sm:rounded-3xl md:rounded-4xl text-white text-xs sm:text-sm md:text-base lg:text-lg font-work font-medium">
+        <div className="flex flex-row gap-2 sm:gap-3 md:gap-3.5 mt-4 sm:mt-6 md:mt-7">
+          <button className="uppercase w-24 md:w-28 lg:w-36 px-6 sm:px-4 md:px-5 lg:px-6 h-9 sm:h-10 md:h-12 lg:h-16 bg-primary rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-4xl text-white text-xs sm:text-xs md:text-sm lg:text-lg font-work font-medium">
             Donate
           </button>
-          <button className="uppercase w-full sm:w-28 md:w-36 h-10 sm:h-12 md:h-14 lg:h-16 bg-white rounded-2xl sm:rounded-3xl md:rounded-4xl text-dark text-xs sm:text-sm md:text-base lg:text-lg font-work font-medium">
+          <button className="uppercase w-24 md:w-28 lg:w-36 px-6 sm:px-4 md:px-5 lg:px-6 h-9 sm:h-10 md:h-12 lg:h-16 bg-white rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-4xl text-dark text-xs sm:text-xs md:text-sm lg:text-lg font-work font-medium">
             Discover
           </button>
         </div>
