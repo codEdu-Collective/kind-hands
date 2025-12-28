@@ -9,17 +9,23 @@ import MobileMenu from "./MobileMenu";
 
 export default function MainMenu() {
   const navLinkClass =
-    "font-work text-dark dark:text-gray-200 font-medium text-lg hover:text-primary transition-colors";
+    "font-work text-dark dark:text-white font-medium text-lg hover:text-primary transition-colors";
 
   return (
-    <nav className="shadow-sm border-b bg-white dark:bg-gray-900 dark:border-gray-700 relative z-50">
+    <nav className="shadow-sm  relative z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link
             href="/"
             className="text-2xl text-dark dark:text-white font-extrabold flex items-center space-x-2 font-shippori shrink-0"
           >
-            <Image src={`/images/logo.png`} alt="Logo" width={32} height={32} className="w-8 h-8" />
+            <Image
+              src={`/images/logo.png`}
+              alt="Logo"
+              width={32}
+              height={32}
+              className="w-8 h-8"
+            />
             <span>Kind Hands</span>
           </Link>
 
@@ -44,41 +50,41 @@ export default function MainMenu() {
                 />
 
                 <div className="absolute top-full left-0 hidden group-hover:block w-48 pt-4">
-                  <div className="bg-white dark:bg-gray-800 shadow-xl rounded-md py-2 border dark:border-gray-700">
+                  <div className="bg-white dark:bg-dark-900 shadow-xl rounded-md py-2 border dark:border-gray-800">
                     <Link
                       href="/causes"
-                      className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 text-dark dark:text-gray-200 transition-colors"
+                      className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-dark-800 text-dark dark:text-white transition-colors"
                     >
                       Causes
                     </Link>
                     <Link
                       href="/projects"
-                      className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 text-dark dark:text-gray-200 transition-colors"
+                      className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-dark-800 text-dark dark:text-white transition-colors"
                     >
                       Projects
                     </Link>
                     <Link
                       href="/team"
-                      className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 text-dark dark:text-gray-200 transition-colors"
+                      className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-dark-800 text-dark dark:text-white transition-colors"
                     >
                       Team
                     </Link>
                     <Link
                       href="/volunteer"
-                      className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 text-dark dark:text-gray-200 transition-colors"
+                      className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-dark-800 text-dark dark:text-white transition-colors"
                     >
                       Volunteer
                     </Link>
                     <Link
                       href="/blog"
-                      className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 text-dark dark:text-gray-200 transition-colors"
+                      className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-dark-800 text-dark dark:text-white transition-colors"
                     >
                       Blog
                     </Link>
 
                     <Link
                       href="/faq"
-                      className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 text-dark dark:text-gray-200 transition-colors"
+                      className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-dark-800 text-dark dark:text-white transition-colors"
                     >
                       FAQ
                     </Link>

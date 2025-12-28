@@ -9,9 +9,9 @@ export default function MobileMenu() {
   const [isMobileSubMenuOpen, setIsMobileSubMenuOpen] = useState(false);
 
   const mobileLinkClass =
-    "block font-work text-dark dark:text-gray-100 font-medium text-lg py-2 border-b border-gray-100 dark:border-gray-800";
+    "block font-work text-dark dark:text-white font-medium text-lg py-2 border-b border-gray-100 dark:border-gray-800";
   const mobileSubLinkClass =
-    "block font-work text-gray-600 dark:text-gray-400 py-2 hover:text-primary text-base";
+    "block font-work text-gray-600 dark:text-white py-2 hover:text-primary text-base";
 
   return (
     <>
@@ -26,8 +26,12 @@ export default function MobileMenu() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-white dark:bg-gray-900 border-t dark:border-gray-700 absolute w-full left-0 top-20 shadow-lg px-4 py-6 flex flex-col space-y-4 h-[calc(100vh-5rem)] overflow-y-auto z-50">
-          <Link href="/" className={mobileLinkClass} onClick={() => setIsMobileMenuOpen(false)}>
+        <div className="lg:hidden bg-white dark:bg-dark-950 border-t dark:border-gray-800 absolute w-full left-0 top-20 shadow-lg px-4 py-6 flex flex-col space-y-4 h-[calc(100vh-5rem)] overflow-y-auto z-50">
+          <Link
+            href="/"
+            className={mobileLinkClass}
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
             Home
           </Link>
           <Link
@@ -84,14 +88,14 @@ export default function MobileMenu() {
                 </Link>
                 <Link
                   href="/blog"
-                  className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 text-dark dark:text-gray-200 transition-colors"
+                  className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-dark-800 text-dark dark:text-white transition-colors"
                 >
                   Blog
                 </Link>
 
                 <Link
                   href="/faq"
-                  className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 text-dark dark:text-gray-200 transition-colors"
+                  className="block px-4 py-2 hover:bg-gray-50 dark:hover:bg-dark-800 text-dark dark:text-white transition-colors"
                 >
                   FAQ
                 </Link>

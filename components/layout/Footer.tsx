@@ -7,7 +7,7 @@ export default function Footer() {
   const utilityLinks = ["Style Guide", "Licenses", "Password", "Not Found"];
 
   return (
-    <footer className="bg-dark text-white">
+    <footer className="bg-dark dark:bg-dark-950 text-white dark:text-white">
       <div className="w-full pt-16 lg:pt-28 pb-10">
         <section className="container mx-auto px-4 md:px-8 max-w-7xl flex flex-col lg:flex-row gap-12 lg:gap-0">
           <div className="w-full lg:w-4/12 flex flex-col items-center lg:items-start text-center lg:text-left lg:pr-12">
@@ -22,7 +22,7 @@ export default function Footer() {
               <span className="font-shippori font-extrabold text-3xl md:text-4xl">Kind Hands</span>
             </Link>
 
-            <p className="font-work text-base md:text-lg lg:text-xl text-gray-300 mb-8 leading-relaxed max-w-md lg:max-w-none mx-auto lg:mx-0">
+            <p className="font-work text-base md:text-lg lg:text-xl text-gray-300 dark:text-white mb-8 leading-relaxed max-w-md lg:max-w-none mx-auto lg:mx-0">
               Care about people to transforming their lives and exudes a positives Impressiono
               believe. fundraising NGO organizations.
             </p>
@@ -46,7 +46,7 @@ export default function Footer() {
             - bg-steel (Senin tema rengin)
             - Grid yapısı: Mobilde tek kolon, Tablette 2, Masaüstünde 3 kolon
           */}
-          <div className="w-full lg:w-8/12 bg-steel rounded-2xl p-8 md:p-12 lg:p-14">
+          <div className="w-full lg:w-8/12 bg-steel dark:bg-dark-600 rounded-2xl p-8 md:p-12 lg:p-14">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-8">
               {/* Kolon 1: Get Involved */}
               <div className="text-center sm:text-left">
@@ -56,7 +56,7 @@ export default function Footer() {
                     <li key={index}>
                       <Link
                         href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
-                        className="font-work text-lg text-gray-300 hover:text-primary transition-colors inline-block"
+                        className="font-work text-lg text-gray-300 dark:text-white hover:text-primary transition-colors inline-block"
                       >
                         {item}
                       </Link>
@@ -73,7 +73,7 @@ export default function Footer() {
                     <li key={index}>
                       <Link
                         href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
-                        className="font-work text-lg text-gray-300 hover:text-primary transition-colors inline-block"
+                        className="font-work text-lg text-gray-300 dark:text-white hover:text-primary transition-colors inline-block"
                       >
                         {item}
                       </Link>
@@ -85,7 +85,7 @@ export default function Footer() {
               {/* Kolon 3: Contact */}
               <div className="text-center sm:text-left sm:col-span-2 lg:col-span-1">
                 <h2 className="font-shippori font-bold text-2xl mb-6 text-white">Contact</h2>
-                <div className="space-y-4 font-work text-lg text-gray-300">
+                <div className="space-y-4 font-work text-lg text-gray-300 dark:text-white">
                   <p>
                     660 Brooklyn Street, 88
                     <br />
@@ -113,7 +113,7 @@ export default function Footer() {
       </div>
 
       {/* Copyright Bar */}
-      <div className="w-full bg-dark text-white font-inter text-sm md:text-base text-center border-t border-cool-slate/20">
+      <div className="w-full bg-dark dark:bg-dark-950 text-white dark:text-white font-inter text-sm md:text-base text-center border-t border-cool-slate/20 dark:border-gray-700">
         <p className="py-6">&copy; 2025 CodeEdu. All rights reserved.</p>
       </div>
     </footer>

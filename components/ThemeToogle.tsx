@@ -9,10 +9,12 @@ const ThemeToggle = () => {
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
     if (savedTheme) {
+      setTheme(savedTheme);
       document.documentElement.setAttribute("data-theme", savedTheme);
     } else {
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
       const defaultTheme = prefersDark ? "dark" : "light";
+      setTheme(defaultTheme);
       document.documentElement.setAttribute("data-theme", defaultTheme);
     }
   }, []);

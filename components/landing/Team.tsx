@@ -6,7 +6,7 @@ const Team = () => {
     <section className="w-full h-217.5 bg-beige flex flex-col justify-center items-center">
       <h2 className="font-sue-ellen text-4xl text-primary">Team</h2>
       <h3 className="font-shippori font-extrabold text-[2.5rem]">Meet Our Volunteers</h3>
-      <div className="flex gap-6 mt-10 text-dark">
+      <div className="flex gap-6 mt-10 text-dark dark:text-white">
         {["Martin Luther", "Keira Knightley", "Jack Sparrow"].map((member, index) => (
           <div key={index} className="text-center">
             <Image
@@ -16,8 +16,8 @@ const Team = () => {
               height={382}
               className="object-cover"
             />
-            <h4 className="my-4.5 font-shippori font-extrabold text-xl">{member}</h4>
-            <div className="flex justify-center gap-4">
+            <h4 className="my-4.5 font-shippori font-extrabold text-xl dark:text-white">{member}</h4>
+            <div className="flex justify-center gap-4 text-dark dark:text-white">
               <FaInstagram size={18} aria-label="Instagram icon" />
               <FaFacebook size={18} aria-label="Facebook icon" />
               <FaSquareXTwitter size={18} aria-label="Twitter icon" />

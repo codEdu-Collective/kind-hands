@@ -12,7 +12,7 @@ const OurEvents = async () => {
       <article className="w-300 flex justify-between items-center mb-12.5">
         <div>
           <h2 className="font-sue-ellen text-4xl text-primary">Our Events</h2>
-          <h3 className="font-shippori font-extrabold text-[2.5rem]">
+          <h3 className="font-shippori font-extrabold text-[2.5rem] dark:text-white">
             Join Upcoming Events <br /> Replays & Webinars
           </h3>
         </div>

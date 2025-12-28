@@ -222,10 +222,10 @@
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-base: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-    0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-lg:
+    0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl:
+    0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
 
@@ -242,8 +242,140 @@
   --foreground: var(--color-foreground);
 }
 
+/* Dark mode color overrides - Kapsamlı ve uyumlu */
+[data-theme="dark"] {
+  /* Ana arka plan ve metin - Koyu ve okunabilir */
+  --color-background: #151f26;
+  --color-foreground: #e8ebed;
+
+  /* Muted renkler - Daha koyu ve kontrastlı */
+  --color-muted: #1f2d34;
+  --color-muted-foreground: #a3afb7;
+  --color-muted-background: #1a262d;
+
+  /* Gray scale - Dark mode için optimize edilmiş */
+  --color-gray: #1f2d34;
+  --color-gray-50: #151f26;
+  --color-gray-100: #1a262d;
+  --color-gray-200: #1f2d34;
+  --color-gray-300: #24333b;
+  --color-gray-400: #293a42;
+  --color-gray-500: #2e4049;
+  --color-gray-600: #384c56;
+  --color-gray-700: #465a64;
+  --color-gray-800: #5f6d75;
+  --color-gray-900: #758793;
+  --color-gray-950: #a3afb7;
+
+  /* Neutral - Dark mode için uyarlanmış */
+  --color-neutral: #758793;
+  --color-neutral-50: #151f26;
+  --color-neutral-100: #1a262d;
+  --color-neutral-200: #1f2d34;
+  --color-neutral-300: #24333b;
+  --color-neutral-400: #293a42;
+  --color-neutral-500: #2e4049;
+  --color-neutral-600: #465a64;
+  --color-neutral-700: #5f6d75;
+  --color-neutral-800: #758793;
+  --color-neutral-900: #a3afb7;
+  --color-neutral-950: #d1d7db;
+
+  /* Açık renkler -> Koyu renklere dönüştürülmüş */
+  --color-beige: #1f2d34;
+  --color-cream: #1a262d;
+  --color-light: #1a262d;
+  --color-snow: #1f2d34;
+
+  /* Özel renkler - Dark mode için uyumlu */
+  --color-slate-ink: #e8ebed;
+  --color-charcoal: #a3afb7;
+  --color-steel: #384c56;
+  --color-cool-slate: #5f6d75;
+  --color-mist-gray: #758793;
+  --color-soft-gray: #a3afb7;
+  --color-cloud-gray: #8d9ba5;
+  --color-coral-red: #ff6d6d;
+
+  /* Dark rengi - Dark mode'da daha koyu */
+  --color-dark: #0a0f14;
+  --color-dark-50: #0f121e;
+  --color-dark-100: #151f26;
+  --color-dark-200: #1a262d;
+  --color-dark-300: #1f2d34;
+  --color-dark-400: #24333b;
+  --color-dark-500: #293a42;
+  --color-dark-600: #2e4049;
+  --color-dark-700: #384c56;
+  --color-dark-800: #465a64;
+  --color-dark-900: #5f6d75;
+  --color-dark-950: #0a0f14;
+
+  /* Navy - Dark mode'da daha koyu */
+  --color-navy: #0a0f14;
+  --color-navy-50: #151f26;
+  --color-navy-100: #1a262d;
+  --color-navy-200: #1f2d34;
+  --color-navy-300: #24333b;
+  --color-navy-400: #293a42;
+  --color-navy-500: #2e4049;
+  --color-navy-600: #384c56;
+  --color-navy-700: #465a64;
+  --color-navy-800: #5f6d75;
+  --color-navy-900: #758793;
+  --color-navy-950: #a3afb7;
+
+  /* Primary (#FF6D6D) - Dark mode'da daha canlı */
+  --color-primary: #ff6d6d;
+  --color-primary-50: #2d0f0f;
+  --color-primary-100: #3d1a1a;
+  --color-primary-200: #5c2626;
+  --color-primary-300: #7a3434;
+  --color-primary-400: #994242;
+  --color-primary-500: #b85050;
+  --color-primary-600: #d65e5e;
+  --color-primary-700: #ff6d6d;
+  --color-primary-800: #ff8585;
+  --color-primary-900: #ffa3a3;
+  --color-primary-950: #ffc7c7;
+
+  /* Accent (#77D7D3) - Dark mode'da daha sert ve canlı */
+  --color-accent: #77d7d3;
+  --color-accent-50: #0d1f1e;
+  --color-accent-100: #1a3f3d;
+  --color-accent-200: #265e5b;
+  --color-accent-300: #337d7a;
+  --color-accent-400: #4a9c98;
+  --color-accent-500: #5faba7;
+  --color-accent-600: #77d7d3;
+  --color-accent-700: #8ee0dc;
+  --color-accent-800: #a5e9e5;
+  --color-accent-900: #bcf2ee;
+  --color-accent-950: #d3fbf7;
+
+  /* Deep Teal - Dark mode için daha parlak */
+  --color-deep-teal: #77d7d3;
+
+  /* White - Dark mode'da açık gri */
+  --color-white: #e8ebed;
+
+  /* TopHeader Colors - Dark mode */
+  --color-topheader-text: #ffffff;
+  --color-topheader-text-hover: #d1d7db;
+  --color-topheader-icon: #ffffff;
+  --color-topheader-icon-hover: var(--color-primary);
+  --color-topheader-border: rgba(255, 255, 255, 0.3);
+
+  /* Background ve Foreground güncellemesi */
+  --background: var(--color-background);
+  --foreground: var(--color-foreground);
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
