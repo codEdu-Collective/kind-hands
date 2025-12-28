@@ -155,18 +155,16 @@ const StyleGuidePage = () => {
             <p className="font-work text-base text-neutral leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris.
+              exercitation ullamco laboris. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris.
             </p>
             <p className="font-work text-base text-neutral leading-relaxed">
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
+              officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
         </div>
@@ -208,10 +206,9 @@ const StyleGuidePage = () => {
             <p className="font-work italic text-base md:text-lg lg:text-2xl text-white max-w-full md:max-w-3xl lg:max-w-180 text-center leading-7 md:leading-8 lg:leading-10 px-4 md:px-6 lg:px-0">
               Veniam quae Nostrum facere repellendus minus quod aut aliquam neque reiciendis. Qui
               beatae vel magnam ipsum repudiandae.Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit.
-              Veniam quae Nostrum facere repellendus minus quod aut aliquam neque reiciendis. Qui
-              beatae vel magnam ipsum repudiandae.Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit.
+              elit. Veniam quae Nostrum facere repellendus minus quod aut aliquam neque reiciendis.
+              Qui beatae vel magnam ipsum repudiandae.Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
             </p>
           </div>
         </div>

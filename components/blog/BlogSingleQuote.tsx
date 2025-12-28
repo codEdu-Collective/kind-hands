@@ -11,9 +11,9 @@ const BlogSingleQuote = () => {
         className="sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-[103px] lg:h-[103px] text-black dark:text-dark bg-white rounded-full p-3 sm:p-4 md:p-5 mb-4 sm:mb-5"
       />
       <p className="text-center leading-relaxed">
-        &ldquo;In the end, maybe it is wiser to surrender before the miraculous
-        scope of human generosity and to just keep saying thank you, forever and
-        sincerely, for as long as we have voices&rdquo;
+        &ldquo;In the end, maybe it is wiser to surrender before the miraculous scope of human
+        generosity and to just keep saying thank you, forever and sincerely, for as long as we have
+        voices&rdquo;
       </p>
     </div>
   );
