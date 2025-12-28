@@ -18,9 +18,7 @@ const AboutUs = () => {
           </button>
         </div>
         <div className="bg-dark dark:bg-dark-700 text-white dark:text-white px-6 sm:px-8 md:px-10 py-8 sm:py-12 md:py-19">
-          <h2 className="font-shippori text-2xl sm:text-3xl md:text-4xl">
-            Become a Volunteer
-          </h2>
+          <h2 className="font-shippori text-2xl sm:text-3xl md:text-4xl">Become a Volunteer</h2>
           <h3 className="font-work font-normal text-base sm:text-lg md:text-xl mt-3 sm:mt-3.5 mb-4 sm:mb-5">
             Below Poverty Line is enchmark used by the government
           </h3>
