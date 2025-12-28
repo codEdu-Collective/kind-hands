@@ -3,7 +3,7 @@ import { LuMail, LuPhone } from "react-icons/lu";
 
 export default function TopHeader() {
   return (
-    <div className="bg-accent dark:bg-accent-300 text-deep-teal dark:text-white text-sm relative z-50">
+    <div className="bg-accent dark:bg-accent-300 text-deep-teal dark:text-white text-sm relative z-50 dark:bg-teal-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 md:py-3">
         <div className="flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0">
           <div className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-6 font-work text-xs sm:text-sm md:text-base">

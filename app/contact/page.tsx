@@ -19,9 +19,9 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 xl:gap-24">
           {/* --- LEFT SIDE (Contact Information) --- */}
           <div className="flex flex-col justify-center text-center lg:text-left">
-            <span className="text-primary font-medium text-lg mb-2 font-sue-ellen">Contact</span>
+            <span className="text-primary font-medium text-4xl mb-2 font-sue-ellen">Contact</span>
 
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-[5rem] font-shippori font-extrabold text-dark mb-6 leading-tight">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-shippori font-extrabold text-dark dark:text-white mb-6 leading-tight">
               Get in Touch With Us
             </h2>
 
