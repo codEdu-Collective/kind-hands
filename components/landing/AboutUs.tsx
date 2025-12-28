@@ -6,16 +6,16 @@ const AboutUs = () => {
   return (
     <section className="relative flex flex-col items-center text-dark">
       <div className="w-300 h-88 relative -top-25 grid grid-cols-3">
-        <div className="bg-accent px-10 py-15">
-          <h2 className="font-shippori text-4xl">Education</h2>
-          <h3 className="font-work font-normal text-xl mt-3.5 mb-5 text-charcoal">
+        <div className="bg-accent dark:bg-accent-400 px-10 py-15">
+          <h2 className="font-shippori text-4xl dark:text-dark">Education</h2>
+          <h3 className="font-work font-normal text-xl mt-3.5 mb-5 text-charcoal dark:text-dark-700">
             Below Poverty Line is enchmark used by the government of India economic disadvantage.
           </h3>
-          <button className="bg-white w-36.5 h-16.5 rounded-4xl uppercase font-work font-medium">
+          <button className="bg-white dark:bg-gray-100 w-36.5 h-16.5 rounded-4xl uppercase font-work font-medium dark:text-white">
             Discover
           </button>
         </div>
-        <div className="bg-dark text-white px-10 py-19">
+        <div className="bg-dark dark:bg-dark-700 text-white dark:text-white px-10 py-19">
           <h2 className="font-shippori text-4xl">Become a Volunteer</h2>
           <h3 className="font-work font-normal text-xl mt-3.5 mb-5">
             Below Poverty Line is enchmark used by the government
@@ -43,7 +43,7 @@ const AboutUs = () => {
       <div className="w-300 h-full flex gap-12">
         <div className="w-150">
           <h3 className="font-sue-ellen text-4xl text-primary mb-1">About US</h3>
-          <h2 className="font-shippori font-extrabold text-[2.5rem] mb-3">
+          <h2 className="font-shippori font-extrabold text-[2.5rem] mb-3 dark:text-white">
             Help People, <br />
             Our Main Goals
           </h2>

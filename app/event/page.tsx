@@ -34,25 +34,25 @@ const Home = async () => {
               </Link>
               <div
                 className={`w-29 h-35 flex flex-col justify-center items-center font-shippori font-extrabold ${
-                  index == 0 ? "bg-primary" : "bg-dark"
+                  index == 0 ? "bg-primary" : "bg-dark dark:bg-dark-700"
                 } text-white max-w-29 max-h-35 absolute top-0 left-0`}
               >
                 <p className="text-6xl">{day}</p>
                 <p className="text-2xl">{month}</p>
               </div>
-              <div className="font-work text-xl text-neutral mt-5">
-                Organized By :<span className="font-medium text-dark"> {organizer.name}</span>
+              <div className="font-work text-xl text-neutral dark:text-gray-300 mt-5">
+                Organized By :<span className="font-medium text-dark dark:text-white"> {organizer.name}</span>
               </div>
-              <div className="w-full h-0.5 bg-cloud-gray mt-7 mb-4" />
+              <div className="w-full h-0.5 bg-cloud-gray dark:bg-gray-600 mt-7 mb-4" />
               <div>
                 <h3
                   className={`font-shippori font-extrabold ${
-                    index == 0 ? "text-primary" : "text-dark"
+                    index == 0 ? "text-primary" : "text-dark dark:text-white"
                   } text-2xl mb-3`}
                 >
                   {title}
                 </h3>
-                <h4 className="font-work text-xl text-neutral line-clamp-2">{description}</h4>
+                <h4 className="font-work text-xl text-neutral dark:text-gray-300 line-clamp-2">{description}</h4>
               </div>
             </div>
           ))}

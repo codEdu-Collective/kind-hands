@@ -57,27 +57,27 @@ const Home = async ({ params }: EventParams) => {
                   , Everyday
                 </p>
               </div>
-              <div className="bg-dark px-6 py-9">
+              <div className="bg-dark dark:bg-dark-700 px-6 py-9">
                 <h3 className="font-shippori font-extrabold text-2xl mb-4">Organizer</h3>
                 <p className="font-work font-medium text-lg">{event.organizer.name}</p>
                 <p className="font-work font-medium text-lg">{event.organizer.email}</p>
               </div>
-              <div className="bg-accent text-dark px-6 py-9">
-                <h3 className="font-shippori font-extrabold text-2xl mb-4">Venue</h3>
-                <p className="font-work font-medium text-lg">{event.venue},</p>
-                <p className="font-work font-medium text-lg">{event.venueAddress}</p>
+              <div className="bg-accent dark:bg-accent-400 text-dark dark:text-dark px-6 py-9">
+                <h3 className="font-shippori font-extrabold text-2xl mb-4 dark:text-dark">Venue</h3>
+                <p className="font-work font-medium text-lg dark:text-dark">{event.venue},</p>
+                <p className="font-work font-medium text-lg dark:text-dark">{event.venueAddress}</p>
               </div>
             </div>
             <article className="w-220.5 text-justify">
               <div>
-                <h1 className="font-shippori font-extrabold text-4xl mb-3">Event Description</h1>
-                <p className="font-work text-xl text-neutral">{event.description}</p>
-                <h2 className="font-shippori font-extrabold text-2xl mt-10 mb-4">Event Content</h2>
-                <p className="font-work text-xl text-neutral">{event.content}</p>
-                <h3 className="font-shippori font-extrabold text-2xl mt-10 mb-4">
+                <h1 className="font-shippori font-extrabold text-4xl mb-3 dark:text-white">Event Description</h1>
+                <p className="font-work text-xl text-neutral dark:text-gray-300">{event.description}</p>
+                <h2 className="font-shippori font-extrabold text-2xl mt-10 mb-4 dark:text-white">Event Content</h2>
+                <p className="font-work text-xl text-neutral dark:text-gray-300">{event.content}</p>
+                <h3 className="font-shippori font-extrabold text-2xl mt-10 mb-4 dark:text-white">
                   Details about the Event
                 </h3>
-                <p className="font-work text-xl text-neutral">{event.details}</p>
+                <p className="font-work text-xl text-neutral dark:text-gray-300">{event.details}</p>
               </div>
             </article>
           </div>
