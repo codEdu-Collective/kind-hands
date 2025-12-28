@@ -13,8 +13,8 @@ import {
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center">
-      <main className="">
+    <div className="flex min-h-screen items-center justify-center w-full">
+      <main className="w-full">
         <Hero />
         <AboutUs />
         <OurCouses />
