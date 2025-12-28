@@ -37,9 +37,8 @@ const Project = () => {
                 <Image
                   src={`/projects/project-${index + 1}.png`}
                   alt="project"
-                  width={240}
-                  height={275}
-                  className="object-cover w-full h-full"
+                  fill
+                  className="object-cover"
                 />
               </div>
             );

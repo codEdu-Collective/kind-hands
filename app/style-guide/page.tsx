@@ -14,6 +14,7 @@ const StyleGuidePage = () => {
     <main className="w-full">
       <header className="relative h-96 md:h-205.5 flex items-center">
         <Image src="/style-guide/style-guide-banner.png" alt="hero" fill className="object-cover" />
+        <Image src="/style-guide/style-guide-banner.png" alt="hero" fill className="object-cover" />
         <div className="z-10 text-white ml-4 md:ml-90 max-w-full md:max-w-180 px-4 md:px-0">
           <h1 className="font-sue-ellen text-2xl md:text-4xl lg:text-5xl mb-1.5">
             Humanity Assets...
@@ -99,7 +100,7 @@ const StyleGuidePage = () => {
           <h1 className="font-shippori font-extrabold text-2xl md:text-3xl lg:text-4xl text-primary mb-6">
             Text
           </h1>
-          <div className="flex flex-col gap-8 md:gap-12 lg:gap-[70px]">
+          <div className="flex flex-col gap-8 md:gap-12 lg:gap-17.5">
             <div>
               <h1 className="font-shippori font-extrabold text-4xl md:text-6xl lg:text-7xl text-dark">
                 Heading Banner
@@ -150,12 +151,19 @@ const StyleGuidePage = () => {
           </h1>
           <div className="flex flex-col gap-4">
             <p className="font-work text-lg font-semibold text-dark">Paragraph</p>
+            <p className="font-work text-lg font-semibold text-dark">Paragraph</p>
             <p className="font-work text-base text-neutral leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris.
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
               exercitation ullamco laboris.
             </p>
             <p className="font-work text-base text-neutral leading-relaxed">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia deserunt mollit anim id est laborum.
@@ -198,6 +206,9 @@ const StyleGuidePage = () => {
               <FaQuoteLeft className="h-8 w-8 md:h-9 md:w-9 lg:h-10 lg:w-10" />
             </div>
             <p className="font-work italic text-base md:text-lg lg:text-2xl text-white max-w-full md:max-w-3xl lg:max-w-180 text-center leading-7 md:leading-8 lg:leading-10 px-4 md:px-6 lg:px-0">
+              Veniam quae Nostrum facere repellendus minus quod aut aliquam neque reiciendis. Qui
+              beatae vel magnam ipsum repudiandae.Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.
               Veniam quae Nostrum facere repellendus minus quod aut aliquam neque reiciendis. Qui
               beatae vel magnam ipsum repudiandae.Lorem ipsum dolor sit amet, consectetur adipiscing
               elit.
@@ -254,22 +265,22 @@ const StyleGuidePage = () => {
             Icon
           </h1>
           <div className="flex flex-wrap items-center gap-4 md:gap-6 lg:gap-8">
-            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-[64px] lg:h-[64px] flex items-center justify-center text-primary">
+            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center text-primary">
               <FaCapsules className="w-full h-full" />
             </div>
-            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-[64px] lg:h-[64px] flex items-center justify-center text-primary">
+            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center text-primary">
               <FaHandHolding className="w-full h-full" />
             </div>
-            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-[64px] lg:h-[64px] flex items-center justify-center text-primary">
+            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center text-primary">
               <FaBaby className="w-full h-full" />
             </div>
-            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-[64px] lg:h-[64px] flex items-center justify-center text-primary">
+            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center text-primary">
               <FaBowlFood className="w-full h-full" />
             </div>
-            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-[64px] lg:h-[64px] flex items-center justify-center text-primary">
+            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center text-primary">
               <FaGlobe className="w-full h-full" />
             </div>
-            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-[64px] lg:h-[64px] flex items-center justify-center text-primary">
+            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center text-primary">
               <FaGraduationCap className="w-full h-full" />
             </div>
           </div>
