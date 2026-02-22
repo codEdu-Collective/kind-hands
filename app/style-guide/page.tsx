@@ -14,6 +14,7 @@ const StyleGuidePage = () => {
     <main className="w-full">
       <header className="relative h-96 md:h-205.5 flex items-center">
         <Image src="/style-guide/style-guide-banner.png" alt="hero" fill className="object-cover" />
+        <Image src="/style-guide/style-guide-banner.png" alt="hero" fill className="object-cover" />
         <div className="z-10 text-white ml-4 md:ml-90 max-w-full md:max-w-180 px-4 md:px-0">
           <h1 className="font-sue-ellen text-2xl md:text-4xl lg:text-5xl mb-1.5">
             Humanity Assets...
@@ -33,7 +34,7 @@ const StyleGuidePage = () => {
               <div className="w-16 h-16 md:w-20 md:h-20 lg:w-22 lg:h-22 bg-primary shadow-sm shrink-0"></div>
               <div className="flex flex-col">
                 <p className="text-xs md:text-sm font-semibold text-dark">Primary - 01</p>
-                <p className="text-[0.625rem] md:text-xs text-neutral">#FF6D6D</p>
+                <p className="text-[10px] md:text-xs text-neutral">#FF6D6D</p>
               </div>
             </div>
 
@@ -41,7 +42,7 @@ const StyleGuidePage = () => {
               <div className="w-16 h-16 md:w-20 md:h-20 lg:w-22 lg:h-22 bg-accent shadow-sm shrink-0"></div>
               <div className="flex flex-col">
                 <p className="text-xs md:text-sm font-semibold text-dark">Color - Accent</p>
-                <p className="text-[0.625rem] md:text-xs text-neutral">#77D7D3</p>
+                <p className="text-[10px] md:text-xs text-neutral">#77D7D3</p>
               </div>
             </div>
 
@@ -49,7 +50,7 @@ const StyleGuidePage = () => {
               <div className="w-16 h-16 md:w-20 md:h-20 lg:w-22 lg:h-22 bg-dark shadow-sm shrink-0"></div>
               <div className="flex flex-col">
                 <p className="text-xs md:text-sm font-semibold text-dark">Color - Dark</p>
-                <p className="text-[0.625rem] md:text-xs text-neutral">#2E4049</p>
+                <p className="text-[10px] md:text-xs text-neutral">#2E4049</p>
               </div>
             </div>
 
@@ -57,7 +58,7 @@ const StyleGuidePage = () => {
               <div className="w-16 h-16 md:w-20 md:h-20 lg:w-22 lg:h-22 bg-neutral shadow-sm border border-gray-200 shrink-0"></div>
               <div className="flex flex-col">
                 <p className="text-xs md:text-sm font-semibold text-dark">Color - Neutral</p>
-                <p className="text-[0.625rem] md:text-xs text-neutral">#727272</p>
+                <p className="text-[10px] md:text-xs text-neutral">#727272</p>
               </div>
             </div>
 
@@ -65,7 +66,7 @@ const StyleGuidePage = () => {
               <div className="w-16 h-16 md:w-20 md:h-20 lg:w-22 lg:h-22 bg-light shadow-sm border border-gray-200 shrink-0"></div>
               <div className="flex flex-col">
                 <p className="text-xs md:text-sm font-semibold text-dark">Color - Light</p>
-                <p className="text-[0.625rem] md:text-xs text-neutral">#ECF1F0</p>
+                <p className="text-[10px] md:text-xs text-neutral">#ECF1F0</p>
               </div>
             </div>
 
@@ -73,7 +74,7 @@ const StyleGuidePage = () => {
               <div className="w-16 h-16 md:w-20 md:h-20 lg:w-22 lg:h-22 bg-beige shadow-sm border border-gray-200 shrink-0"></div>
               <div className="flex flex-col">
                 <p className="text-xs md:text-sm font-semibold text-dark">Color - Beige</p>
-                <p className="text-[0.625rem] md:text-xs text-neutral">#F1EEEC</p>
+                <p className="text-[10px] md:text-xs text-neutral">#F1EEEC</p>
               </div>
             </div>
 
@@ -81,7 +82,7 @@ const StyleGuidePage = () => {
               <div className="w-16 h-16 md:w-20 md:h-20 lg:w-22 lg:h-22 bg-navy shadow-sm shrink-0"></div>
               <div className="flex flex-col">
                 <p className="text-xs md:text-sm font-semibold text-dark">Color - Navy</p>
-                <p className="text-[0.625rem] md:text-xs text-neutral">#1A2B3C</p>
+                <p className="text-[10px] md:text-xs text-neutral">#1A2B3C</p>
               </div>
             </div>
 
@@ -89,7 +90,7 @@ const StyleGuidePage = () => {
               <div className="w-16 h-16 md:w-20 md:h-20 lg:w-22 lg:h-22 bg-white shadow-sm border border-gray-200 shrink-0"></div>
               <div className="flex flex-col">
                 <p className="text-xs md:text-sm font-semibold text-dark">Color - White</p>
-                <p className="text-[0.625rem] md:text-xs text-neutral">#FFFFFF</p>
+                <p className="text-[10px] md:text-xs text-neutral">#FFFFFF</p>
               </div>
             </div>
           </div>
@@ -150,15 +151,20 @@ const StyleGuidePage = () => {
           </h1>
           <div className="flex flex-col gap-4">
             <p className="font-work text-lg font-semibold text-dark">Paragraph</p>
+            <p className="font-work text-lg font-semibold text-dark">Paragraph</p>
             <p className="font-work text-base text-neutral leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris.
+              exercitation ullamco laboris. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris.
             </p>
             <p className="font-work text-base text-neutral leading-relaxed">
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
+              officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
         </div>
@@ -200,7 +206,9 @@ const StyleGuidePage = () => {
             <p className="font-work italic text-base md:text-lg lg:text-2xl text-white max-w-full md:max-w-3xl lg:max-w-180 text-center leading-7 md:leading-8 lg:leading-10 px-4 md:px-6 lg:px-0">
               Veniam quae Nostrum facere repellendus minus quod aut aliquam neque reiciendis. Qui
               beatae vel magnam ipsum repudiandae.Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit.
+              elit. Veniam quae Nostrum facere repellendus minus quod aut aliquam neque reiciendis.
+              Qui beatae vel magnam ipsum repudiandae.Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
             </p>
           </div>
         </div>
