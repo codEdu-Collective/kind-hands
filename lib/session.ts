@@ -4,7 +4,21 @@ import { JWTPayload, jwtVerify, SignJWT } from "jose";
 
 import "server-only";
 
-const key = new TextEncoder().encode(process.env.SECRET);
+const secret = process.env.SECRET;
+
+if (!secret && process.env.NODE_ENV === "production") {
+  throw new Error("SECRET environment variable is not set.");
+}
+
+if (!secret) {
+  console.warn(
+    "Warning: SECRET environment variable is not set. Using a default, insecure key for development purposes only. Please set a strong, random secret in production.",
+  );
+}
+
+const key = new TextEncoder().encode(
+  secret || "a-very-long-and-secure-secret-for-development-only-32-bytes",
+);
 
 const cookie = {
   name: "session",
