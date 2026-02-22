@@ -1,6 +1,14 @@
-# Kind Hands
+![Project Preview](./project_preview.png?raw=true)
+
+<h1 align="center">Kind Hands</h1>
+
+<div align="center">
+
+[Live Demo](https://kind-hands.vercel.app/)
 
 A platform that connects donors and volunteers with important causes, making donations simple and effective.
+
+</div>
 
 ## 🚀 Technologies
 
