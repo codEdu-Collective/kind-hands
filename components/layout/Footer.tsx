@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   const involvedLinks = ["About", "Volunteer", "Causes", "Projects", "Team"];
-  const utilityLinks = ["Style Guide", "Licenses", "Password", "Not Found"];
+  const utilityLinks = ["Style Guide", "Licenses", "FAQ", "Not Found"];
 
   return (
     <footer className="bg-dark text-white">
@@ -47,7 +47,7 @@ export default function Footer() {
             - Grid yapısı: Mobilde tek kolon, Tablette 2, Masaüstünde 3 kolon
           */}
           <div className="w-full lg:w-8/12 bg-steel rounded-2xl p-8 md:p-12 lg:p-14">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3  gap-8">
               {/* Kolon 1: Get Involved */}
               <div className="text-center sm:text-left">
                 <h2 className="font-shippori font-bold text-2xl mb-6 text-white">Get Involved</h2>
@@ -83,7 +83,7 @@ export default function Footer() {
               </div>
 
               {/* Kolon 3: Contact */}
-              <div className="text-center sm:text-left sm:col-span-2 lg:col-span-1">
+              <div className="text-center sm:text-left">
                 <h2 className="font-shippori font-bold text-2xl mb-6 text-white">Contact</h2>
                 <div className="space-y-4 font-work text-lg text-gray-300">
                   <p>
